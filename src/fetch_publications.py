@@ -24,7 +24,7 @@ AUTHOR_QUERIES = {
     "Helena Møgelbjerg Ditzel": '"Ditzel HM"[Author]',
     "Henrik Frederiksen": '"Frederiksen, Henrik"[Full Author Name] AND (Odense[Affiliation] OR "Southern Denmark"[Affiliation])',
     "Niels Abildgaard": '"Abildgaard, Niels"[Full Author Name]',
-    "Tine Rosenberg": '"Rosenberg, Tine"[Full Author Name]',
+    "Tine Rosenberg": '"Rosenberg, Tine"[Full Author Name] AND (Hematology[Affiliation] OR Haematology[Affiliation] OR "Quality of Life Research"[Affiliation])',  # another Tine Rosenberg publishes in ENT surgery
     # "Pia K. Pedersen": no PubMed publications found
 }
 
