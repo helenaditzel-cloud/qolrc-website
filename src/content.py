@@ -28,9 +28,10 @@ NAV = [
     ("about", "About us", "Om os"),
     ("studies", "Ongoing studies", "Igangværende studier"),
     ("pro", "PRO expertise", "PRO-ekspertise"),
+    ("patients", "Patient involvement", "Patientinddragelse"),
     ("members", "Members", "Medarbejdere"),
     ("publications", "Publications", "Publikationer"),
-    ("partners", "Partners", "Samarbejdspartnere"),
+    ("partners", "Partners", "Partnere"),
     ("contact", "Contact", "Kontakt"),
 ]
 
@@ -246,6 +247,77 @@ PRO = {
         {"name": "PROMIS / HealthMeasures", "url": "https://www.healthmeasures.net/"},
         {"name": "COSMIN", "url": "https://www.cosmin.nl/"},
     ],
+}
+
+# ---------------------------------------------------------------- Become a patient representative
+PATIENTS = {
+    "title": {"en": "Become a patient representative", "da": "Bliv patientrepræsentant"},
+    "intro": {
+        "en": "Your experience can help make our research more relevant for patients and their families.",
+        "da": "Dine erfaringer kan gøre vores forskning mere relevant for patienter og pårørende.",
+    },
+    "why_heading": {"en": "Why we involve patients", "da": "Hvorfor vi inddrager patienter"},
+    "why": {
+        "en": [
+            "Our research is about how disease and treatment affect everyday life. Only patients and their relatives know what that is really like, so we want people with that experience to help shape our studies from the start.",
+            "Patient representatives help us ask the right questions, choose questionnaires that cover what matters, and explain our results in a way that makes sense to the people they concern.",
+        ],
+        "da": [
+            "Vores forskning handler om, hvordan sygdom og behandling påvirker hverdagen. Det er kun patienter og pårørende, der ved, hvordan det virkelig er, og derfor vil vi gerne have mennesker med de erfaringer med til at forme vores studier fra starten.",
+            "Patientrepræsentanter hjælper os med at stille de rigtige spørgsmål, vælge spørgeskemaer, der dækker det, der betyder noget, og formidle vores resultater, så de giver mening for dem, de handler om.",
+        ],
+    },
+    "tasks_heading": {"en": "What a patient representative does", "da": "Hvad en patientrepræsentant laver"},
+    "tasks": [
+        {"title": {"en": "Comment on questionnaires", "da": "Kommenterer spørgeskemaer"},
+         "text": {"en": "Read questionnaires and tell us whether the questions are relevant, clear and not too burdensome.",
+                  "da": "Læser spørgeskemaer og fortæller os, om spørgsmålene er relevante, forståelige og ikke for belastende."}},
+        {"title": {"en": "Review study materials", "da": "Gennemlæser studiemateriale"},
+         "text": {"en": "Give feedback on patient information, consent forms and plans for new studies.",
+                  "da": "Giver feedback på patientinformation, samtykkeerklæringer og planer for nye studier."}},
+        {"title": {"en": "Join meetings", "da": "Deltager i møder"},
+         "text": {"en": "Take part in occasional meetings, in person or online, with researchers and other representatives.",
+                  "da": "Deltager i møder en gang imellem, fysisk eller online, med forskere og andre repræsentanter."}},
+        {"title": {"en": "Help share results", "da": "Hjælper med at formidle resultater"},
+         "text": {"en": "Help us write plain-language summaries so our findings reach patients and the public.",
+                  "da": "Hjælper os med at skrive letforståelige resuméer, så vores resultater når ud til patienter og offentligheden."}},
+    ],
+    "who_heading": {"en": "Who can take part", "da": "Hvem kan være med"},
+    "who": {
+        "en": [
+            "People who have, or have had, a hematologic disease such as multiple myeloma, lymphoma, leukemia, ITP or AIHA.",
+            "Relatives and caregivers of people with a hematologic disease.",
+            "No research experience is needed. We explain everything along the way.",
+        ],
+        "da": [
+            "Personer, der har eller har haft en hæmatologisk sygdom, fx myelomatose, lymfom, leukæmi, ITP eller AIHA.",
+            "Pårørende til personer med en hæmatologisk sygdom.",
+            "Du behøver ingen erfaring med forskning. Vi forklarer det hele undervejs.",
+        ],
+    },
+    "practical_heading": {"en": "Practical information", "da": "Praktisk information"},
+    "practical": {
+        "en": [
+            "You decide how much time you want to spend, and you can stop at any time.",
+            "TODO(Describe the expected time commitment, for example a few hours per study.)",
+            "TODO(State whether transport and other expenses are reimbursed, or any fee.)",
+        ],
+        "da": [
+            "Du bestemmer selv, hvor meget tid du vil bruge, og du kan stoppe når som helst.",
+            "TODO(Beskriv den forventede tidsforbrug, fx nogle timer pr. studie.)",
+            "TODO(Angiv, om transport og andre udgifter dækkes, eller om der gives honorar.)",
+        ],
+    },
+    "join_heading": {"en": "Interested?", "da": "Interesseret?"},
+    "join_text": {
+        "en": "Send us a short email with your name and phone number, and tell us whether you are a patient or a relative. We will contact you for an informal talk.",
+        "da": "Send os en kort e-mail med dit navn og telefonnummer, og fortæl, om du er patient eller pårørende. Så kontakter vi dig for en uforpligtende snak.",
+    },
+    "join_privacy": {
+        "en": "Please do not include details about your health or treatment in your email.",
+        "da": "Skriv venligst ikke oplysninger om dit helbred eller din behandling i e-mailen.",
+    },
+    "join_email": "TODO(email address for patient representatives)",
 }
 
 # ---------------------------------------------------------------- Members

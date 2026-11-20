@@ -34,6 +34,7 @@ UI = {
     "more_info": {"en": "More information", "da": "Mere information"},
     "useful_links": {"en": "Useful links", "da": "Nyttige links"},
     "photos": {"en": "Photos:", "da": "Fotos:"},
+    "become_rep": {"en": "Become a patient representative", "da": "Bliv patientrepræsentant"},
     "how_we_help": {"en": "How we can help", "da": "Hvordan vi kan hjælpe"},
     "portrait_of": {"en": "Portrait of", "da": "Portræt af"},
     "photo_missing": {"en": "Photo coming soon", "da": "Foto følger"},
@@ -198,6 +199,7 @@ def about(lang):
   <div class="card-body">
     <h3>{esc(t(th['title'], lang))}</h3>
     <p>{esc(t(th['text'], lang))}</p>
+    {f'<p><a href="{url("patients", lang, d)}">{UI["become_rep"][lang]} &rarr;</a></p>' if i == 6 else ""}
   </div>
 </li>"""
         for i, th in enumerate(a["themes"], 1)
@@ -324,6 +326,49 @@ def pro(lang):
     return layout("pro", lang, nav_label("pro", lang), body, t(P["intro"], lang))
 
 
+def patients(lang):
+    P = C.PATIENTS
+    d = depth_of("patients", lang)
+    why = "\n".join(f"<p>{esc(x)}</p>" for x in P["why"][lang])
+    tasks = "\n".join(
+        f"""<li class="card theme-plain"><h3>{esc(t(x['title'], lang))}</h3><p>{esc(t(x['text'], lang))}</p></li>"""
+        for x in P["tasks"])
+    who = "\n".join(f"<li>{esc(x)}</li>" for x in P["who"][lang])
+    practical = "\n".join(f"<li>{esc(x)}</li>" for x in P["practical"][lang])
+    email = P["join_email"]
+    email_html = (f'<a class="button button-accent" href="mailto:{email}">{esc(email)}</a>'
+                  if "@" in email and "TODO" not in email else esc(email))
+    title = t(P["title"], lang)
+    body = page_header("patients", title, P["intro"], lang) + f"""
+<section class="section">
+  <div class="wrap split">
+    <div class="prose">
+      <h2>{esc(t(P['why_heading'], lang))}</h2>
+      {why}
+    </div>
+    <aside class="contact-box">
+      <h2>{esc(t(P['join_heading'], lang))}</h2>
+      <p>{esc(t(P['join_text'], lang))}</p>
+      <p>{email_html}</p>
+      <p class="small-note">{esc(t(P['join_privacy'], lang))}</p>
+    </aside>
+  </div>
+</section>
+<section class="section section-tint">
+  <div class="wrap">
+    <h2 class="section-title">{esc(t(P['tasks_heading'], lang))}</h2>
+    <ul class="grid grid-2">{tasks}</ul>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap grid grid-2">
+    <div class="card"><h2>{esc(t(P['who_heading'], lang))}</h2><ul class="checklist">{who}</ul></div>
+    <div class="card"><h2>{esc(t(P['practical_heading'], lang))}</h2><ul class="checklist">{practical}</ul></div>
+  </div>
+</section>"""
+    return layout("patients", lang, title, body, t(P["intro"], lang))
+
+
 def initials(name):
     if name.startswith("TODO"):
         return "?"
@@ -443,6 +488,7 @@ PAGES = {
     "about": about,
     "studies": studies,
     "pro": pro,
+    "patients": patients,
     "members": members,
     "publications": publications,
     "partners": partners,
