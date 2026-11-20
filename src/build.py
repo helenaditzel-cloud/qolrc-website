@@ -169,14 +169,25 @@ def nav_label(page, lang):
 
 # ------------------------------------------------------------------ pages
 
+def art(photo_name, fallback, up):
+    """Use a real photo from assets/img/photos/ if it exists, otherwise the generated artwork."""
+    for ext in (".jpg", ".jpeg", ".png", ".webp"):
+        if os.path.exists(os.path.join(ROOT, "assets", "img", "photos", photo_name + ext)):
+            return f"{up}assets/img/photos/{photo_name}{ext}", True
+    return f"{up}assets/img/{fallback}", False
+
+
 def about(lang):
     a = C.ABOUT
     d = depth_of("about", lang)
     up = "../" * d
+    hero_src, _ = art("hero", "hero-art.svg", up)
+    band_src, band_photo = art("band", "band-art.svg", up)
+    band_overlay = "linear-gradient(90deg, rgba(10,42,51,.92), rgba(10,42,51,.7)), " if band_photo else ""
     paras = "\n".join(f"<p>{esc(p)}</p>" for p in a["intro"][lang])
     cards = "\n".join(
         f"""<li class="card theme">
-  <div class="card-art" style="background-image:url('{up}assets/img/theme-{i}.svg')"></div>
+  <div class="card-art" style="background-image:url('{art(f"theme-{i}", f"theme-{i}.svg", up)[0]}')"></div>
   <div class="card-body">
     <h3>{esc(t(th['title'], lang))}</h3>
     <p>{esc(t(th['text'], lang))}</p>
@@ -188,7 +199,7 @@ def about(lang):
         f'<li><span class="fig-value">{esc(f["value"])}</span><span class="fig-label">{esc(t(f["label"], lang))}</span></li>'
         for f in a["figures"]
     )
-    body = f"""<section class="hero" style="background-image:url('{up}assets/img/hero-art.svg')">
+    body = f"""<section class="hero" style="background-image:url('{hero_src}')">
   <div class="wrap">
     <div class="hero-panel">
       <p class="eyebrow">{esc(t(C.SITE['affiliation'], lang))}</p>
@@ -221,7 +232,7 @@ def about(lang):
     <ul class="grid grid-3">{cards}</ul>
   </div>
 </section>
-<section class="band" style="background-image:url('{up}assets/img/band-art.svg')">
+<section class="band" style="background-image:{band_overlay}url('{band_src}')">
   <div class="wrap band-inner">
     <div>
       <h2>{esc(t(a['advice_heading'], lang))}</h2>
