@@ -31,6 +31,9 @@ UI = {
     "breadcrumb": {"en": "Breadcrumb", "da": "Brødkrumme"},
     "figures": {"en": "QoLRC in numbers", "da": "QoLRC i tal"},
     "profile": {"en": "Research profile", "da": "Forskerprofil"},
+    "more_info": {"en": "More information", "da": "Mere information"},
+    "useful_links": {"en": "Useful links", "da": "Nyttige links"},
+    "how_we_help": {"en": "How we can help", "da": "Hvordan vi kan hjælpe"},
     "portrait_of": {"en": "Portrait of", "da": "Portræt af"},
     "photo_missing": {"en": "Photo coming soon", "da": "Foto følger"},
 }
@@ -238,7 +241,7 @@ def about(lang):
       <h2>{esc(t(a['advice_heading'], lang))}</h2>
       <p>{esc(t(a['advice_text'], lang))}</p>
     </div>
-    <p><a class="button button-accent" href="{url('contact', lang, d)}">{UI['contact_us'][lang]} &rarr;</a></p>
+    <p><a class="button button-accent" href="{url('pro', lang, d)}">{UI['how_we_help'][lang]} &rarr;</a></p>
   </div>
 </section>"""
     return layout("about", lang, nav_label("about", lang), body, t(a["hero_lead"], lang))
@@ -262,6 +265,59 @@ def studies(lang):
   <div class="wrap"><ul class="stack">{''.join(items)}</ul></div>
 </section>"""
     return layout("studies", lang, nav_label("studies", lang), body, t(C.STUDIES_INTRO, lang))
+
+
+def md_links(text):
+    """Escape text, then turn [label](https://...) into links."""
+    out = esc(text)
+    return re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2">\1</a>', out)
+
+
+def pro(lang):
+    P = C.PRO
+    d = depth_of("pro", lang)
+    inst = []
+    for i in P["instruments"]:
+        link = (f'<p><a href="{i["url"]}">{UI["more_info"][lang]}<span class="visually-hidden">: {esc(i["name"])}</span> &rarr;</a></p>'
+                if i["url"] else "")
+        inst.append(f"""<li class="card instrument">
+  <h3>{esc(i['name'])}</h3>
+  <p>{esc(t(i['what'], lang))}</p>
+  {link}
+</li>""")
+    adv = "\n".join(
+        f"""<li class="card theme-plain"><h3>{esc(t(a['title'], lang))}</h3><p>{esc(t(a['text'], lang))}</p></li>"""
+        for a in P["advice"]
+    )
+    links = "\n".join(f'<li><a href="{l["url"]}">{esc(l["name"])}</a></li>' for l in P["links"])
+    body = page_header("pro", nav_label("pro", lang), P["intro"], lang) + f"""
+<section class="section">
+  <div class="wrap">
+    <h2 class="section-title">{esc(t(P['instruments_heading'], lang))}</h2>
+    <ul class="grid grid-3">{''.join(inst)}</ul>
+    <p>{esc(t(P['instruments_note'], lang))}</p>
+  </div>
+</section>
+<section class="section section-tint">
+  <div class="wrap">
+    <h2 class="section-title">{esc(t(P['advice_heading'], lang))}</h2>
+    <ul class="grid grid-3">{adv}</ul>
+    <p class="center-cta"><a class="button" href="{url('contact', lang, d)}">{UI['contact_us'][lang]} &rarr;</a></p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap split">
+    <div class="prose">
+      <h2>{esc(t(P['resources_heading'], lang))}</h2>
+      <p class="resource-callout">{md_links(t(P['proteus'], lang))}</p>
+    </div>
+    <aside class="card">
+      <h3>{UI['useful_links'][lang]}</h3>
+      <ul class="link-list">{links}</ul>
+    </aside>
+  </div>
+</section>"""
+    return layout("pro", lang, nav_label("pro", lang), body, t(P["intro"], lang))
 
 
 def initials(name):
@@ -382,6 +438,7 @@ def contact(lang):
 PAGES = {
     "about": about,
     "studies": studies,
+    "pro": pro,
     "members": members,
     "publications": publications,
     "partners": partners,

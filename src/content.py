@@ -27,6 +27,7 @@ SITE = {
 NAV = [
     ("about", "About us", "Om os"),
     ("studies", "Ongoing studies", "Igangværende studier"),
+    ("pro", "PRO expertise", "PRO-ekspertise"),
     ("members", "Members", "Medarbejdere"),
     ("publications", "Publications", "Publikationer"),
     ("partners", "Partners", "Samarbejdspartnere"),
@@ -164,6 +165,88 @@ STUDIES = [
         "role": {"en": "Principal investigator", "da": "Forsøgsansvarlig"},
     },
 ]
+
+# ---------------------------------------------------------------- PRO expertise
+PRO = {
+    "intro": {
+        "en": "The patient-reported outcome measures we work with, and how we can help you use them in your study.",
+        "da": "De patientrapporterede måleinstrumenter, vi arbejder med, og hvordan vi kan hjælpe dig med at bruge dem i dit studie.",
+    },
+    "instruments_heading": {"en": "Questionnaires we work with", "da": "Spørgeskemaer, vi arbejder med"},
+    "instruments_note": {
+        "en": "TODO(Confirm the list and add any other instruments the team has used.)",
+        "da": "TODO(Bekræft listen og tilføj andre spørgeskemaer, teamet har brugt.)",
+    },
+    "instruments": [
+        {
+            "name": "EORTC QLQ-C30",
+            "what": {"en": "Core questionnaire for health-related quality of life in cancer, covering function, symptoms and global health status.",
+                     "da": "Kernespørgeskema om helbredsrelateret livskvalitet ved kræft, der dækker funktion, symptomer og overordnet helbred."},
+            "url": "https://qol.eortc.org/questionnaires/",
+        },
+        {
+            "name": "EORTC QLQ-MY20",
+            "what": {"en": "Module for patients with multiple myeloma, covering disease symptoms, side effects, body image and future perspective.",
+                     "da": "Modul til patienter med myelomatose om sygdomssymptomer, bivirkninger, kropsopfattelse og fremtidsperspektiv."},
+            "url": "https://qol.eortc.org/questionnaires/",
+        },
+        {
+            "name": "EORTC QLQ-CIPN20",
+            "what": {"en": "Module for chemotherapy-induced peripheral neuropathy.",
+                     "da": "Modul om kemoterapiinduceret perifer neuropati."},
+            "url": "https://qol.eortc.org/questionnaires/",
+        },
+        {
+            "name": "PROMIS-29",
+            "what": {"en": "Generic profile measure covering physical function, anxiety, depression, fatigue, sleep, social participation and pain.",
+                     "da": "Generisk profilmål for fysisk funktion, angst, depression, træthed, søvn, social deltagelse og smerte."},
+            "url": "https://www.healthmeasures.net/explore-measurement-systems/promis",
+        },
+        {
+            "name": "Steroid Symptom Questionnaire (SSQ)",
+            "what": {"en": "Questionnaire on symptoms related to corticosteroid treatment, currently being validated in ITP and AIHA.",
+                     "da": "Spørgeskema om symptomer relateret til behandling med binyrebarkhormon, som vi validerer ved ITP og AIHA."},
+            "url": "",
+        },
+        {
+            "name": "G8",
+            "what": {"en": "Geriatric screening tool used to identify older patients with cancer who may benefit from a full geriatric assessment.",
+                     "da": "Geriatrisk screeningsværktøj til at finde ældre patienter med kræft, som kan have gavn af en fuld geriatrisk vurdering."},
+            "url": "",
+        },
+    ],
+    "advice_heading": {"en": "How we can help", "da": "Hvordan vi kan hjælpe"},
+    "advice": [
+        {"title": {"en": "Choosing instruments", "da": "Valg af spørgeskemaer"},
+         "text": {"en": "Selecting PRO measures that fit your research question, population and setting.",
+                  "da": "Valg af PRO-mål, der passer til dit forskningsspørgsmål, din population og dit setting."}},
+        {"title": {"en": "PRO endpoints and protocols", "da": "PRO-endepunkter og protokoller"},
+         "text": {"en": "Defining PRO objectives, endpoints, estimands and assessment schedules, following SPIRIT-PRO.",
+                  "da": "Fastlæggelse af PRO-formål, endepunkter, estimands og måletidspunkter efter SPIRIT-PRO."}},
+        {"title": {"en": "Statistical analysis plans", "da": "Statistiske analyseplaner"},
+         "text": {"en": "Analysis of longitudinal PRO data, including mixed models for repeated measures and handling of missing data.",
+                  "da": "Analyse af longitudinelle PRO-data, herunder mixed models for gentagne målinger og håndtering af manglende data."}},
+        {"title": {"en": "Psychometric validation", "da": "Psykometrisk validering"},
+         "text": {"en": "Developing and validating questionnaires and translations, following COSMIN methodology.",
+                  "da": "Udvikling og validering af spørgeskemaer og oversættelser efter COSMIN-metoden."}},
+        {"title": {"en": "Data collection in practice", "da": "Dataindsamling i praksis"},
+         "text": {"en": "Setting up electronic and paper-based PRO collection and monitoring missing responses in real time.",
+                  "da": "Opsætning af elektronisk og papirbaseret PRO-indsamling og løbende opfølgning på manglende besvarelser."}},
+        {"title": {"en": "Grant applications", "da": "Fondsansøgninger"},
+         "text": {"en": "Writing the PRO sections of grant applications and study protocols.",
+                  "da": "Udarbejdelse af PRO-afsnit i fondsansøgninger og protokoller."}},
+    ],
+    "resources_heading": {"en": "Resources", "da": "Ressourcer"},
+    "proteus": {
+        "en": "Please also see resources for the use of PROs in trials and routine care on the [Proteus Consortium](https://theproteusconsortium.org/) website.",
+        "da": "Se også ressourcer om brug af PRO i kliniske forsøg og i den daglige klinik på [Proteus Consortium](https://theproteusconsortium.org/)s hjemmeside.",
+    },
+    "links": [
+        {"name": "EORTC Quality of Life Group", "url": "https://qol.eortc.org/"},
+        {"name": "PROMIS / HealthMeasures", "url": "https://www.healthmeasures.net/"},
+        {"name": "COSMIN", "url": "https://www.cosmin.nl/"},
+    ],
+}
 
 # ---------------------------------------------------------------- Members
 MEMBERS_INTRO = {

@@ -144,6 +144,14 @@ ul { padding: 0; margin: 0; list-style: none; }
 .tag-link { background: var(--sand); color: #6b4300; }
 .tag-link:hover { background: var(--accent); color: #1d1405; }
 
+/* PRO expertise page */
+.instrument { border-top: 5px solid var(--primary-2); }
+.theme-plain { border-left: 5px solid var(--accent); }
+.center-cta { margin-top: 2rem; }
+.resource-callout { font-size: 1.15rem; background: var(--sand); border-left: 6px solid var(--accent); padding: 1.25rem 1.5rem; border-radius: var(--radius); }
+.link-list li { padding: .45rem 0; border-bottom: 1px solid var(--line); }
+.link-list li:last-child { border-bottom: 0; }
+
 /* Members: portrait on top, bio below */
 .members-grid { align-items: stretch; }
 .member { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
