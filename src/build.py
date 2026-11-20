@@ -26,6 +26,11 @@ UI = {
     "our_role": {"en": "Our role", "da": "Vores rolle"},
     "visit": {"en": "Visit website", "da": "Besøg hjemmeside"},
     "pages": {"en": "Pages", "da": "Sider"},
+    "all_contact": {"en": "All contact details", "da": "Alle kontaktoplysninger"},
+    "home": {"en": "Home", "da": "Forside"},
+    "breadcrumb": {"en": "Breadcrumb", "da": "Brødkrumme"},
+    "figures": {"en": "QoLRC in numbers", "da": "QoLRC i tal"},
+    "profile": {"en": "Research profile", "da": "Forskerprofil"},
 }
 
 
@@ -88,13 +93,19 @@ def layout(page, lang, title, body, description):
 </head>
 <body>
 <a class="skip" href="#main">{UI['skip'][lang]}</a>
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <span>{esc(t(C.SITE['affiliation'], lang))}</span>
+    <a class="lang-switch" href="{url(page, other, d)}" hreflang="{other}" lang="{other}" aria-label="{UI['switch_label'][lang]}">{UI['switch'][lang]}</a>
+  </div>
+</div>
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="{url('about', lang, d)}">
-      <img src="{up}assets/logo-mark.svg" alt="" width="40" height="40">
+      <img src="{up}assets/logo-mark.svg" alt="" width="52" height="52">
       <span class="brand-text"><span class="brand-short">QoLRC</span><span class="brand-long">{esc(t(C.SITE['name'], lang))}</span></span>
     </a>
-    <a class="lang-switch" href="{url(page, other, d)}" hreflang="{other}" lang="{other}" aria-label="{UI['switch_label'][lang]}">{UI['switch'][lang]}</a>
+    <a class="button header-cta" href="{url('contact', lang, d)}">{UI['contact_us'][lang]}</a>
   </div>
   <nav class="main-nav" aria-label="{UI['pages'][lang]}">
     <div class="wrap">
@@ -112,21 +123,36 @@ def layout(page, lang, title, body, description):
 <footer class="site-footer">
   <div class="wrap footer-grid">
     <div>
-      <p class="footer-name">{esc(t(C.SITE['name'], lang))}</p>
+      <a class="brand brand-footer" href="{url('about', lang, d)}">
+        <img src="{up}assets/logo-mark.svg" alt="" width="44" height="44">
+        <span class="brand-text"><span class="brand-short">QoLRC</span><span class="brand-long">{esc(t(C.SITE['name'], lang))}</span></span>
+      </a>
       <p>{esc(t(C.SITE['footer_text'], lang))}</p>
-      <p class="small">{esc(t(C.SITE['privacy'], lang))}</p>
     </div>
-    <nav aria-label="{UI['pages'][lang]}"><ul class="footer-links">{footer_links}</ul></nav>
+    <nav aria-label="{UI['pages'][lang]}">
+      <p class="footer-heading">{UI['pages'][lang]}</p>
+      <ul class="footer-links">{footer_links}</ul>
+    </nav>
+    <div>
+      <p class="footer-heading">{UI['contact_us'][lang]}</p>
+      <address>{"<br>".join(esc(t(line, lang)) for line in C.CONTACT['address'][:3])}</address>
+      <p><a href="{url('contact', lang, d)}">{UI['all_contact'][lang]} &rarr;</a></p>
+    </div>
   </div>
+  <div class="footer-bottom"><div class="wrap">{esc(t(C.SITE['privacy'], lang))}</div></div>
 </footer>
 </body>
 </html>
 """
 
 
-def page_header(title, intro, lang):
+def page_header(page, title, intro, lang):
+    d = depth_of(page, lang)
     return f"""<section class="page-head">
   <div class="wrap">
+    <nav class="crumbs" aria-label="{UI['breadcrumb'][lang]}">
+      <a href="{url('about', lang, d)}">{UI['home'][lang]}</a> <span aria-hidden="true">/</span> <span aria-current="page">{esc(title)}</span>
+    </nav>
     <h1>{esc(title)}</h1>
     <p class="lead">{esc(t(intro, lang))}</p>
   </div>
@@ -144,39 +170,62 @@ def nav_label(page, lang):
 def about(lang):
     a = C.ABOUT
     d = depth_of("about", lang)
+    up = "../" * d
     paras = "\n".join(f"<p>{esc(p)}</p>" for p in a["intro"][lang])
     cards = "\n".join(
         f"""<li class="card theme">
-  <h3>{esc(t(th['title'], lang))}</h3>
-  <p>{esc(t(th['text'], lang))}</p>
-</li>"""
-        for th in a["themes"]
-    )
-    body = f"""<section class="hero">
-  <div class="wrap hero-inner">
-    <p class="eyebrow">{esc(t(C.SITE['affiliation'], lang))}</p>
-    <h1>{esc(t(a['hero_title'], lang))}</h1>
-    <p class="hero-lead">{esc(t(a['hero_lead'], lang))}</p>
+  <div class="card-art" style="background-image:url('{up}assets/img/theme-{i}.svg')"></div>
+  <div class="card-body">
+    <h3>{esc(t(th['title'], lang))}</h3>
+    <p>{esc(t(th['text'], lang))}</p>
   </div>
+</li>"""
+        for i, th in enumerate(a["themes"], 1)
+    )
+    figures = "\n".join(
+        f'<li><span class="fig-value">{esc(f["value"])}</span><span class="fig-label">{esc(t(f["label"], lang))}</span></li>'
+        for f in a["figures"]
+    )
+    body = f"""<section class="hero" style="background-image:url('{up}assets/img/hero-art.svg')">
+  <div class="wrap">
+    <div class="hero-panel">
+      <p class="eyebrow">{esc(t(C.SITE['affiliation'], lang))}</p>
+      <h1>{esc(t(a['hero_title'], lang))}</h1>
+      <p class="hero-lead">{esc(t(a['hero_lead'], lang))}</p>
+      <p class="hero-actions"><a class="button" href="{url('studies', lang, d)}">{UI['read_more_studies'][lang]} &rarr;</a></p>
+    </div>
+  </div>
+</section>
+<section class="figures" aria-label="{UI['figures'][lang]}">
+  <div class="wrap"><ul class="figures-list">{figures}</ul></div>
 </section>
 <section class="section">
   <div class="wrap split">
     <div class="prose">
+      <p class="kicker">QoLRC</p>
       <h2>{esc(t(a['intro_heading'], lang))}</h2>
       {paras}
-      <p><a class="button" href="{url('studies', lang, d)}">{UI['read_more_studies'][lang]}</a></p>
     </div>
     <aside class="contact-box" aria-labelledby="cb-h">
       <h2 id="cb-h">{esc(t(a['contact_box_heading'], lang))}</h2>
       <p>{esc(t(a['contact_box_text'], lang))}</p>
-      <p><a class="button button-light" href="{url('contact', lang, d)}">{UI['contact_us'][lang]}</a></p>
+      <p><a class="button button-accent" href="{url('contact', lang, d)}">{UI['contact_us'][lang]} &rarr;</a></p>
     </aside>
   </div>
 </section>
 <section class="section section-tint">
   <div class="wrap">
-    <h2>{esc(t(a['themes_heading'], lang))}</h2>
+    <h2 class="section-title">{esc(t(a['themes_heading'], lang))}</h2>
     <ul class="grid grid-3">{cards}</ul>
+  </div>
+</section>
+<section class="band" style="background-image:url('{up}assets/img/band-art.svg')">
+  <div class="wrap band-inner">
+    <div>
+      <h2>{esc(t(a['advice_heading'], lang))}</h2>
+      <p>{esc(t(a['advice_text'], lang))}</p>
+    </div>
+    <p><a class="button button-accent" href="{url('contact', lang, d)}">{UI['contact_us'][lang]} &rarr;</a></p>
   </div>
 </section>"""
     return layout("about", lang, nav_label("about", lang), body, t(a["hero_lead"], lang))
@@ -195,7 +244,7 @@ def studies(lang):
   <p>{esc(t(s['text'], lang))}</p>
   <p class="meta"><strong>{UI['our_role'][lang]}:</strong> {esc(t(s['role'], lang))}</p>
 </li>""")
-    body = page_header(nav_label("studies", lang), C.STUDIES_INTRO, lang) + f"""
+    body = page_header("studies", nav_label("studies", lang), C.STUDIES_INTRO, lang) + f"""
 <section class="section">
   <div class="wrap"><ul class="stack">{''.join(items)}</ul></div>
 </section>"""
@@ -218,6 +267,8 @@ def members(lang):
         else:
             pic = f'<span class="avatar avatar-initials" aria-hidden="true">{initials(m["name"])}</span>'
         mail = f'<p><a href="mailto:{m["email"]}">{esc(m["email"])}</a></p>' if m["email"] else ""
+        if m.get("profile"):
+            mail += f'<p><a href="{m["profile"]}">{UI["profile"][lang]}<span class="visually-hidden">: {esc(m["name"])}</span> &rarr;</a></p>'
         cards.append(f"""<li class="card member">
   {pic}
   <div>
@@ -227,7 +278,7 @@ def members(lang):
     {mail}
   </div>
 </li>""")
-    body = page_header(nav_label("members", lang), C.MEMBERS_INTRO, lang) + f"""
+    body = page_header("members", nav_label("members", lang), C.MEMBERS_INTRO, lang) + f"""
 <section class="section">
   <div class="wrap"><ul class="grid grid-2">{''.join(cards)}</ul></div>
 </section>"""
@@ -253,7 +304,7 @@ def publications(lang):
                           f'<em>{esc(p["journal"])}</em>. {p["year"]}.{doi}</li>')
         groups.append("</ol>")
         inner = "\n".join(groups)
-    body = page_header(nav_label("publications", lang), C.PUBLICATIONS_INTRO, lang) + f"""
+    body = page_header("publications", nav_label("publications", lang), C.PUBLICATIONS_INTRO, lang) + f"""
 <section class="section">
   <div class="wrap prose">{inner}</div>
 </section>"""
@@ -271,7 +322,7 @@ def partners(lang):
   <p>{esc(t(p['text'], lang))}</p>
   {link}
 </li>""")
-    body = page_header(nav_label("partners", lang), C.PARTNERS_INTRO, lang) + f"""
+    body = page_header("partners", nav_label("partners", lang), C.PARTNERS_INTRO, lang) + f"""
 <section class="section">
   <div class="wrap">
     <ul class="grid grid-3">{''.join(cards)}</ul>
@@ -287,7 +338,7 @@ def contact(lang):
     email = c["email"]
     email_html = (f'<a href="mailto:{email}">{esc(email)}</a>' if "@" in email and "TODO" not in email
                   else esc(email))
-    body = page_header(nav_label("contact", lang), c["intro"], lang) + f"""
+    body = page_header("contact", nav_label("contact", lang), c["intro"], lang) + f"""
 <section class="section">
   <div class="wrap grid grid-3 contact-grid">
     <div class="card">

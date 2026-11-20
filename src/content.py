@@ -99,6 +99,17 @@ ABOUT = {
             },
         },
     ],
+    # Key figures shown in a band under the banner. Keep these accurate.
+    "figures": [
+        {"value": "3", "label": {"en": "Ongoing studies", "da": "Igangværende studier"}},
+        {"value": "4", "label": {"en": "Countries in our collaborations", "da": "Lande i vores samarbejder"}},
+        {"value": "6", "label": {"en": "Research areas", "da": "Forskningsområder"}},
+    ],
+    "advice_heading": {"en": "Advice and collaboration", "da": "Rådgivning og samarbejde"},
+    "advice_text": {
+        "en": "Planning a study with patient-reported outcomes? We advise on choice of instruments, PRO endpoints, statistical analysis plans and grant applications, and welcome new collaborations.",
+        "da": "Planlægger du et studie med patientrapporterede oplysninger? Vi rådgiver om valg af spørgeskemaer, PRO-endepunkter, statistiske analyseplaner og fondsansøgninger og indgår gerne i nye samarbejder.",
+    },
     "contact_box_heading": {"en": "Get in touch", "da": "Kontakt os"},
     "contact_box_text": {
         "en": "Interested in collaborating, or need advice on PROs for a study or grant application? We would like to hear from you.",
@@ -164,13 +175,25 @@ MEMBERS_INTRO = {
 MEMBERS = [
     {
         "name": "Lene Kongsgaard Nielsen",
-        "title": {"en": "Head of QoLRC", "da": "Leder af QoLRC"},
+        "title": {"en": "MD, PhD, Head of QoLRC", "da": "Læge, ph.d., leder af QoLRC"},
         "bio": {
-            "en": "TODO(Short bio, 2 to 3 sentences: background, research focus, degrees.)",
-            "da": "TODO(Kort biografi, 2 til 3 sætninger: baggrund, forskningsområde, grader.)",
+            "en": "Specialist in hematology and clinical associate professor. Her research focuses on multiple myeloma and on symptoms and health-related quality of life in patients with hematologic cancer. TODO(Lene to check and expand this bio.)",
+            "da": "Speciallæge i hæmatologi og klinisk lektor. Hendes forskning fokuserer på myelomatose samt symptomer og helbredsrelateret livskvalitet hos patienter med hæmatologisk kræft. TODO(Lene tjekker og uddyber biografien.)",
         },
         "email": "",
         "photo": "",
+        "profile": "https://portal.findresearcher.sdu.dk/da/persons/lenekn",
+    },
+    {
+        "name": "Henrik Frederiksen",
+        "title": {"en": "MD, PhD, Clinical Professor in Hematology", "da": "Læge, ph.d., klinisk professor i hæmatologi"},
+        "bio": {
+            "en": "Head of Research at the Hematology Research Unit, Odense University Hospital and University of Southern Denmark. His research covers non-malignant hematologic diseases and the complications and reduced quality of life that aging, frailty and other chronic conditions bring to patients with hematologic cancer. Former chair of the Danish Society of Hematology.",
+            "da": "Forskningsleder for Hæmatologisk Forskningsenhed, Odense Universitetshospital og Syddansk Universitet. Hans forskning omfatter godartede hæmatologiske sygdomme samt de komplikationer og den nedsatte livskvalitet, som aldring, skrøbelighed og andre kroniske sygdomme medfører for patienter med hæmatologisk kræft. Tidligere formand for Dansk Hæmatologisk Selskab.",
+        },
+        "email": "",
+        "photo": "",
+        "profile": "https://www.sdu.dk/en/forskning/haematologi",
     },
     {
         "name": "Helena Møgelbjerg Ditzel",
@@ -181,6 +204,7 @@ MEMBERS = [
         },
         "email": "",
         "photo": "",
+        "profile": "",
     },
     {
         "name": "TODO(Name)",
@@ -188,6 +212,7 @@ MEMBERS = [
         "bio": {"en": "TODO(Add the remaining members, with title and a short bio.)", "da": "TODO(Tilføj de øvrige medarbejdere med titel og kort biografi.)"},
         "email": "",
         "photo": "",
+        "profile": "",
     },
 ]
 
