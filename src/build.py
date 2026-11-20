@@ -440,12 +440,18 @@ def publications(lang):
                     out.append("</ol></section>")
                 year = p["year"]
                 out.append(f'<section class="pub-year" data-year="{year}"><h2 class="year">{year or ""}</h2><ol class="pubs">')
-            names = []
-            for a in p["authors"]:
-                is_member = any(rx.search(a) for rxs in match.values() for rx in rxs)
-                names.append(f"<strong>{esc(a)}</strong>" if is_member else esc(a))
-            if len(names) > 12:
-                names = names[:10] + ["…"] + names[-1:]
+            flags = [any(rx.search(a) for rxs in match.values() for rx in rxs) for a in p["authors"]]
+            names, gap = [], False
+            n = len(p["authors"])
+            for k, (a, is_member) in enumerate(zip(p["authors"], flags)):
+                keep = n <= 12 or k < 10 or k == n - 1 or is_member
+                if keep:
+                    if gap:
+                        names.append("…")
+                        gap = False
+                    names.append(f"<strong>{esc(a)}</strong>" if is_member else esc(a))
+                else:
+                    gap = True
             cite = esc(p["journal"])
             if p.get("volume"):
                 cite += f" {esc(p['volume'])}"

@@ -182,7 +182,7 @@ ul { padding: 0; margin: 0; list-style: none; }
 .year { font-size: 1.4rem; border-bottom: 3px solid var(--accent); padding-bottom: .4rem; margin-top: 2rem; display: inline-block; }
 .pubs { padding-left: 1.2rem; }
 .pubs li { margin-bottom: 1rem; }
-.pub-title { font-weight: 700; }
+.pub-title { font-weight: 700; display: block; margin-bottom: .15rem; }
 .pub-authors { color: var(--muted); }
 
 address { font-style: normal; }
