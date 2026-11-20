@@ -171,19 +171,8 @@ MEMBERS_INTRO = {
     "da": "Menneskene bag QoLRC.",
 }
 
-# photo: file name in assets/img/ (leave "" to show initials instead)
+# photo: file name in assets/img/people/ (portrait, ideally 800 x 1000 px). Leave "" to show a placeholder.
 MEMBERS = [
-    {
-        "name": "Lene Kongsgaard Nielsen",
-        "title": {"en": "MD, PhD, Head of QoLRC", "da": "Læge, ph.d., leder af QoLRC"},
-        "bio": {
-            "en": "Specialist in hematology and clinical associate professor. Her research focuses on multiple myeloma and on symptoms and health-related quality of life in patients with hematologic cancer. TODO(Lene to check and expand this bio.)",
-            "da": "Speciallæge i hæmatologi og klinisk lektor. Hendes forskning fokuserer på myelomatose samt symptomer og helbredsrelateret livskvalitet hos patienter med hæmatologisk kræft. TODO(Lene tjekker og uddyber biografien.)",
-        },
-        "email": "",
-        "photo": "",
-        "profile": "https://portal.findresearcher.sdu.dk/da/persons/lenekn",
-    },
     {
         "name": "Henrik Frederiksen",
         "title": {"en": "MD, PhD, Clinical Professor in Hematology", "da": "Læge, ph.d., klinisk professor i hæmatologi"},
@@ -192,8 +181,19 @@ MEMBERS = [
             "da": "Forskningsleder for Hæmatologisk Forskningsenhed, Odense Universitetshospital og Syddansk Universitet. Hans forskning omfatter godartede hæmatologiske sygdomme samt de komplikationer og den nedsatte livskvalitet, som aldring, skrøbelighed og andre kroniske sygdomme medfører for patienter med hæmatologisk kræft. Tidligere formand for Dansk Hæmatologisk Selskab.",
         },
         "email": "",
-        "photo": "",
+        "photo": "henrik-frederiksen.jpg",
         "profile": "https://www.sdu.dk/en/forskning/haematologi",
+    },
+    {
+        "name": "Niels Abildgaard",
+        "title": {"en": "Clinical Professor in Hematology", "da": "Klinisk professor i hæmatologi"},
+        "bio": {
+            "en": "Clinical professor at the Department of Hematology, Odense University Hospital, and head of the Odense Amyloidosis Centre (AmyC OUH), a Center of Clinical Excellence. TODO(Niels to check and add his research focus, for example multiple myeloma.)",
+            "da": "Klinisk professor på Hæmatologisk Afdeling, Odense Universitetshospital, og leder af Odense Amyloidosis Centre (AmyC OUH), et Center for Klinisk Excellence. TODO(Niels tjekker og tilføjer sit forskningsområde, fx myelomatose.)",
+        },
+        "email": "",
+        "photo": "niels-abildgaard.jpg",
+        "profile": "",
     },
     {
         "name": "Helena Møgelbjerg Ditzel",
@@ -203,15 +203,29 @@ MEMBERS = [
             "da": "Klinisk forsker, der arbejder med patientrapporterede oplysninger, metoder til måling af helbredsrelateret livskvalitet og psykometrisk validering inden for hæmatologisk onkologi med fokus på myelomatose og autoimmune cytopenier. Forsøgsansvarlig og projektleder i flere internationale studier.",
         },
         "email": "",
-        "photo": "",
+        "photo": "helena-ditzel.jpg",
         "profile": "",
     },
     {
-        "name": "TODO(Name)",
-        "title": {"en": "TODO(Title)", "da": "TODO(Titel)"},
-        "bio": {"en": "TODO(Add the remaining members, with title and a short bio.)", "da": "TODO(Tilføj de øvrige medarbejdere med titel og kort biografi.)"},
+        "name": "Pia K. Pedersen",
+        "title": {"en": "Daily Manager, Hematology Research Unit", "da": "Daglig leder, Hæmatologisk Forskningsenhed"},
+        "bio": {
+            "en": "TODO(Pia to confirm her title and add a short bio, 2 to 3 sentences.)",
+            "da": "TODO(Pia bekræfter sin titel og tilføjer en kort biografi på 2 til 3 sætninger.)",
+        },
         "email": "",
-        "photo": "",
+        "photo": "pia-pedersen.jpg",
+        "profile": "",
+    },
+    {
+        "name": "Tine Rosenberg",
+        "title": {"en": "Research Coordinator and Fundraiser", "da": "Forskningskoordinator og fundraiser"},
+        "bio": {
+            "en": "TODO(Tine to confirm her title and add a short bio, 2 to 3 sentences.)",
+            "da": "TODO(Tine bekræfter sin titel og tilføjer en kort biografi på 2 til 3 sætninger.)",
+        },
+        "email": "",
+        "photo": "tine-rosenberg.jpg",
         "profile": "",
     },
 ]

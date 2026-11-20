@@ -31,6 +31,8 @@ UI = {
     "breadcrumb": {"en": "Breadcrumb", "da": "Brødkrumme"},
     "figures": {"en": "QoLRC in numbers", "da": "QoLRC i tal"},
     "profile": {"en": "Research profile", "da": "Forskerprofil"},
+    "portrait_of": {"en": "Portrait of", "da": "Portræt af"},
+    "photo_missing": {"en": "Photo coming soon", "da": "Foto følger"},
 }
 
 
@@ -260,27 +262,33 @@ def initials(name):
 
 def members(lang):
     d = depth_of("members", lang)
+    up = "../" * d
     cards = []
     for m in C.MEMBERS:
-        if m["photo"]:
-            pic = f'<img class="avatar" src="{"../" * d}assets/img/{m["photo"]}" alt="" width="120" height="120">'
+        photo_file = os.path.join(ROOT, "assets", "img", "people", m["photo"]) if m["photo"] else ""
+        if photo_file and os.path.exists(photo_file):
+            pic = f'<img class="portrait" src="{up}assets/img/people/{m["photo"]}" alt="{esc(UI["portrait_of"][lang])} {esc(m["name"])}" width="400" height="500" loading="lazy">'
         else:
-            pic = f'<span class="avatar avatar-initials" aria-hidden="true">{initials(m["name"])}</span>'
-        mail = f'<p><a href="mailto:{m["email"]}">{esc(m["email"])}</a></p>' if m["email"] else ""
+            pic = (f'<div class="portrait portrait-placeholder" role="img" aria-label="{esc(UI["photo_missing"][lang])}">'
+                   f'<img src="{up}assets/img/portrait-placeholder.svg" alt="" width="400" height="500">'
+                   f'<span>{esc(UI["photo_missing"][lang])}</span></div>')
+        links = ""
+        if m["email"]:
+            links += f'<p><a href="mailto:{m["email"]}">{esc(m["email"])}</a></p>'
         if m.get("profile"):
-            mail += f'<p><a href="{m["profile"]}">{UI["profile"][lang]}<span class="visually-hidden">: {esc(m["name"])}</span> &rarr;</a></p>'
+            links += f'<p><a href="{m["profile"]}">{UI["profile"][lang]}<span class="visually-hidden">: {esc(m["name"])}</span> &rarr;</a></p>'
         cards.append(f"""<li class="card member">
   {pic}
-  <div>
+  <div class="member-body">
     <h2>{esc(m['name'])}</h2>
     <p class="role">{esc(t(m['title'], lang))}</p>
     <p>{esc(t(m['bio'], lang))}</p>
-    {mail}
+    {links}
   </div>
 </li>""")
     body = page_header("members", nav_label("members", lang), C.MEMBERS_INTRO, lang) + f"""
 <section class="section">
-  <div class="wrap"><ul class="grid grid-2">{''.join(cards)}</ul></div>
+  <div class="wrap"><ul class="grid grid-3 members-grid">{''.join(cards)}</ul></div>
 </section>"""
     return layout("members", lang, nav_label("members", lang), body, t(C.MEMBERS_INTRO, lang))
 
