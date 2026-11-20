@@ -33,6 +33,7 @@ UI = {
     "profile": {"en": "Research profile", "da": "Forskerprofil"},
     "more_info": {"en": "More information", "da": "Mere information"},
     "useful_links": {"en": "Useful links", "da": "Nyttige links"},
+    "photos": {"en": "Photos:", "da": "Fotos:"},
     "how_we_help": {"en": "How we can help", "da": "Hvordan vi kan hjælpe"},
     "portrait_of": {"en": "Portrait of", "da": "Portræt af"},
     "photo_missing": {"en": "Photo coming soon", "da": "Foto følger"},
@@ -144,7 +145,7 @@ def layout(page, lang, title, body, description):
       <p><a href="{url('contact', lang, d)}">{UI['all_contact'][lang]} &rarr;</a></p>
     </div>
   </div>
-  <div class="footer-bottom"><div class="wrap">{esc(t(C.SITE['privacy'], lang))}</div></div>
+  <div class="footer-bottom"><div class="wrap">{esc(t(C.SITE['privacy'], lang))} {UI['photos'][lang]} <a href="https://unsplash.com">Unsplash</a>.</div></div>
 </footer>
 </body>
 </html>
@@ -153,7 +154,10 @@ def layout(page, lang, title, body, description):
 
 def page_header(page, title, intro, lang):
     d = depth_of(page, lang)
-    return f"""<section class="page-head">
+    src, has_photo = art(f"header-{page}", "", "../" * d)
+    style = (f' style="background-image:linear-gradient(100deg, rgba(10,42,51,.94) 0%, rgba(15,61,74,.85) 45%, rgba(15,61,74,.45) 100%), url(\'{src}\')"'
+             if has_photo else "")
+    return f"""<section class="page-head{' page-head-photo' if has_photo else ''}"{style}>
   <div class="wrap">
     <nav class="crumbs" aria-label="{UI['breadcrumb'][lang]}">
       <a href="{url('about', lang, d)}">{UI['home'][lang]}</a> <span aria-hidden="true">/</span> <span aria-current="page">{esc(title)}</span>
