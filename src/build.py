@@ -34,6 +34,9 @@ UI = {
     "more_info": {"en": "More information", "da": "Mere information"},
     "useful_links": {"en": "Useful links", "da": "Nyttige links"},
     "photos": {"en": "Photos:", "da": "Fotos:"},
+    "all": {"en": "All", "da": "Alle"},
+    "filter_by": {"en": "Filter by person", "da": "Filtrér efter person"},
+    "pub_source": {"en": "From PubMed, updated automatically every week. Last updated", "da": "Fra PubMed, opdateres automatisk hver uge. Senest opdateret"},
     "become_rep": {"en": "Become a patient representative", "da": "Bliv patientrepræsentant"},
     "how_we_help": {"en": "How we can help", "da": "Hvordan vi kan hjælpe"},
     "portrait_of": {"en": "Portrait of", "da": "Portræt af"},
@@ -409,28 +412,77 @@ def members(lang):
     return layout("members", lang, nav_label("members", lang), body, t(C.MEMBERS_INTRO, lang))
 
 
+def load_pubmed():
+    path = os.path.join(ROOT, "src", "publications.json")
+    if not os.path.exists(path):
+        return None
+    import json
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
 def publications(lang):
-    pubs = sorted(C.PUBLICATIONS, key=lambda p: (-p["year"], p["title"]))
-    if not pubs:
+    data = load_pubmed()
+    if not data or not data.get("publications"):
         inner = f"<p>{esc(t(C.PUBLICATIONS_EMPTY, lang))}</p>"
     else:
-        groups, year = [], None
+        pubs = data["publications"]
+        match = {m: [re.compile(rx) for rx in rxs] for m, rxs in data.get("author_match", {}).items()}
+        members = sorted({m for p in pubs for m in p["members"]})
+        chips = [f'<button type="button" class="chip" aria-pressed="true" data-filter="all">{UI["all"][lang]} ({len(pubs)})</button>']
+        for m in members:
+            n = sum(1 for p in pubs if m in p["members"])
+            chips.append(f'<button type="button" class="chip" aria-pressed="false" data-filter="{esc(m)}">{esc(m)} ({n})</button>')
+        out, year = [], None
         for p in pubs:
             if p["year"] != year:
                 if year is not None:
-                    groups.append("</ol>")
+                    out.append("</ol></section>")
                 year = p["year"]
-                groups.append(f'<h2 class="year">{year}</h2><ol class="pubs">')
-            doi = (f' <a href="https://doi.org/{html.escape(p["doi"])}">doi:{html.escape(p["doi"])}</a>'
-                   if p.get("doi") else "")
-            groups.append(f'<li><span class="pub-title">{esc(p["title"])}</span> '
-                          f'<span class="pub-authors">{esc(p["authors"])}.</span> '
-                          f'<em>{esc(p["journal"])}</em>. {p["year"]}.{doi}</li>')
-        groups.append("</ol>")
-        inner = "\n".join(groups)
+                out.append(f'<section class="pub-year" data-year="{year}"><h2 class="year">{year or ""}</h2><ol class="pubs">')
+            names = []
+            for a in p["authors"]:
+                is_member = any(rx.search(a) for rxs in match.values() for rx in rxs)
+                names.append(f"<strong>{esc(a)}</strong>" if is_member else esc(a))
+            if len(names) > 12:
+                names = names[:10] + ["…"] + names[-1:]
+            cite = esc(p["journal"])
+            if p.get("volume"):
+                cite += f" {esc(p['volume'])}"
+                if p.get("issue"):
+                    cite += f"({esc(p['issue'])})"
+            if p.get("pages"):
+                cite += f":{esc(p['pages'])}"
+            links = f'<a href="https://pubmed.ncbi.nlm.nih.gov/{p["pmid"]}/">PubMed</a>'
+            if p.get("doi"):
+                links += f' · <a href="https://doi.org/{html.escape(p["doi"])}">DOI</a>'
+            out.append(f'''<li data-members="{esc("|".join(p["members"]))}"><span class="pub-title">{esc(p["title"])}</span> <span class="pub-authors">{", ".join(names)}.</span> <em>{cite}</em>. {p["year"]}. <span class="pub-links">{links}</span></li>''')
+        out.append("</ol></section>")
+        inner = f"""<div class="pub-tools">
+  <p class="pub-updated">{UI['pub_source'][lang]} {esc(data.get('updated', ''))}.</p>
+  <div class="chips" role="group" aria-label="{UI['filter_by'][lang]}">{''.join(chips)}</div>
+</div>
+{''.join(out)}
+<script>
+(function () {{
+  var chips = document.querySelectorAll('.chip');
+  chips.forEach(function (c) {{
+    c.addEventListener('click', function () {{
+      var f = c.getAttribute('data-filter');
+      chips.forEach(function (o) {{ o.setAttribute('aria-pressed', o === c ? 'true' : 'false'); }});
+      document.querySelectorAll('.pubs li').forEach(function (li) {{
+        li.hidden = !(f === 'all' || li.getAttribute('data-members').split('|').indexOf(f) > -1);
+      }});
+      document.querySelectorAll('.pub-year').forEach(function (sec) {{
+        sec.hidden = !sec.querySelector('li:not([hidden])');
+      }});
+    }});
+  }});
+}})();
+</script>"""
     body = page_header("publications", nav_label("publications", lang), C.PUBLICATIONS_INTRO, lang) + f"""
 <section class="section">
-  <div class="wrap prose">{inner}</div>
+  <div class="wrap prose-wide">{inner}</div>
 </section>"""
     return layout("publications", lang, nav_label("publications", lang), body, t(C.PUBLICATIONS_INTRO, lang))
 

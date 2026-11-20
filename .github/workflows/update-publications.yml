@@ -1,0 +1,38 @@
+name: Update publications from PubMed
+
+on:
+  schedule:
+    - cron: "17 4 * * 1"   # every Monday morning
+  workflow_dispatch:       # "Run workflow" button on GitHub
+  push:
+    branches: [main]
+    paths:
+      - "src/fetch_publications.py"
+      - ".github/workflows/update-publications.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch publications from PubMed
+        run: python3 src/fetch_publications.py
+      - name: Rebuild site
+        run: python3 src/build.py
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update publications from PubMed"
+            git push
+          fi

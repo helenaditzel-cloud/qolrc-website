@@ -387,8 +387,8 @@ MEMBERS = [
 
 # ---------------------------------------------------------------- Publications
 PUBLICATIONS_INTRO = {
-    "en": "Selected peer-reviewed publications from QoLRC members, newest first.",
-    "da": "Udvalgte fagfællebedømte publikationer fra QoLRC's medarbejdere, nyeste først.",
+    "en": "Publications by QoLRC members, newest first.",
+    "da": "Publikationer fra QoLRC's medarbejdere, nyeste først.",
 }
 
 # Each entry: year, authors, title, journal, doi (optional)
@@ -398,8 +398,8 @@ PUBLICATIONS = [
 ]
 
 PUBLICATIONS_EMPTY = {
-    "en": "TODO(The publication list will be filled in from PubMed. Send the author names and years to include.)",
-    "da": "TODO(Publikationslisten udfyldes fra PubMed. Send de forfatternavne og år, der skal med.)",
+    "en": "The publication list is being fetched from PubMed and will appear here shortly.",
+    "da": "Publikationslisten hentes fra PubMed og vises her om lidt.",
 }
 
 # ---------------------------------------------------------------- Partners
