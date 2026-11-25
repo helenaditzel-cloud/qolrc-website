@@ -198,7 +198,7 @@ def about(lang):
     paras = "\n".join(f"<p>{esc(p)}</p>" for p in a["intro"][lang])
     cards = "\n".join(
         f"""<li class="card theme">
-  <div class="card-art" style="background-image:url('{art(f"theme-{i}", f"theme-{i}.svg", up)[0]}')"></div>
+  <div class="card-icon"><img src="{up}assets/img/icons/theme-{i}.svg" alt="" width="56" height="56"></div>
   <div class="card-body">
     <h3>{esc(t(th['title'], lang))}</h3>
     <p>{esc(t(th['text'], lang))}</p>
