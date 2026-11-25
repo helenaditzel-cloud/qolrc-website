@@ -401,7 +401,8 @@ MEMBERS = [
         },
         "email": "",
         "photo": "helena-ditzel.jpg",
-        "profile": "",
+        "profile": "https://portal.findresearcher.sdu.dk/en/persons/hmditzel/",
+        "orcid": "0000-0002-9435-0524",
     },
     {
         "name": "Pia K. Pedersen",
