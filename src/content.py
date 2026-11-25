@@ -384,12 +384,13 @@ MEMBERS = [
         "name": "Niels Abildgaard",
         "title": {"en": "Clinical Professor in Hematology", "da": "Klinisk professor i hæmatologi"},
         "bio": {
-            "en": "Clinical professor at the Department of Hematology, Odense University Hospital, and head of the Odense Amyloidosis Centre (AmyC OUH), a Center of Clinical Excellence. TODO(Niels to check and add his research focus, for example multiple myeloma.)",
-            "da": "Klinisk professor på Hæmatologisk Afdeling, Odense Universitetshospital, og leder af Odense Amyloidosis Centre (AmyC OUH), et Center for Klinisk Excellence. TODO(Niels tjekker og tilføjer sit forskningsområde, fx myelomatose.)",
+            "en": "Clinical professor at the Department of Hematology, Odense University Hospital, and the University of Southern Denmark, and head of the Odense Amyloidosis Centre (AmyC OUH), a Center of Clinical Excellence. His research covers multiple myeloma from disease biology to treatment, with particular emphasis on myeloma bone disease.",
+            "da": "Klinisk professor på Hæmatologisk Afdeling, Odense Universitetshospital, og Syddansk Universitet samt leder af Odense Amyloidosis Centre (AmyC OUH), et Center for Klinisk Excellence. Hans forskning dækker myelomatose fra sygdomsbiologi til behandling med særligt fokus på knoglesygdom ved myelomatose.",
         },
         "email": "",
         "photo": "niels-abildgaard.jpg",
-        "profile": "",
+        "profile": "https://portal.findresearcher.sdu.dk/en/persons/nabildgaard/",
+        "orcid": "0000-0001-6852-2014",
     },
     {
         "name": "Helena Møgelbjerg Ditzel",
@@ -422,7 +423,8 @@ MEMBERS = [
         },
         "email": "",
         "photo": "tine-rosenberg.jpg",
-        "profile": "",
+        "profile": "https://portal.findresearcher.sdu.dk/en/persons/tinerosenberg/",
+        "orcid": "0000-0002-7874-5526",
     },
 ]
 
