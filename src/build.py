@@ -397,6 +397,8 @@ def members(lang):
             links += f'<p><a href="mailto:{m["email"]}">{esc(m["email"])}</a></p>'
         if m.get("profile"):
             links += f'<p><a href="{m["profile"]}">{UI["profile"][lang]}<span class="visually-hidden">: {esc(m["name"])}</span> &rarr;</a></p>'
+        if m.get("orcid"):
+            links += f'<p class="orcid"><a href="https://orcid.org/{m["orcid"]}">ORCID {m["orcid"]}</a></p>'
         cards.append(f"""<li class="card member">
   {pic}
   <div class="member-body">

@@ -49,11 +49,13 @@ ABOUT = {
     "intro": {
         "en": [
             "The Quality of Life Research Center (QoLRC) studies how hematologic diseases and their treatment affect patients' everyday lives. We work with patient-reported outcomes (PROs) and health-related quality of life (HRQoL) in multiple myeloma, other hematologic cancers and benign hematologic conditions such as autoimmune cytopenias.",
-            "The center is based in the Department of Hematology at Odense University Hospital and is affiliated with the University of Southern Denmark. We lead and contribute to national and multinational studies in close collaboration with clinicians, statisticians, patient organizations and research partners across the Nordic countries and Europe.",
+            "The center is based in the Department of Hematology at Odense University Hospital and is affiliated with the University of Southern Denmark. For 35 years we have been part of the Nordic Myeloma Study Group, where our focus has been designing, collecting and analyzing quality of life data in clinical trials. We have also collected long-term quality of life data from Danish patients outside clinical trials.",
+            "Our vision is to develop an interdisciplinary center for research in quality of life, working closely with clinicians, statisticians, patient organizations and research partners across the Nordic countries and Europe.",
         ],
         "da": [
             "Quality of Life Research Center (QoLRC) undersøger, hvordan hæmatologiske sygdomme og deres behandling påvirker patienternes hverdag. Vi arbejder med patientrapporterede oplysninger (PRO) og helbredsrelateret livskvalitet (HRQoL) ved myelomatose, andre hæmatologiske kræftsygdomme og godartede hæmatologiske sygdomme som autoimmune cytopenier.",
-            "Centret har base i Hæmatologisk Afdeling på Odense Universitetshospital og er tilknyttet Syddansk Universitet. Vi leder og bidrager til nationale og internationale studier i tæt samarbejde med klinikere, statistikere, patientforeninger og forskningspartnere i Norden og Europa.",
+            "Centret har base i Hæmatologisk Afdeling på Odense Universitetshospital og er tilknyttet Syddansk Universitet. I 35 år har vi været en del af Nordic Myeloma Study Group, hvor vores fokus har været at planlægge, indsamle og analysere livskvalitetsdata i kliniske forsøg. Vi har også indsamlet langsigtede livskvalitetsdata fra danske patienter uden for kliniske forsøg.",
+            "Vores vision er at udvikle et tværfagligt center for forskning i livskvalitet i tæt samarbejde med klinikere, statistikere, patientforeninger og forskningspartnere i Norden og Europa.",
         ],
     },
     "themes_heading": {"en": "Our research", "da": "Vores forskning"},
@@ -356,25 +358,27 @@ MEMBERS_INTRO = {
 MEMBERS = [
     {
         "name": "Lene Kongsgaard Nielsen",
-        "title": {"en": "MD, PhD, Head of QoLRC", "da": "Læge, ph.d., leder af QoLRC"},
+        "title": {"en": "MD, PhD, Associate Professor, Head of QoLRC", "da": "Læge, ph.d., lektor, leder af QoLRC"},
         "bio": {
-            "en": "Specialist in hematology and head of the Quality of Life Research Center. Her research focuses on health-related quality of life and patient-reported outcomes in multiple myeloma and other hematologic cancers, including the methodology of measuring and analyzing quality of life in clinical studies. TODO(Lene to check and expand this bio.)",
-            "da": "Speciallæge i hæmatologi og leder af Quality of Life Research Center. Hendes forskning fokuserer på helbredsrelateret livskvalitet og patientrapporterede oplysninger ved myelomatose og andre hæmatologiske kræftsygdomme, herunder metoder til at måle og analysere livskvalitet i kliniske studier. TODO(Lene tjekker og uddyber biografien.)",
+            "en": "Consultant in hematology, associate professor at the University of Southern Denmark and head of the Quality of Life Research Center. She leads the center's research on quality of life in multiple myeloma, including the design, collection and analysis of quality of life data in Nordic Myeloma Study Group trials and in real-world Danish cohorts.",
+            "da": "Overlæge i hæmatologi, lektor ved Syddansk Universitet og leder af Quality of Life Research Center. Hun leder centrets forskning i livskvalitet ved myelomatose, herunder planlægning, indsamling og analyse af livskvalitetsdata i studier fra Nordic Myeloma Study Group og i danske kohorter uden for kliniske forsøg.",
         },
         "email": "",
         "photo": "lene-kongsgaard-nielsen.jpg",
         "profile": "https://portal.findresearcher.sdu.dk/da/persons/lenekn",
+        "orcid": "0000-0003-2083-3870",
     },
     {
         "name": "Henrik Frederiksen",
-        "title": {"en": "MD, PhD, Clinical Professor in Hematology", "da": "Læge, ph.d., klinisk professor i hæmatologi"},
+        "title": {"en": "MD, PhD, Professor, Head of Research", "da": "Læge, ph.d., professor, forskningsleder"},
         "bio": {
-            "en": "Head of Research at the Hematology Research Unit, Odense University Hospital and University of Southern Denmark. His research covers non-malignant hematologic diseases and the complications and reduced quality of life that aging, frailty and other chronic conditions bring to patients with hematologic cancer. Former chair of the Danish Society of Hematology.",
-            "da": "Forskningsleder for Hæmatologisk Forskningsenhed, Odense Universitetshospital og Syddansk Universitet. Hans forskning omfatter godartede hæmatologiske sygdomme samt de komplikationer og den nedsatte livskvalitet, som aldring, skrøbelighed og andre kroniske sygdomme medfører for patienter med hæmatologisk kræft. Tidligere formand for Dansk Hæmatologisk Selskab.",
+            "en": "Consultant and Head of Research at the Department and Research Unit of Hematology, Odense University Hospital and University of Southern Denmark. His research focuses on frailty and supportive care in hematologic cancer, including how frailty assessment can be used in routine care to tailor treatment, as well as non-malignant hematologic diseases. Former chair of the Danish Society of Hematology.",
+            "da": "Overlæge og forskningsleder ved Hæmatologisk Afdeling og Forskningsenhed, Odense Universitetshospital og Syddansk Universitet. Hans forskning fokuserer på skrøbelighed og understøttende behandling ved hæmatologisk kræft, herunder hvordan vurdering af skrøbelighed kan bruges i den daglige klinik til at tilpasse behandlingen, samt godartede hæmatologiske sygdomme. Tidligere formand for Dansk Hæmatologisk Selskab.",
         },
         "email": "",
         "photo": "henrik-frederiksen.jpg",
         "profile": "https://www.sdu.dk/en/forskning/haematologi",
+        "orcid": "0000-0001-8905-0220",
     },
     {
         "name": "Niels Abildgaard",
@@ -466,7 +470,7 @@ PARTNERS = [
     },
     {
         "name": {"en": "Nordic Myeloma Study Group (NMSG)", "da": "Nordic Myeloma Study Group (NMSG)"},
-        "text": {"en": "Nordic collaborative group for clinical myeloma research.", "da": "Nordisk samarbejdsgruppe for klinisk myelomatoseforskning."},
+        "text": {"en": "Collaborative group for clinical myeloma research in Norway, Sweden, Finland, Estonia, Iceland and Denmark. QoLRC has been part of the group for 35 years.", "da": "Samarbejdsgruppe for klinisk myelomatoseforskning i Norge, Sverige, Finland, Estland, Island og Danmark. QoLRC har været en del af gruppen i 35 år."},
         "url": "",
         "country": {"en": "Nordic countries", "da": "Norden"},
     },
