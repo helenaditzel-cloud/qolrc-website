@@ -195,7 +195,7 @@ def about(lang):
     hero_src, _ = art("hero", "hero-art.svg", up)
     band_src, band_photo = art("band", "band-art.svg", up)
     band_overlay = "linear-gradient(90deg, rgba(10,42,51,.92), rgba(10,42,51,.7)), " if band_photo else ""
-    paras = "\n".join(f"<p>{esc(p)}</p>" for p in a["intro"][lang])
+    paras = "\n".join(f"<p>{md_links(p)}</p>" for p in a["intro"][lang])
     cards = "\n".join(
         f"""<li class="card theme">
   <div class="card-icon"><img src="{up}assets/img/icons/theme-{i}.svg" alt="" width="56" height="56"></div>

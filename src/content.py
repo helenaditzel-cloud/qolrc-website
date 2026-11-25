@@ -49,12 +49,12 @@ ABOUT = {
     "intro": {
         "en": [
             "The Quality of Life Research Center (QoLRC) studies how hematologic diseases and their treatment affect patients' everyday lives. We work with patient-reported outcomes (PROs) and health-related quality of life (HRQoL) in multiple myeloma, other hematologic cancers and benign hematologic conditions such as autoimmune cytopenias.",
-            "The center is based in the Department of Hematology at Odense University Hospital and is affiliated with the University of Southern Denmark. For 35 years we have been part of the Nordic Myeloma Study Group, where our focus has been designing, collecting and analyzing quality of life data in clinical trials. We have also collected long-term quality of life data from Danish patients outside clinical trials.",
+            "The center is based in the Department of Hematology at Odense University Hospital and is affiliated with the University of Southern Denmark. For 35 years we have been part of the [Nordic Myeloma Study Group (NMSG)](https://www.nordicmyeloma.org/), where our focus has been designing, collecting and analyzing quality of life data in clinical trials. We have also collected long-term quality of life data from Danish patients outside clinical trials. Within the [Nordic ITP Group](https://nordicitp.com/), we work on patient-reported outcomes in immune thrombocytopenia, including the translation and psychometric evaluation of questionnaires.",
             "Our vision is to develop an interdisciplinary center for research in quality of life, working closely with clinicians, statisticians, patient organizations and research partners across the Nordic countries and Europe.",
         ],
         "da": [
             "Quality of Life Research Center (QoLRC) undersøger, hvordan hæmatologiske sygdomme og deres behandling påvirker patienternes hverdag. Vi arbejder med patientrapporterede oplysninger (PRO) og helbredsrelateret livskvalitet (HRQoL) ved myelomatose, andre hæmatologiske kræftsygdomme og godartede hæmatologiske sygdomme som autoimmune cytopenier.",
-            "Centret har base i Hæmatologisk Afdeling på Odense Universitetshospital og er tilknyttet Syddansk Universitet. I 35 år har vi været en del af Nordic Myeloma Study Group, hvor vores fokus har været at planlægge, indsamle og analysere livskvalitetsdata i kliniske forsøg. Vi har også indsamlet langsigtede livskvalitetsdata fra danske patienter uden for kliniske forsøg.",
+            "Centret har base i Hæmatologisk Afdeling på Odense Universitetshospital og er tilknyttet Syddansk Universitet. I 35 år har vi været en del af [Nordic Myeloma Study Group (NMSG)](https://www.nordicmyeloma.org/), hvor vores fokus har været at planlægge, indsamle og analysere livskvalitetsdata i kliniske forsøg. Vi har også indsamlet langsigtede livskvalitetsdata fra danske patienter uden for kliniske forsøg. I [Nordic ITP Group](https://nordicitp.com/) arbejder vi med patientrapporterede oplysninger ved immun trombocytopeni, herunder oversættelse og psykometrisk evaluering af spørgeskemaer.",
             "Vores vision er at udvikle et tværfagligt center for forskning i livskvalitet i tæt samarbejde med klinikere, statistikere, patientforeninger og forskningspartnere i Norden og Europa.",
         ],
     },
@@ -474,7 +474,13 @@ PARTNERS = [
     {
         "name": {"en": "Nordic Myeloma Study Group (NMSG)", "da": "Nordic Myeloma Study Group (NMSG)"},
         "text": {"en": "Collaborative group for clinical myeloma research in Norway, Sweden, Finland, Estonia, Iceland and Denmark. QoLRC has been part of the group for 35 years.", "da": "Samarbejdsgruppe for klinisk myelomatoseforskning i Norge, Sverige, Finland, Estland, Island og Danmark. QoLRC har været en del af gruppen i 35 år."},
-        "url": "",
+        "url": "https://www.nordicmyeloma.org/",
+        "country": {"en": "Nordic countries", "da": "Norden"},
+    },
+    {
+        "name": {"en": "Nordic ITP Group", "da": "Nordic ITP Group"},
+        "text": {"en": "Nordic network for research and education in immune thrombocytopenia, with members from Denmark, Finland, Iceland, Norway and Sweden. Henrik Frederiksen is a member of the steering committee.", "da": "Nordisk netværk for forskning og uddannelse inden for immun trombocytopeni med medlemmer fra Danmark, Finland, Island, Norge og Sverige. Henrik Frederiksen er medlem af styregruppen."},
+        "url": "https://nordicitp.com/",
         "country": {"en": "Nordic countries", "da": "Norden"},
     },
     {
