@@ -236,8 +236,8 @@ PRO = {
          ]},
         {"title": {"en": "Older patients and frailty", "da": "Ældre patienter og skrøbelighed"},
          "items": [
-            {"name": "G8", "what": {"en": "Geriatric screening tool to identify frailty in older patients with cancer.", "da": "Geriatrisk screeningsværktøj til at finde skrøbelighed hos ældre patienter med kræft."},
-             "url": "", "doi": "10.1016/S2666-7568(24)00118-1"},
+            {"name": "G8 and modified G8", "what": {"en": "Geriatric screening tools to identify frailty in older patients with cancer.", "da": "Geriatriske screeningsværktøjer til at finde skrøbelighed hos ældre patienter med kræft."},
+             "url": "", "doi": "10.1016/j.jgo.2022.07.004", "danish": True},
             {"name": "EORTC QLQ-ELD14", "what": {"en": "Module for older patients with cancer.", "da": "Modul til ældre patienter med kræft."},
              "url": "https://qol.eortc.org/questionnaires/", "doi": "10.1016/S2666-7568(24)00118-1"},
             {"name": "Tilburg Frailty Indicator", "what": {"en": "Self-reported frailty.", "da": "Selvrapporteret skrøbelighed."},
@@ -396,8 +396,8 @@ MEMBERS = [
         "name": "Helena Møgelbjerg Ditzel",
         "title": {"en": "MD, PhD, Postdoctoral Researcher", "da": "Læge, ph.d., postdoc"},
         "bio": {
-            "en": "Clinician-researcher working on patient-reported outcomes, health-related quality of life methodology and psychometric validation in hematologic oncology, with a focus on multiple myeloma and autoimmune cytopenias. Principal investigator and project manager in several multinational studies.",
-            "da": "Klinisk forsker, der arbejder med patientrapporterede oplysninger, metoder til måling af helbredsrelateret livskvalitet og psykometrisk validering inden for hæmatologisk onkologi med fokus på myelomatose og autoimmune cytopenier. Forsøgsansvarlig og projektleder i flere internationale studier.",
+            "en": "Clinician-researcher working on health-related quality of life, patient-reported outcomes and psychometric validation in hematology and oncology, with a focus on multiple myeloma, autoimmune cytopenias and frailty in older adults. Project manager of the REMNANT-PRO study and principal investigator of the PROGNOSIS-G8 cohort study. PhD in geriatric oncology from the University of Southern Denmark (2025) and board member of the Danish Society of Geriatric Oncology.",
+            "da": "Klinisk forsker, der arbejder med helbredsrelateret livskvalitet, patientrapporterede oplysninger og psykometrisk validering inden for hæmatologi og onkologi med fokus på myelomatose, autoimmune cytopenier og skrøbelighed hos ældre. Projektleder for REMNANT-PRO-studiet og forsøgsansvarlig for kohortestudiet PROGNOSIS-G8. Ph.d. i geriatrisk onkologi fra Syddansk Universitet (2025) og bestyrelsesmedlem i Dansk Selskab for Geriatrisk Onkologi.",
         },
         "email": "",
         "photo": "helena-ditzel.jpg",
