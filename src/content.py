@@ -355,6 +355,17 @@ MEMBERS_INTRO = {
 # photo: file name in assets/img/people/ (portrait, ideally 800 x 1000 px). Leave "" to show a placeholder.
 MEMBERS = [
     {
+        "name": "Lene Kongsgaard Nielsen",
+        "title": {"en": "MD, PhD, Head of QoLRC", "da": "Læge, ph.d., leder af QoLRC"},
+        "bio": {
+            "en": "Specialist in hematology and head of the Quality of Life Research Center. Her research focuses on health-related quality of life and patient-reported outcomes in multiple myeloma and other hematologic cancers, including the methodology of measuring and analyzing quality of life in clinical studies. TODO(Lene to check and expand this bio.)",
+            "da": "Speciallæge i hæmatologi og leder af Quality of Life Research Center. Hendes forskning fokuserer på helbredsrelateret livskvalitet og patientrapporterede oplysninger ved myelomatose og andre hæmatologiske kræftsygdomme, herunder metoder til at måle og analysere livskvalitet i kliniske studier. TODO(Lene tjekker og uddyber biografien.)",
+        },
+        "email": "",
+        "photo": "lene-kongsgaard-nielsen.jpg",
+        "profile": "https://portal.findresearcher.sdu.dk/da/persons/lenekn",
+    },
+    {
         "name": "Henrik Frederiksen",
         "title": {"en": "MD, PhD, Clinical Professor in Hematology", "da": "Læge, ph.d., klinisk professor i hæmatologi"},
         "bio": {
