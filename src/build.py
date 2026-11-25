@@ -100,7 +100,7 @@ def layout(page, lang, title, body, description):
 <link rel="canonical" href="{canonical}">
 <link rel="alternate" hreflang="{lang}" href="{canonical}">
 <link rel="alternate" hreflang="{other}" href="{alt}">
-<link rel="icon" href="{up}assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{up}assets/favicon.png" type="image/png">
 <link rel="stylesheet" href="{up}assets/style.css">
 </head>
 <body>
@@ -114,8 +114,7 @@ def layout(page, lang, title, body, description):
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="{url('about', lang, d)}">
-      <img src="{up}assets/logo-mark.svg" alt="" width="52" height="52">
-      <span class="brand-text"><span class="brand-short">QoLRC</span><span class="brand-long">{esc(t(C.SITE['name'], lang))}</span></span>
+      <img class="brand-logo" src="{up}assets/img/logo.png" alt="Quality of Life Research Center OUH" width="828" height="394">
     </a>
     <a class="button header-cta" href="{url('contact', lang, d)}">{UI['contact_us'][lang]}</a>
   </div>
@@ -136,8 +135,7 @@ def layout(page, lang, title, body, description):
   <div class="wrap footer-grid">
     <div>
       <a class="brand brand-footer" href="{url('about', lang, d)}">
-        <img src="{up}assets/logo-mark.svg" alt="" width="44" height="44">
-        <span class="brand-text"><span class="brand-short">QoLRC</span><span class="brand-long">{esc(t(C.SITE['name'], lang))}</span></span>
+        <img class="brand-logo" src="{up}assets/img/logo-white.png" alt="Quality of Life Research Center OUH" width="828" height="394">
       </a>
       <p>{esc(t(C.SITE['footer_text'], lang))}</p>
     </div>

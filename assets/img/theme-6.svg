@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" preserveAspectRatio="xMidYMid slice"><rect width="600" height="300" fill="#0f3d4a"/>
 <circle cx="72" cy="159" r="151" fill="#f2a541" opacity="0.22"/>
-<circle cx="301" cy="131" r="64" fill="#7cc0c2" opacity="0.22"/>
-<circle cx="188" cy="239" r="72" fill="#7cc0c2" opacity="0.15"/>
-<circle cx="372" cy="85" r="144" fill="#7cc0c2" opacity="0.3"/>
-<circle cx="468" cy="258" r="47" fill="#7cc0c2" opacity="0.15"/>
+<circle cx="301" cy="131" r="64" fill="#9cc3e0" opacity="0.22"/>
+<circle cx="188" cy="239" r="72" fill="#9cc3e0" opacity="0.15"/>
+<circle cx="372" cy="85" r="144" fill="#9cc3e0" opacity="0.3"/>
+<circle cx="468" cy="258" r="47" fill="#9cc3e0" opacity="0.15"/>
 <circle cx="393" cy="69" r="134" fill="#f2a541" opacity="0.15"/>
-<circle cx="211" cy="239" r="92" fill="#7cc0c2" opacity="0.22"/>
+<circle cx="211" cy="239" r="92" fill="#9cc3e0" opacity="0.22"/>
 <path d="M-20 60 Q 150 0 300 60 T 620 60" fill="none" stroke="#ffffff" stroke-opacity=".28" stroke-width="2"/>
 <path d="M-20 105 Q 150 45 300 105 T 620 105" fill="none" stroke="#ffffff" stroke-opacity=".28" stroke-width="2"/>
 <path d="M-20 150 Q 150 90 300 150 T 620 150" fill="none" stroke="#ffffff" stroke-opacity=".28" stroke-width="2"/>
