@@ -407,8 +407,8 @@ MEMBERS = [
         "name": "Pia K. Pedersen",
         "title": {"en": "Daily Manager, Hematology Research Unit", "da": "Daglig leder, Hæmatologisk Forskningsenhed"},
         "bio": {
-            "en": "TODO(Pia to confirm her title and add a short bio, 2 to 3 sentences.)",
-            "da": "TODO(Pia bekræfter sin titel og tilføjer en kort biografi på 2 til 3 sætninger.)",
+            "en": "Daily manager of the Hematology Research Unit at Odense University Hospital and the University of Southern Denmark. She is responsible for the unit's day-to-day management and administration and supports researchers and research projects across the unit, including QoLRC.",
+            "da": "Daglig leder af Hæmatologisk Forskningsenhed på Odense Universitetshospital og Syddansk Universitet. Hun har ansvaret for enhedens daglige drift og administration og understøtter forskere og forskningsprojekter på tværs af enheden, herunder QoLRC.",
         },
         "email": "",
         "photo": "pia-pedersen.jpg",
@@ -418,8 +418,8 @@ MEMBERS = [
         "name": "Tine Rosenberg",
         "title": {"en": "Research Coordinator and Fundraiser", "da": "Forskningskoordinator og fundraiser"},
         "bio": {
-            "en": "TODO(Tine to confirm her title and add a short bio, 2 to 3 sentences.)",
-            "da": "TODO(Tine bekræfter sin titel og tilføjer en kort biografi på 2 til 3 sætninger.)",
+            "en": "Research coordinator and project manager (MSc in Health Science) at the Hematology Research Unit and QoLRC, Odense University Hospital. Her research focuses on home-based treatment and digital patient-reported outcomes in multiple myeloma, including home-administered daratumumab and digital symptom reporting before treatment, and she has contributed to the Danish translation and validation of several questionnaires, including the SSQ-MM. From 2026 she is a PhD fellow in the national Treat@Home program, studying home-based daratumumab treatment across Danish hematology departments.",
+            "da": "Forskningskoordinator og projektleder (cand.scient.san.) ved Hæmatologisk Forskningsenhed og QoLRC, Odense Universitetshospital. Hendes forskning fokuserer på hjemmebehandling og digitale patientrapporterede oplysninger ved myelomatose, herunder daratumumab givet i eget hjem og digital symptomrapportering før behandling, og hun har bidraget til dansk oversættelse og validering af flere spørgeskemaer, herunder SSQ-MM. Fra 2026 er hun ph.d.-studerende i det nationale Treat@Home-program, hvor hun undersøger hjemmebehandling med daratumumab på tværs af danske hæmatologiske afdelinger.",
         },
         "email": "",
         "photo": "tine-rosenberg.jpg",
