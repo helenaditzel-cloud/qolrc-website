@@ -32,6 +32,8 @@ UI = {
     "figures": {"en": "QoLRC in numbers", "da": "QoLRC i tal"},
     "profile": {"en": "Research profile", "da": "Forskerprofil"},
     "more_info": {"en": "More information", "da": "Mere information"},
+    "danish_badge": {"en": "Danish validation", "da": "Dansk validering"},
+    "our_paper": {"en": "Our paper", "da": "Vores artikel"},
     "useful_links": {"en": "Useful links", "da": "Nyttige links"},
     "photos": {"en": "Photos:", "da": "Fotos:"},
     "all": {"en": "All", "da": "Alle"},
@@ -285,15 +287,16 @@ def md_links(text):
 def pro(lang):
     P = C.PRO
     d = depth_of("pro", lang)
-    inst = []
-    for i in P["instruments"]:
-        link = (f'<p><a href="{i["url"]}">{UI["more_info"][lang]}<span class="visually-hidden">: {esc(i["name"])}</span> &rarr;</a></p>'
-                if i["url"] else "")
-        inst.append(f"""<li class="card instrument">
-  <h3>{esc(i['name'])}</h3>
-  <p>{esc(t(i['what'], lang))}</p>
-  {link}
-</li>""")
+    groups = []
+    for g in P["instrument_groups"]:
+        rows = []
+        for i in g["items"]:
+            name = (f'<a href="{i["url"]}">{esc(i["name"])}</a>' if i.get("url") else esc(i["name"]))
+            badge = f' <span class="tag tag-dk">{UI["danish_badge"][lang]}</span>' if i.get("danish") else ""
+            paper = (f' <a class="paper-link" href="https://doi.org/{html.escape(i["doi"])}">{UI["our_paper"][lang]}</a>'
+                     if i.get("doi") else "")
+            rows.append(f'<li><span class="inst-name">{name}</span>{badge}<span class="inst-what">{esc(t(i["what"], lang))}{paper}</span></li>')
+        groups.append(f'''<div class="card inst-group"><h3>{esc(t(g["title"], lang))}</h3><ul class="inst-list">{"".join(rows)}</ul></div>''')
     adv = "\n".join(
         f"""<li class="card theme-plain"><h3>{esc(t(a['title'], lang))}</h3><p>{esc(t(a['text'], lang))}</p></li>"""
         for a in P["advice"]
@@ -303,8 +306,8 @@ def pro(lang):
 <section class="section">
   <div class="wrap">
     <h2 class="section-title">{esc(t(P['instruments_heading'], lang))}</h2>
-    <ul class="grid grid-3">{''.join(inst)}</ul>
-    <p>{esc(t(P['instruments_note'], lang))}</p>
+    <p class="lead-dark">{esc(t(P['instruments_note'], lang))}</p>
+    <div class="grid grid-2 inst-grid">{''.join(groups)}</div>
   </div>
 </section>
 <section class="section section-tint">
