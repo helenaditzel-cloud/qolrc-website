@@ -233,3 +233,10 @@ mark.todo { background: #fff3b0; color: #5a4500; padding: .05rem .35rem; border-
 .news-gallery { list-style: none; padding: 0; margin: .2rem 0 1rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: .5rem; }
 .news-gallery img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-radius: 4px; }
 .news-gallery a:focus-visible img, .news-gallery a:hover img { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+.sponsor-grid { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+.sponsor { background: #fff; border: 1px solid var(--line); border-radius: 6px; min-height: 120px; display: flex; align-items: center; justify-content: center; padding: 1.25rem; text-align: center; }
+.sponsor a { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; text-decoration: none; color: inherit; }
+.sponsor img { max-width: 100%; max-height: 72px; width: auto; height: auto; object-fit: contain; }
+.sponsor-name { font-weight: 700; color: var(--primary); line-height: 1.3; }
+.sponsor a:hover .sponsor-name { text-decoration: underline; }

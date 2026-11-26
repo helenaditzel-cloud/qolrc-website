@@ -585,6 +585,29 @@ def publications(lang):
     return layout("publications", lang, nav_label("publications", lang), body, t(C.PUBLICATIONS_INTRO, lang))
 
 
+def sponsors_section(lang, up):
+    items = []
+    for sp in getattr(C, "SPONSORS", []):
+        f = os.path.join(ROOT, "assets", "img", "sponsors", sp.get("logo") or "")
+        if sp.get("logo") and os.path.exists(f):
+            inner = f'<img src="{up}assets/img/sponsors/{sp["logo"]}" alt="{esc(sp["name"])}">'
+        else:
+            inner = f'<span class="sponsor-name">{esc(sp["name"])}</span>'
+        if sp.get("url"):
+            inner = f'<a href="{sp["url"]}">{inner}</a>'
+        items.append(f'<li class="sponsor">{inner}</li>')
+    if not items:
+        return ""
+    return f"""
+<section class="section section-tint">
+  <div class="wrap">
+    <h2 class="section-title">{esc(t(C.SPONSORS_HEADING, lang))}</h2>
+    <p class="lead-dark">{esc(t(C.SPONSORS_INTRO, lang))}</p>
+    <ul class="sponsor-grid">{''.join(items)}</ul>
+  </div>
+</section>"""
+
+
 def partners(lang):
     cards = []
     for p in C.PARTNERS:
@@ -600,9 +623,8 @@ def partners(lang):
 <section class="section">
   <div class="wrap">
     <ul class="grid grid-3">{''.join(cards)}</ul>
-    <p>{esc(t(C.PARTNERS_NOTE, lang))}</p>
   </div>
-</section>"""
+</section>""" + sponsors_section(lang, "../" * depth_of("partners", lang))
     return layout("partners", lang, nav_label("partners", lang), body, t(C.PARTNERS_INTRO, lang))
 
 
