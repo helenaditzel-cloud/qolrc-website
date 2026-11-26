@@ -223,8 +223,10 @@ STUDIES = [{'group': 'nmsg',
   'disease': {'en': 'Multiple myeloma', 'da': 'Myelomatose'},
   'nct': '',
   'status': {'en': 'Early phase', 'da': 'Tidlig fase'},
-  'text': {'en': 'An upcoming NMSG study in multiple myeloma. TODO(Add a one-sentence description of ISOLDE.)',
-           'da': 'Et kommende NMSG-studie i myelomatose. TODO(Tilføj en kort beskrivelse af ISOLDE.)'},
+  'text': {'en': 'An investigator-initiated, single-arm, open-label, multicenter phase 2 study of isatuximab, iberdomide and limited bortezomib '
+                 'in patients with newly diagnosed multiple myeloma who are not eligible for high-dose melphalan with autologous stem cell transplantation.',
+           'da': 'Et investigatorinitieret, enkeltarmet, åbent multicenter fase 2-studie af isatuximab, iberdomid og begrænset bortezomib hos patienter '
+                 'med nydiagnosticeret myelomatose, som ikke kan tilbydes højdosis melphalan med autolog stamcelletransplantation.'},
   'role': {'en': 'Quality of life data (NMSG core facility)', 'da': 'Livskvalitetsdata (NMSG core facility)'}},
  {'title': {'en': 'Validation of the Steroid Symptom Questionnaire in ITP and AIHA', 'da': 'Validering af Steroid Symptom Questionnaire ved ITP og AIHA'},
   'disease': {'en': 'Autoimmune cytopenias', 'da': 'Autoimmune cytopenier'},
