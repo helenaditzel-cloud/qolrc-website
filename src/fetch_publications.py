@@ -22,11 +22,11 @@ TOOL = "qolrc-website"
 
 # name shown on the site -> PubMed query
 AUTHOR_QUERIES = {
-    "Helena Møgelbjerg Ditzel": '"Ditzel HM"[Author]',
-    "Henrik Frederiksen": '"Frederiksen, Henrik"[Full Author Name] AND (Odense[Affiliation] OR "Southern Denmark"[Affiliation])',
-    "Niels Abildgaard": '"Abildgaard, Niels"[Full Author Name]',
-    "Tine Rosenberg": '"Rosenberg, Tine"[Full Author Name] AND (Hematology[Affiliation] OR Haematology[Affiliation] OR "Quality of Life Research"[Affiliation])',  # another Tine Rosenberg publishes in ENT surgery
-    "Lene Kongsgaard Nielsen": '"Nielsen, Lene Kongsgaard"[Full Author Name]',
+    "Helena Møgelbjerg Ditzel": '"Ditzel HM"[Author] OR ("Ditzel H"[Author] AND "Quality of Life Research"[Affiliation])',
+    "Henrik Frederiksen": '("Frederiksen, Henrik"[Full Author Name] AND (Odense[Affiliation] OR "Southern Denmark"[Affiliation])) OR ("Frederiksen H"[Author] AND "Quality of Life Research"[Affiliation])',
+    "Niels Abildgaard": '"Abildgaard, Niels"[Full Author Name] OR ("Abildgaard N"[Author] AND (myeloma OR "Quality of Life Research"[Affiliation]))',
+    "Tine Rosenberg": '("Rosenberg, Tine"[Full Author Name] OR "Rosenberg T"[Author]) AND (Hematology[Affiliation] OR Haematology[Affiliation] OR "Quality of Life Research"[Affiliation])',  # another Tine Rosenberg publishes in ENT surgery
+    "Lene Kongsgaard Nielsen": '"Nielsen, Lene Kongsgaard"[Full Author Name] OR ("Nielsen LK"[Author] AND ("Quality of Life Research"[Affiliation] OR myeloma))',
     "Anne Møller Clausen": '"Clausen AM"[Author] AND Odense[Affiliation]',
     "Nina Andersen": '"Andersen, Nina"[Full Author Name] AND Odense[Affiliation] AND (frailty OR geriatric) NOT Municipality[Affiliation]',  # another Nina Andersen publishes from Odense Municipality
     "Klara Rydahl": '"Rydahl KFK"[Author]',
@@ -54,13 +54,21 @@ PRO_STRONG = re.compile(
     r"quality[- ]of[- ]life|\bh?r?qol\b|\bhrql\b|patient[- ]reported|self[- ]reported|self[- ]report\b|"
     r"\bproms?\b|\bpros\b|\bpro\b(?![- ]?(?:tein|gnos|gress|lifer|phyla|duc|cedur|spect|mot|teas|thromb|bnp|inflam))|"
     r"questionnaire|psychometric|eortc|\bqlq|\bfact-|eq-5d|\bsf-?12\b|\bsf-?36\b|promis\b|"
-    r"symptom burden|well-?being|cosmin|health utilit",
+    r"symptom burden|well-?being|cosmin|health utilit|facit|functional assessment of (?:cancer|chronic)",
     re.I)
 PRO_MESH = {"Quality of Life", "Patient Reported Outcome Measures", "Psychometrics",
             "Surveys and Questionnaires", "Self Report"}
 # Manual corrections, by PubMed ID, if the automatic sorting gets a paper wrong
 PRO_INCLUDE = set()
-PRO_EXCLUDE = set()
+PRO_EXCLUDE = {
+    "26174842",  # NT-proCNP biomarker ("pro" in peptide name)
+    "25939704",  # bone geometry in myelofibrosis
+    "39893275",  # tattooing determinants (twin study)
+    "31971287",  # nurses' attitudes (survey of staff, not patients)
+    "39584488",  # conference report
+    "34862700", "33054870",  # social media use in affective disorders
+    "18381648", "14511432", "12547486", "14574147", "16778700", "12748896",  # ageing/twin epidemiology
+}
 
 
 def is_pro(pmid, title, abstract, keywords, mesh):
@@ -68,7 +76,7 @@ def is_pro(pmid, title, abstract, keywords, mesh):
         return True
     if pmid in PRO_EXCLUDE:
         return False
-    if PRO_STRONG.search(title) or PRO_STRONG.search(" ".join(keywords)):
+    if PRO_STRONG.search(title) or PRO_STRONG.search(" ".join(keywords)) or re.search(r"\bfatigue\b", title, re.I):
         return True
     if PRO_MESH & set(mesh):
         return True
