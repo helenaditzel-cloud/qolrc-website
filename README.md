@@ -11,6 +11,7 @@ python3 src/build.py
 
 - Styles are in `assets/style.css`. Photos go in `assets/img/`.
 - Text marked `TODO(...)` shows on the site as a yellow "To do" note until it is filled in.
+- News & events: add a photo to `assets/img/news/` and a post at the top of `NEWS` in `src/content.py`. The three newest posts also appear on the homepage.
 - Publications are fetched from PubMed every Monday by `.github/workflows/update-publications.yml` (edit the people in `src/fetch_publications.py`).
 - Hosted with GitHub Pages (Settings, Pages, deploy from branch `main`, folder `/ (root)`).
 - The site uses no cookies, no tracking and no external fonts or scripts.

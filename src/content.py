@@ -31,6 +31,7 @@ NAV = [
     ("patients", "Patient involvement", "Patientinddragelse"),
     ("members", "Members", "Medarbejdere"),
     ("publications", "Publications", "Publikationer"),
+    ("news", "News & events", "Nyheder"),
     ("partners", "Partners", "Partnere"),
     ("contact", "Contact", "Kontakt"),
 ]
@@ -633,3 +634,34 @@ CONTACT = {
         "da": "Vi kan ikke besvare spørgsmål om individuel behandling. Kontakt venligst din egen afdeling eller læge.",
     },
 }
+
+
+# ---------------------------------------------------------------- News & events
+# Newest posts are shown first, and the three newest also appear on the homepage.
+# To add a post: put a photo in assets/img/news/ and add an entry at the top of this list.
+# date: YYYY-MM-DD. photo: file name in assets/img/news/ (or ""). link: optional web address.
+NEWS_INTRO = {
+    "en": "Meetings, conferences and presentations from QoLRC.",
+    "da": "Møder, konferencer og præsentationer fra QoLRC.",
+}
+
+NEWS = [
+    {
+        "date": "2026-09-01",
+        "title": {"en": "Poster on geriatric assessment in older patients with hematologic cancer",
+                  "da": "Poster om geriatrisk vurdering af ældre patienter med hæmatologisk kræft"},
+        "text": {"en": "Nina Andersen presented the results of the pilot study on comprehensive geriatric assessment at the start of treatment for older patients with frailty and hematologic cancer. TODO(Add the name of the meeting and the correct date.)",
+                 "da": "Nina Andersen præsenterede resultaterne af pilotstudiet om geriatrisk helbredsvurdering ved opstart af behandling hos ældre, skrøbelige patienter med hæmatologisk kræft. TODO(Tilføj mødets navn og den korrekte dato.)"},
+        "photo": "nina-poster.jpg",
+        "link": "",
+    },
+    {
+        "date": "2025-09-01",
+        "title": {"en": "Poster on home-based daratumumab treatment guided by patient-reported outcomes",
+                  "da": "Poster om hjemmebehandling med daratumumab styret af patientrapporterede oplysninger"},
+        "text": {"en": "Tine Rosenberg presented results showing that daratumumab can be given at home or in a local health clinic, and that patient-reported outcome data can be used to assess patients before treatment. TODO(Add the name of the meeting and the correct date.)",
+                 "da": "Tine Rosenberg præsenterede resultater, der viser, at daratumumab kan gives i eget hjem eller i en lokal sundhedsklinik, og at patientrapporterede oplysninger kan bruges til at vurdere patienterne før behandling. TODO(Tilføj mødets navn og den korrekte dato.)"},
+        "photo": "tine-poster.jpg",
+        "link": "",
+    },
+]

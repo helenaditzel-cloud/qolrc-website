@@ -36,6 +36,10 @@ UI = {
     "our_paper": {"en": "Our paper", "da": "Vores artikel"},
     "useful_links": {"en": "Useful links", "da": "Nyttige links"},
     "photos": {"en": "Photos:", "da": "Fotos:"},
+    "read_more": {"en": "Read more", "da": "Læs mere"},
+    "no_news": {"en": "News will appear here.", "da": "Nyheder vises her."},
+    "recent_events": {"en": "Recent events", "da": "Seneste nyt"},
+    "all_news": {"en": "All news and events", "da": "Alle nyheder"},
     "all": {"en": "All", "da": "Alle"},
     "filter_by": {"en": "Filter by person", "da": "Filtrér efter person"},
     "pub_source": {"en": "From PubMed, updated automatically every week. Last updated", "da": "Fra PubMed, opdateres automatisk hver uge. Senest opdateret"},
@@ -212,6 +216,14 @@ def about(lang):
         f'<li><span class="fig-value">{esc(f["value"])}</span><span class="fig-label">{esc(t(f["label"], lang))}</span></li>'
         for f in a["figures"]
     )
+    latest = sorted_news()[:3]
+    recent = (f"""<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2 class="section-title">{UI['recent_events'][lang]}</h2>
+      <a href="{url('news', lang, d)}">{UI['all_news'][lang]} &rarr;</a></div>
+    <ul class="grid grid-3 news-grid">{news_cards(latest, lang, up)}</ul>
+  </div>
+</section>""" if latest else "")
     body = f"""<section class="hero" style="background-image:url('{hero_src}')">
   <div class="wrap">
     <div class="hero-panel">
@@ -245,6 +257,7 @@ def about(lang):
     <ul class="grid grid-3">{cards}</ul>
   </div>
 </section>
+{recent}
 <section class="band" style="background-image:{band_overlay}url('{band_src}')">
   <div class="wrap band-inner">
     <div>
@@ -379,6 +392,52 @@ def patients(lang):
   </div>
 </section>"""
     return layout("patients", lang, title, body, t(P["intro"], lang))
+
+
+MONTHS = {
+    "en": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    "da": ["januar", "februar", "marts", "april", "maj", "juni", "juli", "august", "september", "oktober", "november", "december"],
+}
+
+
+def fmt_date(d, lang):
+    y, m, day = d.split("-")
+    if lang == "da":
+        return f"{int(day)}. {MONTHS['da'][int(m) - 1]} {y}"
+    return f"{MONTHS['en'][int(m) - 1]} {int(day)}, {y}"
+
+
+def news_cards(posts, lang, up):
+    out = []
+    for n in posts:
+        img = (f'<img class="news-img" src="{up}assets/img/news/{n["photo"]}" alt="" width="1200" height="900">'
+               if n.get("photo") else "")
+        link = (f'<p><a href="{n["link"]}">{UI["read_more"][lang]} &rarr;</a></p>' if n.get("link") else "")
+        out.append(f"""<li class="card news-card">
+  {img}
+  <div class="card-body">
+    <p class="news-date"><time datetime="{n['date']}">{fmt_date(n['date'], lang)}</time></p>
+    <h3>{esc(t(n['title'], lang))}</h3>
+    <p>{esc(t(n['text'], lang))}</p>
+    {link}
+  </div>
+</li>""")
+    return "".join(out)
+
+
+def sorted_news():
+    return sorted(getattr(C, "NEWS", []), key=lambda n: n["date"], reverse=True)
+
+
+def news(lang):
+    d = depth_of("news", lang)
+    posts = sorted_news()
+    inner = f'<ul class="grid grid-3 news-grid">{news_cards(posts, lang, "../" * d)}</ul>' if posts else f"<p>{UI['no_news'][lang]}</p>"
+    body = page_header("news", nav_label("news", lang), C.NEWS_INTRO, lang) + f"""
+<section class="section">
+  <div class="wrap">{inner}</div>
+</section>"""
+    return layout("news", lang, nav_label("news", lang), body, t(C.NEWS_INTRO, lang))
 
 
 def initials(name):
@@ -560,6 +619,7 @@ PAGES = {
     "patients": patients,
     "members": members,
     "publications": publications,
+    "news": news,
     "partners": partners,
     "contact": contact,
 }
