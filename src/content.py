@@ -657,7 +657,15 @@ NEWS = [
                "da": "Livskvalitetsresultater fra SABLe-studiet præsenteret på NMSG-mødet i Reykjavik"},
      "text": {"en": "Tine Rosenberg presented the patient-reported outcome results from the phase II SABLe study (NMSG 29/21) at the Nordic Myeloma Study Group meeting in Reykjavik. The study tested an alternating selinexor-based regimen in patients with newly diagnosed multiple myeloma who are not eligible for stem cell transplantation, and patients reported improved quality of life.",
               "da": "Tine Rosenberg præsenterede resultaterne for patientrapporterede oplysninger fra fase II-studiet SABLe (NMSG 29/21) på Nordic Myeloma Study Groups møde i Reykjavik. Studiet afprøvede et alternerende selinexor-baseret behandlingsregime hos patienter med nydiagnosticeret myelomatose, som ikke kan tilbydes stamcelletransplantation, og patienterne rapporterede forbedret livskvalitet."},
-     "photo": "tine-nmsg-2026.jpg", "link": "https://www.nordicmyeloma.org/"},
+     "photo": "tine-nmsg-2026.jpg", "link": "https://www.nordicmyeloma.org/",
+     "gallery": [
+         {"file": "helena-lene-reykjavik.jpg", "full": "helena-lene-reykjavik-full.jpg",
+          "alt": {"en": "Helena Møgelbjerg Ditzel and Lene Kongsgaard Nielsen in front of Hallgrímskirkja in Reykjavik",
+                  "da": "Helena Møgelbjerg Ditzel og Lene Kongsgaard Nielsen foran Hallgrímskirkja i Reykjavik"}},
+         {"file": "helena-tine-reykjavik.jpg", "full": "helena-tine-reykjavik-full.jpg",
+          "alt": {"en": "Helena Møgelbjerg Ditzel and Tine Rosenberg at the Gullfoss waterfall",
+                  "da": "Helena Møgelbjerg Ditzel og Tine Rosenberg ved vandfaldet Gullfoss"}},
+     ]},
     {
         "date": "2026-09-01",
         "title": {"en": "Poster on geriatric assessment in older patients with hematologic cancer",

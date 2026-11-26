@@ -229,3 +229,7 @@ mark.todo { background: #fff3b0; color: #5a4500; padding: .05rem .35rem; border-
 .news-grid { align-items: start; }
 .section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
 .section-head .section-title { margin-bottom: 1.5rem; }
+
+.news-gallery { list-style: none; padding: 0; margin: .2rem 0 1rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: .5rem; }
+.news-gallery img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-radius: 4px; }
+.news-gallery a:focus-visible img, .news-gallery a:hover img { outline: 3px solid var(--accent); outline-offset: 2px; }

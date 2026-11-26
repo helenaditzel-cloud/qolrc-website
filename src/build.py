@@ -37,6 +37,7 @@ UI = {
     "useful_links": {"en": "Useful links", "da": "Nyttige links"},
     "photos": {"en": "Photos:", "da": "Fotos:"},
     "read_more": {"en": "Read more", "da": "Læs mere"},
+    "more_photos": {"en": "More photos", "da": "Flere billeder"},
     "no_news": {"en": "News will appear here.", "da": "Nyheder vises her."},
     "recent_events": {"en": "Recent events", "da": "Seneste nyt"},
     "all_news": {"en": "All news and events", "da": "Alle nyheder"},
@@ -413,6 +414,14 @@ def news_cards(posts, lang, up):
         img = (f'<img class="news-img" src="{up}assets/img/news/{n["photo"]}" alt="" width="1200" height="900">'
                if n.get("photo") else "")
         link = (f'<p><a href="{n["link"]}">{UI["read_more"][lang]} &rarr;</a></p>' if n.get("link") else "")
+        gallery = ""
+        if n.get("gallery"):
+            items = "".join(
+                f'<li><a href="{up}assets/img/news/{g.get("full", g["file"])}">'
+                f'<img src="{up}assets/img/news/{g["file"]}" alt="{esc(t(g["alt"], lang))}" width="900" height="900"></a></li>'
+                for g in n["gallery"])
+            gallery = f'<ul class="news-gallery" aria-label="{UI["more_photos"][lang]}">{items}</ul>'
+        link = gallery + link
         out.append(f"""<li class="card news-card">
   {img}
   <div class="card-body">
