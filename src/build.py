@@ -318,10 +318,12 @@ def pro(lang):
                      if i.get("doi") else "")
             rows.append(f'<li><span class="inst-name">{name}</span>{badge}<span class="inst-what">{esc(t(i["what"], lang))}{paper}</span></li>')
         groups.append(f'''<div class="card inst-group"><h3>{esc(t(g["title"], lang))}</h3><ul class="inst-list">{"".join(rows)}</ul></div>''')
-    adv = "\n".join(
-        f"""<li class="card theme-plain"><h3>{esc(t(a['title'], lang))}</h3><p>{esc(t(a['text'], lang))}</p></li>"""
-        for a in P["advice"]
-    )
+    def adv_cards(items):
+        return "\n".join(
+            f"""<li class="card theme-plain"><h3>{esc(t(a['title'], lang))}</h3><p>{esc(t(a['text'], lang))}</p></li>"""
+            for a in items)
+    adv = adv_cards(P["advice"][:2])
+    collab = adv_cards(P["advice"][2:])
     links = "\n".join(f'<li><a href="{l["url"]}">{esc(l["name"])}</a></li>' for l in P["links"])
     body = page_header("pro", nav_label("pro", lang), P["intro"], lang) + f"""
 <section class="section">
@@ -334,7 +336,10 @@ def pro(lang):
 <section class="section section-tint">
   <div class="wrap">
     <h2 class="section-title">{esc(t(P['advice_heading'], lang))}</h2>
-    <ul class="grid grid-3">{adv}</ul>
+    <ul class="grid grid-2">{adv}</ul>
+    <h2 class="section-title study-group">{esc(t(P['collab_heading'], lang))}</h2>
+    <p class="lead-dark">{esc(t(P['collab_intro'], lang))}</p>
+    <ul class="grid grid-2">{collab}</ul>
     <p class="center-cta"><a class="button" href="{url('contact', lang, d)}">{UI['contact_us'][lang]} &rarr;</a></p>
   </div>
 </section>

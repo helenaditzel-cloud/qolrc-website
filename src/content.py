@@ -328,6 +328,9 @@ PRO = {
              "url": "", "doi": "10.1177/26335565251415477"},
          ]},
     ],
+    "collab_heading": {"en": "Research collaboration", "da": "Forskningssamarbejde"},
+    "collab_intro": {"en": "We also take part in studies as research partners, contributing to the parts of a project where PRO expertise is needed.",
+                     "da": "Vi indgår også i studier som forskningspartnere og bidrager til de dele af et projekt, hvor der er brug for PRO-ekspertise."},
     "advice_heading": {"en": "How we can help", "da": "Hvordan vi kan hjælpe"},
     "advice": [
         {"title": {"en": "Choosing instruments", "da": "Valg af spørgeskemaer"},
