@@ -646,6 +646,12 @@ NEWS_INTRO = {
 }
 
 NEWS = [
+    {"date": "2026-10-19",
+     "title": {"en": "SSQ-MM validation study presented at ISOQOL 2026 in Prague",
+               "da": "SSQ-MM-valideringsstudiet præsenteret på ISOQOL 2026 i Prag"},
+     "text": {"en": "Helena Møgelbjerg Ditzel presented a poster on the multinational psychometric validation of the Steroid Symptom Questionnaire – Multiple Myeloma (SSQ-MM) in patients with immune thrombocytopenia (ITP) and autoimmune hemolytic anemia (AIHA) at the 33rd Annual Conference of the International Society for Quality of Life Research (ISOQOL) in Prague. The study will include 180 patients in Denmark, Norway, Sweden and the United Kingdom, and will also develop a Swedish version of the questionnaire.",
+              "da": "Helena Møgelbjerg Ditzel præsenterede en poster om den multinationale psykometriske validering af Steroid Symptom Questionnaire – Multiple Myeloma (SSQ-MM) hos patienter med immun trombocytopeni (ITP) og autoimmun hæmolytisk anæmi (AIHA) på den 33. årlige konference i International Society for Quality of Life Research (ISOQOL) i Prag. Studiet skal inkludere 180 patienter i Danmark, Norge, Sverige og Storbritannien og udvikler desuden en svensk version af spørgeskemaet."},
+     "photo": "helena-isoqol-2026.jpg", "link": "https://www.isoqol.org/events/33rd-annual-conference/"},
     {
         "date": "2026-09-01",
         "title": {"en": "Poster on geriatric assessment in older patients with hematologic cancer",
