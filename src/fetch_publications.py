@@ -27,8 +27,8 @@ AUTHOR_QUERIES = {
     "Tine Rosenberg": '"Rosenberg, Tine"[Full Author Name] AND (Hematology[Affiliation] OR Haematology[Affiliation] OR "Quality of Life Research"[Affiliation])',  # another Tine Rosenberg publishes in ENT surgery
     "Lene Kongsgaard Nielsen": '"Nielsen, Lene Kongsgaard"[Full Author Name]',
     "Anne Møller Clausen": '"Clausen AM"[Author] AND Odense[Affiliation]',
-    "Nina Andersen": '"Andersen, Nina"[Full Author Name] AND Odense[Affiliation] AND (frailty OR geriatric)',  # several other Nina Andersens publish from Odense
-    "Klara Rydahl": '"Rydahl K"[Author] AND Odense[Affiliation]',
+    "Nina Andersen": '"Andersen, Nina"[Full Author Name] AND Odense[Affiliation] AND (frailty OR geriatric) NOT Municipality[Affiliation]',  # another Nina Andersen publishes from Odense Municipality
+    "Klara Rydahl": '"Rydahl KFK"[Author]',
     # Pia K. Pedersen and Tina Käehne: no PubMed publications found
     # Affiliated researchers (Madeleine King, Sören Möller) are left out on purpose
 }
