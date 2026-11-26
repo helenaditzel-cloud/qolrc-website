@@ -652,6 +652,12 @@ NEWS = [
      "text": {"en": "Helena Møgelbjerg Ditzel presented a poster on the multinational psychometric validation of the Steroid Symptom Questionnaire – Multiple Myeloma (SSQ-MM) in patients with immune thrombocytopenia (ITP) and autoimmune hemolytic anemia (AIHA) at the 33rd Annual Conference of the International Society for Quality of Life Research (ISOQOL) in Prague. The study will include 180 patients in Denmark, Norway, Sweden and the United Kingdom, and will also develop a Swedish version of the questionnaire.",
               "da": "Helena Møgelbjerg Ditzel præsenterede en poster om den multinationale psykometriske validering af Steroid Symptom Questionnaire – Multiple Myeloma (SSQ-MM) hos patienter med immun trombocytopeni (ITP) og autoimmun hæmolytisk anæmi (AIHA) på den 33. årlige konference i International Society for Quality of Life Research (ISOQOL) i Prag. Studiet skal inkludere 180 patienter i Danmark, Norge, Sverige og Storbritannien og udvikler desuden en svensk version af spørgeskemaet."},
      "photo": "helena-isoqol-2026.jpg", "link": "https://www.isoqol.org/events/33rd-annual-conference/"},
+    {"date": "2026-09-10",
+     "title": {"en": "Quality of life results from the SABLe study presented at the NMSG meeting in Reykjavik",
+               "da": "Livskvalitetsresultater fra SABLe-studiet præsenteret på NMSG-mødet i Reykjavik"},
+     "text": {"en": "Tine Rosenberg presented the patient-reported outcome results from the phase II SABLe study (NMSG 29/21) at the Nordic Myeloma Study Group meeting in Reykjavik. The study tested an alternating selinexor-based regimen in patients with newly diagnosed multiple myeloma who are not eligible for stem cell transplantation, and patients reported improved quality of life.",
+              "da": "Tine Rosenberg præsenterede resultaterne for patientrapporterede oplysninger fra fase II-studiet SABLe (NMSG 29/21) på Nordic Myeloma Study Groups møde i Reykjavik. Studiet afprøvede et alternerende selinexor-baseret behandlingsregime hos patienter med nydiagnosticeret myelomatose, som ikke kan tilbydes stamcelletransplantation, og patienterne rapporterede forbedret livskvalitet."},
+     "photo": "tine-nmsg-2026.jpg", "link": "https://www.nordicmyeloma.org/"},
     {
         "date": "2026-09-01",
         "title": {"en": "Poster on geriatric assessment in older patients with hematologic cancer",
