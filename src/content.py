@@ -66,8 +66,8 @@ ABOUT = {
         {
             "title": {"en": "PROs in clinical trials", "da": "PRO i kliniske forsøg"},
             "text": {
-                "en": "Designing, collecting and analyzing patient-reported outcomes in randomized and single-arm trials, following international standards for PRO endpoints and estimands.",
-                "da": "Planlægning, indsamling og analyse af patientrapporterede oplysninger i randomiserede og enkeltarmede forsøg efter internationale standarder for PRO-endepunkter og estimands.",
+                "en": "Planning how patient-reported outcomes are included in randomized and single-arm trials, from choosing endpoints and assessment schedules to collecting and analyzing the data, following international standards for PRO endpoints and estimands.",
+                "da": "Planlægning af, hvordan patientrapporterede oplysninger indgår i randomiserede og enkeltarmede forsøg, fra valg af endepunkter og måletidspunkter til indsamling og analyse af data, efter internationale standarder for PRO-endepunkter og estimands.",
             },
         },
         {
