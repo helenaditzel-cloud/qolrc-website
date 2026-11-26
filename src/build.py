@@ -459,8 +459,7 @@ def initials(name):
 def members(lang):
     d = depth_of("members", lang)
     up = "../" * d
-    cards = []
-    for m in C.MEMBERS:
+    def card(m):
         photo_file = os.path.join(ROOT, "assets", "img", "people", m["photo"]) if m["photo"] else ""
         if photo_file and os.path.exists(photo_file):
             pic = f'<img class="portrait" src="{up}assets/img/people/{m["photo"]}" alt="{esc(UI["portrait_of"][lang])} {esc(m["name"])}" width="400" height="500">'
@@ -475,18 +474,26 @@ def members(lang):
             links += f'<p><a href="{m["profile"]}">{UI["profile"][lang]}<span class="visually-hidden">: {esc(m["name"])}</span> &rarr;</a></p>'
         if m.get("orcid"):
             links += f'<p class="orcid"><a href="https://orcid.org/{m["orcid"]}">ORCID {m["orcid"]}</a></p>'
-        cards.append(f"""<li class="card member">
+        return f"""<li class="card member">
   {pic}
   <div class="member-body">
-    <h2>{esc(m['name'])}</h2>
+    <h3>{esc(m['name'])}</h3>
     <p class="role">{esc(t(m['title'], lang))}</p>
     <p>{esc(t(m['bio'], lang))}</p>
     {links}
   </div>
-</li>""")
+</li>"""
+    sections = []
+    for gid, gtitle in C.MEMBER_GROUPS:
+        people = [m for m in C.MEMBERS if C.MEMBER_GROUP_OF.get(m["name"]) == gid]
+        if people:
+            sections.append(f'<h2 class="section-title study-group">{esc(t(gtitle, lang))}</h2>'
+                            f'<ul class="grid grid-3 members-grid">{"".join(card(m) for m in people)}</ul>')
+    missing = [m["name"] for m in C.MEMBERS if m["name"] not in C.MEMBER_GROUP_OF]
+    assert not missing, f"members without group: {missing}"
     body = page_header("members", nav_label("members", lang), C.MEMBERS_INTRO, lang) + f"""
 <section class="section">
-  <div class="wrap"><ul class="grid grid-3 members-grid">{''.join(cards)}</ul></div>
+  <div class="wrap">{''.join(sections)}</div>
 </section>"""
     return layout("members", lang, nav_label("members", lang), body, t(C.MEMBERS_INTRO, lang))
 

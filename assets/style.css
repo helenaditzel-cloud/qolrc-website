@@ -187,7 +187,7 @@ ul { padding: 0; margin: 0; list-style: none; }
 .portrait-placeholder img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .portrait-placeholder span { position: absolute; left: 0; right: 0; bottom: 1rem; text-align: center; font-size: .85rem; font-weight: 700; color: var(--muted); }
 .member-body { padding: 1.5rem 1.6rem 1.75rem; }
-.member-body h2 { font-size: 1.3rem; margin-bottom: .6rem; }
+.member-body h3 { font-size: 1.3rem; margin-bottom: .6rem; }
 .orcid { font-size: .9rem; margin-top: -.4rem; }
 .role { color: var(--accent-dark); margin-top: -.3rem; font-weight: 700; }
 

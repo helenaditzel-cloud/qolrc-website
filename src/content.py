@@ -423,6 +423,28 @@ MEMBERS_INTRO = {
 }
 
 # photo: file name in assets/img/people/ (portrait, ideally 800 x 1000 px). Leave "" to show a placeholder.
+MEMBER_GROUPS = [
+    ("leadership", {"en": "Leadership", "da": "Ledelse"}),
+    ("researchers", {"en": "Researchers", "da": "Forskere"}),
+    ("phd", {"en": "PhD students", "da": "Ph.d.-studerende"}),
+    ("adjunct", {"en": "Adjunct and affiliated", "da": "Tilknyttede forskere"}),
+    ("admin", {"en": "Administration", "da": "Administration"}),
+]
+
+MEMBER_GROUP_OF = {
+    "Henrik Frederiksen": "leadership",
+    "Lene Kongsgaard Nielsen": "leadership",
+    "Pia K. Pedersen": "leadership",
+    "Niels Abildgaard": "researchers",
+    "Helena Møgelbjerg Ditzel": "researchers",
+    "Tine Rosenberg": "researchers",
+    "Anne Møller Clausen": "phd",
+    "Nina Andersen": "phd",
+    "Klara Rydahl": "phd",
+    "Madeleine King": "adjunct",
+    "Tina Käehne": "admin",
+}
+
 MEMBERS = [{'name': 'Henrik Frederiksen',
   'title': {'en': 'MD, PhD, Head of Research and Professor', 'da': 'Læge, ph.d., forskningsleder og professor'},
   'bio': {'en': 'Consultant and Head of Research at the Department and Research Unit of Hematology, Odense University Hospital and University of Southern '
