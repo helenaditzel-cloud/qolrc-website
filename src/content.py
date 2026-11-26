@@ -166,11 +166,16 @@ STUDIES = [{'group': 'nmsg',
   'role': {'en': 'Danish HRQoL lead', 'da': 'Dansk ansvarlig for livskvalitet'},
   'group': 'nmsg'},
  {'group': 'nmsg',
-  'title': {'en': 'SHIELD', 'da': 'SHIELD'},
+  'title': {'en': 'SHIELD: subcutaneous immunoglobulin against early infections in multiple myeloma',
+            'da': 'SHIELD: subkutant immunglobulin mod tidlige infektioner ved myelomatose'},
   'disease': {'en': 'Multiple myeloma', 'da': 'Myelomatose'},
   'nct': '',
-  'text': {'en': 'An NMSG study in multiple myeloma. TODO(Add a one-sentence description of SHIELD.)',
-           'da': 'Et NMSG-studie i myelomatose. TODO(Tilføj en kort beskrivelse af SHIELD.)'},
+  'text': {'en': 'A randomized phase 2 trial (NMSG 32/23) testing whether preventive subcutaneous immunoglobulin reduces infections and early mortality '
+                 'compared with standard infection prophylaxis in patients with newly diagnosed multiple myeloma who are not eligible for stem cell '
+                 'transplantation. Quality of life is measured repeatedly during the first year of treatment.',
+           'da': 'Et randomiseret fase 2-forsøg (NMSG 32/23), der undersøger, om forebyggende subkutant immunglobulin mindsker infektioner og tidlig '
+                 'dødelighed sammenlignet med standard infektionsprofylakse hos patienter med nydiagnosticeret myelomatose, som ikke kan tilbydes '
+                 'stamcelletransplantation. Livskvaliteten måles gentagne gange gennem det første behandlingsår.'},
   'role': {'en': 'Quality of life data (NMSG core facility)', 'da': 'Livskvalitetsdata (NMSG core facility)'}},
  {'title': {'en': 'Patient-reported outcomes in the Nordic IRd trial', 'da': 'Patientrapporterede oplysninger i det nordiske IRd-forsøg'},
   'disease': {'en': 'Multiple myeloma', 'da': 'Myelomatose'},
