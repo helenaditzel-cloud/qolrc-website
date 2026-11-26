@@ -260,7 +260,12 @@ def about(lang):
     <ul class="grid grid-3">{cards}</ul>
   </div>
 </section>
-<div class="photo-divider" style="background-image:url('{up}assets/img/photos/divider.jpg')" role="presentation"></div>
+<section class="quote-band">
+  <div class="wrap quote-inner">
+    <img class="quote-photo" src="{up}assets/img/photos/divider.jpg" alt=""  width="1400" height="787">
+    <blockquote class="quote-text"><p>{esc(t(a['quote'], lang))}</p></blockquote>
+  </div>
+</section>
 {recent}
 <section class="band" style="background-image:{band_overlay}url('{band_src}')">
   <div class="wrap band-inner">

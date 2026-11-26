@@ -61,6 +61,8 @@ ABOUT = {
             "Vores vision er at etablere et tværfagligt center for forskning i helbredsrelateret livskvalitet på internationalt niveau i tæt samarbejde med klinikere, statistikere, patientrepræsentanter, patientforeninger og forskningspartnere i Norden og Europa.",
         ],
     },
+    "quote": {"en": "Living well matters as much as living longer, and only patients can tell us how they are really doing.",
+              "da": "Et godt liv betyder lige så meget som et langt liv, og kun patienterne kan fortælle os, hvordan de reelt har det."},
     "themes_heading": {"en": "Our research", "da": "Vores forskning"},
     "themes": [
         {
