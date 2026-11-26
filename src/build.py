@@ -265,7 +265,7 @@ def studies(lang):
             reg = (f'<a class="tag tag-link" href="https://clinicaltrials.gov/study/{s["nct"]}">'
                    f'{UI["registry"][lang]}: {s["nct"]}</a>')
         items.append(f"""<li class="card study">
-  <p class="tags"><span class="tag">{esc(t(s['disease'], lang))}</span>{reg}</p>
+  <p class="tags">{f'<span class="tag tag-status">{esc(t(s["status"], lang))}</span>' if s.get("status") else ""}<span class="tag">{esc(t(s['disease'], lang))}</span>{reg}</p>
   <h2>{esc(t(s['title'], lang))}</h2>
   <p>{esc(t(s['text'], lang))}</p>
   <p class="meta"><strong>{UI['our_role'][lang]}:</strong> {esc(t(s['role'], lang))}</p>
