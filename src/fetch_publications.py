@@ -26,7 +26,7 @@ AUTHOR_QUERIES = {
     "Henrik Frederiksen": '("Frederiksen, Henrik"[Full Author Name] AND (Odense[Affiliation] OR "Southern Denmark"[Affiliation])) OR ("Frederiksen H"[Author] AND "Quality of Life Research"[Affiliation])',
     "Niels Abildgaard": '"Abildgaard, Niels"[Full Author Name] OR ("Abildgaard N"[Author] AND (myeloma OR "Quality of Life Research"[Affiliation]))',
     "Tine Rosenberg": '("Rosenberg, Tine"[Full Author Name] OR "Rosenberg T"[Author]) AND Odense[Affiliation] AND (Hematology[Affiliation] OR Haematology[Affiliation] OR "Quality of Life Research"[Affiliation])',  # another Tine Rosenberg publishes in ENT surgery
-    "Lene Kongsgaard Nielsen": '"Nielsen, Lene Kongsgaard"[Full Author Name] OR ("Nielsen LK"[Author] AND (Odense[Affiliation] OR Gødstrup[Affiliation] OR Herning[Affiliation]) AND ("Quality of Life Research"[Affiliation] OR myeloma OR hematology OR haematology))',
+    "Lene Kongsgaard Nielsen": '"Nielsen, Lene Kongsgaard"[Full Author Name] OR ("Nielsen LK"[Author] AND (Odense[Affiliation] OR Gødstrup[Affiliation] OR Herning[Affiliation]) AND ("Quality of Life Research"[Affiliation] OR myeloma OR hematology OR haematology) AND 2005:3000[dp])',
     "Anne Møller Clausen": '"Clausen AM"[Author] AND Odense[Affiliation]',
     "Nina Andersen": '"Andersen, Nina"[Full Author Name] AND Odense[Affiliation] AND (frailty OR geriatric) NOT Municipality[Affiliation]',  # another Nina Andersen publishes from Odense Municipality
     "Klara Rydahl": '"Rydahl KFK"[Author]',
