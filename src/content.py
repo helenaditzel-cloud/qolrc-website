@@ -606,8 +606,8 @@ MEMBERS = [{'name': 'Henrik Frederiksen',
 
 # ---------------------------------------------------------------- Publications
 PUBLICATIONS_INTRO = {
-    "en": "Publications by QoLRC members, newest first.",
-    "da": "Publikationer fra QoLRC's medarbejdere, nyeste først.",
+    "en": "Publications by the QoLRC team, newest first. The list opens with our PRO publications: papers on quality of life, patient-reported outcomes or PRO methodology. Use the buttons to see each person's publications or all publications.",
+    "da": "Publikationer fra QoLRC-teamet, nyeste først. Listen viser først vores PRO-publikationer: artikler om livskvalitet, patientrapporterede oplysninger eller PRO-metode. Brug knapperne til at se den enkeltes publikationer eller alle publikationer.",
 }
 
 # Each entry: year, authors, title, journal, doi (optional)

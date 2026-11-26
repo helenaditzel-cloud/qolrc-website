@@ -13,6 +13,7 @@ import re
 import time
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "src", "publications.json")
@@ -44,6 +45,62 @@ AUTHOR_MATCH = {
     "Nina Andersen": [r"^Andersen N$"],
     "Klara Rydahl": [r"^Rydahl K"],
 }
+
+# ---- PRO classification -------------------------------------------------
+# A paper counts as a "PRO publication" if it is about quality of life,
+# reports patient-reported outcomes in any form, or is a methodological
+# study of PROs. Decided from title, abstract, keywords and MeSH terms.
+PRO_STRONG = re.compile(
+    r"quality[- ]of[- ]life|\bh?r?qol\b|\bhrql\b|patient[- ]reported|self[- ]reported|self[- ]report\b|"
+    r"\bproms?\b|\bpros\b|\bpro\b(?![- ]?(?:tein|gnos|gress|lifer|phyla|duc|cedur|spect|mot|teas|thromb|bnp|inflam))|"
+    r"questionnaire|psychometric|eortc|\bqlq|\bfact-|eq-5d|\bsf-?12\b|\bsf-?36\b|promis\b|"
+    r"symptom burden|well-?being|cosmin|health utilit",
+    re.I)
+PRO_MESH = {"Quality of Life", "Patient Reported Outcome Measures", "Psychometrics",
+            "Surveys and Questionnaires", "Self Report"}
+# Manual corrections, by PubMed ID, if the automatic sorting gets a paper wrong
+PRO_INCLUDE = set()
+PRO_EXCLUDE = set()
+
+
+def is_pro(pmid, title, abstract, keywords, mesh):
+    if pmid in PRO_INCLUDE:
+        return True
+    if pmid in PRO_EXCLUDE:
+        return False
+    if PRO_STRONG.search(title) or PRO_STRONG.search(" ".join(keywords)):
+        return True
+    if PRO_MESH & set(mesh):
+        return True
+    return len(PRO_STRONG.findall(abstract)) >= 2
+
+
+def efetch_details(ids):
+    """Abstract, keywords and MeSH terms per PMID."""
+    out = {}
+    for i in range(0, len(ids), 200):
+        batch = ids[i:i + 200]
+        data = urllib.parse.urlencode({"db": "pubmed", "id": ",".join(batch),
+                                       "retmode": "xml", "tool": TOOL}).encode()
+        for attempt in range(4):
+            try:
+                req = urllib.request.Request(EUTILS + "efetch.fcgi", data=data, headers={"User-Agent": TOOL})
+                with urllib.request.urlopen(req, timeout=120) as r:
+                    root = ET.fromstring(r.read())
+                break
+            except Exception:
+                if attempt == 3:
+                    raise
+                time.sleep(3 + attempt * 3)
+        for art in root.iter("PubmedArticle"):
+            pmid = art.findtext(".//MedlineCitation/PMID", "")
+            abstract = " ".join("".join(t.itertext()) for t in art.iter("AbstractText"))
+            keywords = ["".join(k.itertext()) for k in art.iter("Keyword")]
+            mesh = [d.text or "" for d in art.iter("DescriptorName")]
+            out[pmid] = (abstract, keywords, mesh)
+        time.sleep(0.4)
+    return out
+
 
 MONTHS = {m: i for i, m in enumerate(
     ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], 1)}
@@ -91,6 +148,7 @@ def main():
             members_by_pmid.setdefault(pmid, set()).add(name)
 
     summaries = esummary(sorted(members_by_pmid))
+    details = efetch_details(sorted(members_by_pmid))
     pubs = []
     for pmid, s in summaries.items():
         if s.get("error"):
@@ -106,6 +164,7 @@ def main():
                 doi = a.get("value", "")
         authors = [a.get("name", "") for a in s.get("authors", []) if a.get("authtype", "Author") == "Author"]
         title = re.sub(r"<[^>]+>", "", s.get("title", "")).strip()
+        abstract, keywords, mesh = details.get(pmid, ("", [], []))
         pubs.append({
             "pmid": pmid,
             "year": year,
@@ -118,12 +177,13 @@ def main():
             "pages": s.get("pages", ""),
             "doi": doi,
             "members": sorted(members_by_pmid[pmid]),
+            "pro": is_pro(pmid, title, abstract, keywords, mesh),
         })
     pubs.sort(key=lambda p: (p["sortdate"], p["pmid"]), reverse=True)
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump({"updated": time.strftime("%Y-%m-%d"), "author_match": AUTHOR_MATCH,
                    "publications": pubs}, f, ensure_ascii=False, indent=1)
-    print(f"wrote {len(pubs)} publications to {os.path.relpath(OUT, ROOT)}")
+    print(f"wrote {len(pubs)} publications ({sum(p['pro'] for p in pubs)} PRO) to {os.path.relpath(OUT, ROOT)}")
 
 
 if __name__ == "__main__":

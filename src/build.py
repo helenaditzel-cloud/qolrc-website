@@ -37,6 +37,7 @@ UI = {
     "useful_links": {"en": "Useful links", "da": "Nyttige links"},
     "photos": {"en": "Photos:", "da": "Fotos:"},
     "read_more": {"en": "Read more", "da": "Læs mere"},
+    "pro_pubs": {"en": "PRO publications", "da": "PRO-publikationer"},
     "more_photos": {"en": "More photos", "da": "Flere billeder"},
     "no_news": {"en": "News will appear here.", "da": "Nyheder vises her."},
     "recent_events": {"en": "Recent events", "da": "Seneste nyt"},
@@ -522,17 +523,23 @@ def publications(lang):
         pubs = data["publications"]
         match = {m: [re.compile(rx) for rx in rxs] for m, rxs in data.get("author_match", {}).items()}
         members = sorted({m for p in pubs for m in p["members"]})
-        chips = [f'<button type="button" class="chip" aria-pressed="true" data-filter="all">{UI["all"][lang]} ({len(pubs)})</button>']
+        has_pro = any("pro" in p for p in pubs)
+        n_pro = sum(1 for p in pubs if p.get("pro"))
+        chips = []
+        if has_pro:
+            chips.append(f'<button type="button" class="chip chip-pro" aria-pressed="true" data-filter="pro">{UI["pro_pubs"][lang]} ({n_pro})</button>')
         for m in members:
             n = sum(1 for p in pubs if m in p["members"])
             chips.append(f'<button type="button" class="chip" aria-pressed="false" data-filter="{esc(m)}">{esc(m)} ({n})</button>')
+        chips.append(f'<button type="button" class="chip" aria-pressed="{"false" if has_pro else "true"}" data-filter="all">{UI["all"][lang]} ({len(pubs)})</button>')
         out, year = [], None
         for p in pubs:
             if p["year"] != year:
                 if year is not None:
                     out.append("</ol></section>")
                 year = p["year"]
-                out.append(f'<section class="pub-year" data-year="{year}"><h2 class="year">{year or ""}</h2><ol class="pubs">')
+                year_hidden = has_pro and not any(q.get("pro") for q in pubs if q["year"] == year)
+                out.append(f'<section class="pub-year" data-year="{year}"{" hidden" if year_hidden else ""}><h2 class="year">{year or ""}</h2><ol class="pubs">')
             flags = [any(rx.search(a) for rxs in match.values() for rx in rxs) for a in p["authors"]]
             names, gap = [], False
             n = len(p["authors"])
@@ -555,7 +562,8 @@ def publications(lang):
             links = f'<a href="https://pubmed.ncbi.nlm.nih.gov/{p["pmid"]}/">PubMed</a>'
             if p.get("doi"):
                 links += f' · <a href="https://doi.org/{html.escape(p["doi"])}">DOI</a>'
-            out.append(f'''<li data-members="{esc("|".join(p["members"]))}"><span class="pub-title">{esc(p["title"])}</span> <span class="pub-authors">{", ".join(names)}.</span> <em>{cite}</em>. {p["year"]}. <span class="pub-links">{links}</span></li>''')
+            hid = " hidden" if has_pro and not p.get("pro") else ""
+            out.append(f'''<li data-members="{esc("|".join(p["members"]))}" data-pro="{1 if p.get("pro") else 0}"{hid}><span class="pub-title">{esc(p["title"])}</span> <span class="pub-authors">{", ".join(names)}.</span> <em>{cite}</em>. {p["year"]}. <span class="pub-links">{links}</span></li>''')
         out.append("</ol></section>")
         inner = f"""<div class="pub-tools">
   <p class="pub-updated">{UI['pub_source'][lang]} {esc(data.get('updated', ''))}.</p>
@@ -570,7 +578,7 @@ def publications(lang):
       var f = c.getAttribute('data-filter');
       chips.forEach(function (o) {{ o.setAttribute('aria-pressed', o === c ? 'true' : 'false'); }});
       document.querySelectorAll('.pubs li').forEach(function (li) {{
-        li.hidden = !(f === 'all' || li.getAttribute('data-members').split('|').indexOf(f) > -1);
+        li.hidden = !(f === 'all' || (f === 'pro' ? li.getAttribute('data-pro') === '1' : li.getAttribute('data-members').split('|').indexOf(f) > -1));
       }});
       document.querySelectorAll('.pub-year').forEach(function (sec) {{
         sec.hidden = !sec.querySelector('li:not([hidden])');
