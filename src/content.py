@@ -443,20 +443,19 @@ MEMBERS_INTRO = {
 
 # photo: file name in assets/img/people/ (portrait, ideally 800 x 1000 px). Leave "" to show a placeholder.
 MEMBER_GROUPS = [
-    ("leadership", {"en": "Leadership", "da": "Ledelse"}),
-    ("researchers", {"en": "Researchers", "da": "Forskere"}),
+    ("core", {"en": "Leadership and core team", "da": "Ledelse og kerneteam"}),
     ("phd", {"en": "PhD students", "da": "Ph.d.-studerende"}),
     ("adjunct", {"en": "Adjunct and affiliated", "da": "Tilknyttede forskere"}),
     ("admin", {"en": "Administration", "da": "Administration"}),
 ]
 
-MEMBER_GROUP_OF = {
-    "Henrik Frederiksen": "leadership",
-    "Lene Kongsgaard Nielsen": "leadership",
-    "Pia K. Pedersen": "leadership",
-    "Niels Abildgaard": "researchers",
-    "Helena Møgelbjerg Ditzel": "researchers",
-    "Tine Rosenberg": "researchers",
+MEMBER_GROUP_OF = {  # order here = order on the page
+    "Henrik Frederiksen": "core",
+    "Lene Kongsgaard Nielsen": "core",
+    "Niels Abildgaard": "core",
+    "Helena Møgelbjerg Ditzel": "core",
+    "Tine Rosenberg": "core",
+    "Pia K. Pedersen": "core",
     "Anne Møller Clausen": "phd",
     "Nina Andersen": "phd",
     "Klara Rydahl": "phd",

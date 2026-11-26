@@ -491,7 +491,8 @@ def members(lang):
 </li>"""
     sections = []
     for gid, gtitle in C.MEMBER_GROUPS:
-        people = [m for m in C.MEMBERS if C.MEMBER_GROUP_OF.get(m["name"]) == gid]
+        by_name = {m["name"]: m for m in C.MEMBERS}
+        people = [by_name[nm] for nm, g in C.MEMBER_GROUP_OF.items() if g == gid and nm in by_name]
         if people:
             sections.append(f'<h2 class="section-title study-group">{esc(t(gtitle, lang))}</h2>'
                             f'<ul class="grid grid-3 members-grid">{"".join(card(m) for m in people)}</ul>')
