@@ -461,6 +461,7 @@ MEMBER_GROUP_OF = {
     "Nina Andersen": "phd",
     "Klara Rydahl": "phd",
     "Madeleine King": "adjunct",
+    "Sören Möller": "adjunct",
     "Tina Käehne": "admin",
 }
 
@@ -550,6 +551,19 @@ MEMBERS = [{'name': 'Henrik Frederiksen',
   'email': '',
   'photo': 'madeleine-king.jpg',
   'profile': ''},
+ {'name': 'Sören Möller',
+  'title': {'en': 'PhD, Professor of Translational Biostatistics', 'da': 'Ph.d., professor i translationel biostatistik'},
+  'bio': {'en': 'Professor of translational biostatistics at Epidemiology, Biostatistics and Biodemography, Department of Public Health, University of '
+                'Southern Denmark, and previously biostatistician at OPEN, Odense University Hospital. His work focuses on applying and developing advanced '
+                'statistical methods in health research and clinical epidemiology, and he collaborates with QoLRC on the statistical analysis of quality of '
+                'life data.',
+          'da': 'Professor i translationel biostatistik ved Epidemiologi, Biostatistik og Biodemografi, Institut for Sundhedstjenesteforskning, Syddansk Universitet, '
+                'og tidligere biostatistiker ved OPEN, Odense Universitetshospital. Hans arbejde handler om at anvende og udvikle avancerede statistiske '
+                'metoder i sundhedsforskning og klinisk epidemiologi, og han samarbejder med QoLRC om statistisk analyse af livskvalitetsdata.'},
+  'email': '',
+  'photo': 'soren-moller.jpg',
+  'profile': '',
+  'orcid': '0000-0003-0858-4269'},
  {'name': 'Anne Møller Clausen',
   'title': {'en': 'RN, MSc in Clinical Nursing, PhD Student', 'da': 'Sygeplejerske, cand.cur., ph.d.-studerende'},
   'bio': {'en': 'Registered nurse with an MSc in Clinical Nursing and PhD student at the Department of Hematology, Odense University Hospital. Her PhD '
@@ -633,7 +647,7 @@ PARTNERS = [
     },
     {
         "name": {"en": "OPEN, Open Patient data Explorative Network", "da": "OPEN, Open Patient data Explorative Network"},
-        "text": {"en": "Data management and biostatistics, including our collaboration with Professor Sören Möller, Department of Health Services Research, University of Southern Denmark.", "da": "Datahåndtering og biostatistik, herunder vores samarbejde med professor Sören Möller, Institut for Sundhedstjenesteforskning, Syddansk Universitet."},
+        "text": {"en": "Data management and biostatistics, including our collaboration with Professor Sören Möller, Department of Public Health, University of Southern Denmark.", "da": "Datahåndtering og biostatistik, herunder vores samarbejde med professor Sören Möller, Institut for Sundhedstjenesteforskning, Syddansk Universitet."},
         "url": "",
         "country": {"en": "Denmark", "da": "Danmark"},
     },
