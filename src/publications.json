@@ -148,6 +148,7 @@
    "pages": "",
    "doi": "10.1111/bjh.70870",
    "members": [
+    "Klara Rydahl",
     "Lene Kongsgaard Nielsen",
     "Niels Abildgaard"
    ]
@@ -173,6 +174,7 @@
    "pages": "",
    "doi": "10.1111/ejh.70339",
    "members": [
+    "Klara Rydahl",
     "Lene Kongsgaard Nielsen"
    ]
   },
@@ -3619,29 +3621,6 @@
    ]
   },
   {
-   "pmid": "35977148",
-   "year": 2022,
-   "sortdate": "2022/08/02",
-   "title": "Healthcare professionals' experience with emergency department-based acute care performed within nursing homes.",
-   "authors": [
-    "Udesen SEJ",
-    "Nielsen DS",
-    "Andersen N",
-    "Rasmussen CH",
-    "Mikkelsen S",
-    "Braband M",
-    "Lassen A"
-   ],
-   "journal": "Age Ageing",
-   "volume": "51",
-   "issue": "8",
-   "pages": "",
-   "doi": "10.1093/ageing/afac170",
-   "members": [
-    "Nina Andersen"
-   ]
-  },
-  {
    "pmid": "35959822",
    "year": 2022,
    "sortdate": "2022/07/18",
@@ -4128,6 +4107,28 @@
    "doi": "10.1186/s12885-022-09184-1",
    "members": [
     "Niels Abildgaard"
+   ]
+  },
+  {
+   "pmid": "34862700",
+   "year": 2022,
+   "sortdate": "2022/02/01",
+   "title": "Bipolar disorder and regretted behavior in relation to use of social media and online dating.",
+   "authors": [
+    "Rydahl KFK",
+    "Brund RBK",
+    "Medici CR",
+    "Straarup KMN",
+    "Straszek SPV",
+    "Østergaard SD"
+   ],
+   "journal": "Bipolar Disord",
+   "volume": "24",
+   "issue": "1",
+   "pages": "27-38",
+   "doi": "10.1111/bdi.13169",
+   "members": [
+    "Klara Rydahl"
    ]
   },
   {
@@ -4939,27 +4940,6 @@
    ]
   },
   {
-   "pmid": "34389578",
-   "year": 2021,
-   "sortdate": "2021/08/13",
-   "title": "Municipal acute care teams as a flexible solution for the treatment of acutely ill patients at-home: a mixed-method study of patients' and caregivers' experiences with an acute care team.",
-   "authors": [
-    "Udesen SEJ",
-    "Nielsen DS",
-    "Andersen N",
-    "Østervang C",
-    "Lassen AT"
-   ],
-   "journal": "BMJ Open",
-   "volume": "11",
-   "issue": "8",
-   "pages": "e049945",
-   "doi": "10.1136/bmjopen-2021-049945",
-   "members": [
-    "Nina Andersen"
-   ]
-  },
-  {
    "pmid": "34348121",
    "year": 2021,
    "sortdate": "2021/08/09",
@@ -5244,27 +5224,6 @@
    ]
   },
   {
-   "pmid": "33913802",
-   "year": 2021,
-   "sortdate": "2021/06/01",
-   "title": "Healthcare professionals' experiences with highly qualified nurses working in acute care teams in primary healthcare settings.",
-   "authors": [
-    "Udesen SEJ",
-    "Lassen AT",
-    "Andersen N",
-    "Østervang C",
-    "Nielsen DS"
-   ],
-   "journal": "Scand J Prim Health Care",
-   "volume": "39",
-   "issue": "2",
-   "pages": "194-203",
-   "doi": "10.1080/02813432.2021.1913903",
-   "members": [
-    "Nina Andersen"
-   ]
-  },
-  {
    "pmid": "33823225",
    "year": 2021,
    "sortdate": "2021/06/01",
@@ -5511,6 +5470,29 @@
    "doi": "10.1111/bjh.17337",
    "members": [
     "Henrik Frederiksen"
+   ]
+  },
+  {
+   "pmid": "33054870",
+   "year": 2021,
+   "sortdate": "2021/04/01",
+   "title": "Use of social media and online dating among individuals with a history of affective disorder.",
+   "authors": [
+    "Rydahl KFK",
+    "Brund RBK",
+    "Medici CR",
+    "Hansen V",
+    "Straarup KN",
+    "Straszek SPV",
+    "Østergaard SD"
+   ],
+   "journal": "Acta Neuropsychiatr",
+   "volume": "33",
+   "issue": "2",
+   "pages": "92-103",
+   "doi": "10.1017/neu.2020.36",
+   "members": [
+    "Klara Rydahl"
    ]
   },
   {
