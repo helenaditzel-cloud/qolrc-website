@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-26",
  "author_match": {
   "Helena Møgelbjerg Ditzel": [
    "^Ditzel HM$"
@@ -12,6 +12,19 @@
   ],
   "Tine Rosenberg": [
    "^Rosenberg T$"
+  ],
+  "Lene Kongsgaard Nielsen": [
+   "^Nielsen LK$",
+   "^Kongsgaard Nielsen L$"
+  ],
+  "Anne Møller Clausen": [
+   "^Clausen AM$"
+  ],
+  "Nina Andersen": [
+   "^Andersen N$"
+  ],
+  "Klara Rydahl": [
+   "^Rydahl K"
   ]
  },
  "publications": [
@@ -135,7 +148,32 @@
    "pages": "",
    "doi": "10.1111/bjh.70870",
    "members": [
+    "Lene Kongsgaard Nielsen",
     "Niels Abildgaard"
+   ]
+  },
+  {
+   "pmid": "42869643",
+   "year": 2026,
+   "sortdate": "2026/10/13",
+   "title": "Elevated Risks for Depression and Anxiety Following Diagnosis of Multiple Myeloma.",
+   "authors": [
+    "Rydahl KFK",
+    "Øvlisen AK",
+    "Horsbøl TA",
+    "Möller S",
+    "Nielsen LK",
+    "Østergaard SD",
+    "El-Galaly TC",
+    "Rohde C"
+   ],
+   "journal": "Eur J Haematol",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "doi": "10.1111/ejh.70339",
+   "members": [
+    "Lene Kongsgaard Nielsen"
    ]
   },
   {
@@ -230,6 +268,37 @@
    "doi": "10.1192/bjp.2025.10363",
    "members": [
     "Henrik Frederiksen"
+   ]
+  },
+  {
+   "pmid": "42192604",
+   "year": 2026,
+   "sortdate": "2026/08/01",
+   "title": "Mitigating Teclistamab Toxicity: Prophylactic Tocilizumab and Timing of Immunoglobulin Replacement Therapy in a Nationwide Cohort.",
+   "authors": [
+    "Torpe AH",
+    "Thorsen J",
+    "Mathiasen G",
+    "Iversen KF",
+    "Farmer S",
+    "Lund T",
+    "Hansen CT",
+    "Nielsen LK",
+    "Jørgensen NGD",
+    "Vase MØ",
+    "Teodorescu EM",
+    "Salomo M",
+    "Wennerström C",
+    "Slørdahl TS",
+    "Szabo AG"
+   ],
+   "journal": "Am J Hematol",
+   "volume": "101",
+   "issue": "8",
+   "pages": "2081-2085",
+   "doi": "10.1002/ajh.70383",
+   "members": [
+    "Lene Kongsgaard Nielsen"
    ]
   },
   {
@@ -433,7 +502,34 @@
    "pages": "",
    "doi": "10.61409/A09250759",
    "members": [
+    "Anne Møller Clausen",
     "Tine Rosenberg"
+   ]
+  },
+  {
+   "pmid": "41879719",
+   "year": 2026,
+   "sortdate": "2026/05/01",
+   "title": "First-line immunochemotherapy for indolent lymphoma does not affect muscle volume: a post hoc analysis of 472 patients in long-term remissions from the GALLIUM study.",
+   "authors": [
+    "Jørgensen JB",
+    "Hansen KV",
+    "Nielsen LK",
+    "Gade IL",
+    "Pedersen MA",
+    "Jensen P",
+    "Simonsen MR",
+    "Knapp A",
+    "Gormsen LC",
+    "El-Galaly TC"
+   ],
+   "journal": "Leuk Lymphoma",
+   "volume": "67",
+   "issue": "6",
+   "pages": "1352-1361",
+   "doi": "10.1080/10428194.2026.2642931",
+   "members": [
+    "Lene Kongsgaard Nielsen"
    ]
   },
   {
@@ -544,7 +640,8 @@
    "pages": "102835",
    "doi": "10.1016/j.jgo.2025.102835",
    "members": [
-    "Henrik Frederiksen"
+    "Henrik Frederiksen",
+    "Nina Andersen"
    ]
   },
   {
@@ -597,6 +694,32 @@
    "doi": "10.1080/13506129.2025.2585277",
    "members": [
     "Niels Abildgaard"
+   ]
+  },
+  {
+   "pmid": "41625129",
+   "year": 2026,
+   "sortdate": "2026/01/30",
+   "title": "Association of the Tilburg Frailty Indicator with mortality, readmission, and healthcare contacts in adult patients with multimorbidity.",
+   "authors": [
+    "Hjelholt TJ",
+    "Veedfald T",
+    "Frølich A",
+    "Appel C",
+    "Thomsen HH",
+    "Prior A",
+    "Bjerrum AD",
+    "Balsby M",
+    "Jensen AMS",
+    "Nielsen LK"
+   ],
+   "journal": "J Multimorb Comorb",
+   "volume": "16",
+   "issue": "",
+   "pages": "26335565251415477",
+   "doi": "10.1177/26335565251415477",
+   "members": [
+    "Lene Kongsgaard Nielsen"
    ]
   },
   {
@@ -947,6 +1070,7 @@
    "pages": "43",
    "doi": "10.1186/s41687-025-00869-2",
    "members": [
+    "Lene Kongsgaard Nielsen",
     "Niels Abildgaard",
     "Tine Rosenberg"
    ]
@@ -971,6 +1095,27 @@
    "doi": "10.31083/FBL26205",
    "members": [
     "Niels Abildgaard"
+   ]
+  },
+  {
+   "pmid": "39933969",
+   "year": 2025,
+   "sortdate": "2025/04/01",
+   "title": "Young Adult Siblings and Cancer: A Scoping Review Mapping the Evidence of Psychosocial Functions and Interventions.",
+   "authors": [
+    "Vasegaard H",
+    "Clausen AM",
+    "Kidholm ML",
+    "Coyne E",
+    "Dieperink KB"
+   ],
+   "journal": "Semin Oncol Nurs",
+   "volume": "41",
+   "issue": "2",
+   "pages": "151834",
+   "doi": "10.1016/j.soncn.2025.151834",
+   "members": [
+    "Anne Møller Clausen"
    ]
   },
   {
@@ -1062,8 +1207,35 @@
    "pages": "517-527",
    "doi": "10.1111/ejh.14358",
    "members": [
+    "Lene Kongsgaard Nielsen",
     "Niels Abildgaard",
     "Tine Rosenberg"
+   ]
+  },
+  {
+   "pmid": "39909655",
+   "year": 2025,
+   "sortdate": "2025/02/01",
+   "title": "Isatuximab, bortezomib, lenalidomide, and limited dexamethasone in patients with transplant-ineligible multiple myeloma (REST): a multicentre, single-arm, phase 2 trial.",
+   "authors": [
+    "Askeland FB",
+    "Haukås E",
+    "Slørdahl TS",
+    "Klostergaard A",
+    "Alexandersen T",
+    "Lysén A",
+    "Abdollahi P",
+    "Nielsen LK",
+    "Hermansen E",
+    "Schjesvold F"
+   ],
+   "journal": "Lancet Haematol",
+   "volume": "12",
+   "issue": "2",
+   "pages": "e120-e127",
+   "doi": "10.1016/S2352-3026(24)00347-8",
+   "members": [
+    "Lene Kongsgaard Nielsen"
    ]
   },
   {
@@ -1225,6 +1397,28 @@
    ]
   },
   {
+   "pmid": "39277506",
+   "year": 2024,
+   "sortdate": "2024/12/01",
+   "title": "Instruments for Assessing Family Functioning in Adults Patients with Cancer: A Systematic Review of Measurement Properties.",
+   "authors": [
+    "Alfaro-Diaz C",
+    "Esandi N",
+    "Clausen AM",
+    "Canga-Armayor N",
+    "Pueyo-Garrigues M",
+    "Dieperink KB"
+   ],
+   "journal": "Semin Oncol Nurs",
+   "volume": "40",
+   "issue": "6",
+   "pages": "151729",
+   "doi": "10.1016/j.soncn.2024.151729",
+   "members": [
+    "Anne Møller Clausen"
+   ]
+  },
+  {
    "pmid": "39049601",
    "year": 2024,
    "sortdate": "2024/12/01",
@@ -1287,6 +1481,35 @@
    "members": [
     "Henrik Frederiksen",
     "Niels Abildgaard"
+   ]
+  },
+  {
+   "pmid": "39584488",
+   "year": 2024,
+   "sortdate": "2024/11/01",
+   "title": "Report of the sixth Nordic Family Health and Care Conference 2024: Sharing Interdisciplinary Work to Improve the Health and Well-Being of Families.",
+   "authors": [
+    "Rothausen CS",
+    "Clausen AM",
+    "Agerskov H",
+    "Bekker-Jensen D",
+    "Birkelund L",
+    "Kidholm ML",
+    "Kvorning L",
+    "Marcussen J",
+    "Poulsen HS",
+    "Sorknaes AD",
+    "Voetmann SS",
+    "Voltelen B",
+    "Dieperink KB"
+   ],
+   "journal": "J Fam Nurs",
+   "volume": "30",
+   "issue": "4",
+   "pages": "329-334",
+   "doi": "10.1177/10748407241297234",
+   "members": [
+    "Anne Møller Clausen"
    ]
   },
   {
@@ -1454,6 +1677,7 @@
    "doi": "10.1007/s11136-024-03707-y",
    "members": [
     "Henrik Frederiksen",
+    "Lene Kongsgaard Nielsen",
     "Niels Abildgaard"
    ]
   },
@@ -1651,6 +1875,26 @@
    "doi": "10.1186/s13023-024-03298-4",
    "members": [
     "Henrik Frederiksen"
+   ]
+  },
+  {
+   "pmid": "38856787",
+   "year": 2024,
+   "sortdate": "2024/06/10",
+   "title": "Transition of care in a Danish context: translation, cross-cultural adaptation and content validation of CTM-15 and PACT-M.",
+   "authors": [
+    "Ajstrup M",
+    "Mejdahl CT",
+    "Christiansen DH",
+    "Nielsen LK"
+   ],
+   "journal": "J Patient Rep Outcomes",
+   "volume": "8",
+   "issue": "1",
+   "pages": "58",
+   "doi": "10.1186/s41687-024-00739-3",
+   "members": [
+    "Lene Kongsgaard Nielsen"
    ]
   },
   {
@@ -1920,6 +2164,7 @@
    "pages": "15",
    "doi": "10.1186/s41687-024-00691-2",
    "members": [
+    "Lene Kongsgaard Nielsen",
     "Niels Abildgaard"
    ]
   },
@@ -1995,7 +2240,8 @@
    "pages": "",
    "doi": "10.61409/V08230538",
    "members": [
-    "Niels Abildgaard"
+    "Niels Abildgaard",
+    "Nina Andersen"
    ]
   },
   {
@@ -2278,6 +2524,26 @@
    ]
   },
   {
+   "pmid": "36866540",
+   "year": 2023,
+   "sortdate": "2023/11/01",
+   "title": "Protective Buffering: Nurses Facilitating Communication Between Adults With Cancer and Their Adult Family Caregivers Who Overprotect One Another-An Integrative Review.",
+   "authors": [
+    "Rothausen CS",
+    "Clausen AM",
+    "Voltelen B",
+    "Dieperink KB"
+   ],
+   "journal": "J Fam Nurs",
+   "volume": "29",
+   "issue": "4",
+   "pages": "417-436",
+   "doi": "10.1177/10748407231156454",
+   "members": [
+    "Anne Møller Clausen"
+   ]
+  },
+  {
    "pmid": "38022316",
    "year": 2023,
    "sortdate": "2023/10/17",
@@ -2354,6 +2620,7 @@
    "pages": "2107-2114",
    "doi": "10.1038/s41375-023-01998-7",
    "members": [
+    "Lene Kongsgaard Nielsen",
     "Niels Abildgaard"
    ]
   },
@@ -2829,6 +3096,25 @@
    "doi": "10.1016/j.ccell.2023.02.003",
    "members": [
     "Henrik Frederiksen"
+   ]
+  },
+  {
+   "pmid": "36951802",
+   "year": 2023,
+   "sortdate": "2023/03/23",
+   "title": "Extreme hyperferritinemia in restrictive type anorexia nervosa.",
+   "authors": [
+    "Amanoal CH",
+    "Nielsen LK",
+    "Thomsen HH"
+   ],
+   "journal": "Endocrinol Diabetes Metab Case Rep",
+   "volume": "2023",
+   "issue": "1",
+   "pages": "",
+   "doi": "10.1530/EDM-22-0405",
+   "members": [
+    "Lene Kongsgaard Nielsen"
    ]
   },
   {
@@ -3330,6 +3616,29 @@
    "doi": "10.1016/j.ccell.2022.06.012",
    "members": [
     "Henrik Frederiksen"
+   ]
+  },
+  {
+   "pmid": "35977148",
+   "year": 2022,
+   "sortdate": "2022/08/02",
+   "title": "Healthcare professionals' experience with emergency department-based acute care performed within nursing homes.",
+   "authors": [
+    "Udesen SEJ",
+    "Nielsen DS",
+    "Andersen N",
+    "Rasmussen CH",
+    "Mikkelsen S",
+    "Braband M",
+    "Lassen A"
+   ],
+   "journal": "Age Ageing",
+   "volume": "51",
+   "issue": "8",
+   "pages": "",
+   "doi": "10.1093/ageing/afac170",
+   "members": [
+    "Nina Andersen"
    ]
   },
   {
@@ -4225,6 +4534,31 @@
    ]
   },
   {
+   "pmid": "33651278",
+   "year": 2021,
+   "sortdate": "2021/12/01",
+   "title": "Implications of response shift for micro-, meso-, and macro-level healthcare decision-making using results of patient-reported outcome measures.",
+   "authors": [
+    "Sawatzky R",
+    "Kwon JY",
+    "Barclay R",
+    "Chauhan C",
+    "Frank L",
+    "van den Hout WB",
+    "Nielsen LK",
+    "Nolte S",
+    "Sprangers MAG"
+   ],
+   "journal": "Qual Life Res",
+   "volume": "30",
+   "issue": "12",
+   "pages": "3343-3357",
+   "doi": "10.1007/s11136-021-02766-9",
+   "members": [
+    "Lene Kongsgaard Nielsen"
+   ]
+  },
+  {
    "pmid": "33389640",
    "year": 2021,
    "sortdate": "2021/12/01",
@@ -4284,6 +4618,34 @@
    "doi": "10.1182/blood.2021012039",
    "members": [
     "Henrik Frederiksen"
+   ]
+  },
+  {
+   "pmid": "34736479",
+   "year": 2021,
+   "sortdate": "2021/11/04",
+   "title": "Patient-reported outcomes in patients with hematological relapse or progressive disease: a longitudinal observational study.",
+   "authors": [
+    "Sommer M",
+    "Nielsen LK",
+    "Nielsen LB",
+    "Brøndum RF",
+    "Nielsen MM",
+    "Rytter AS",
+    "Vesteghem C",
+    "Severinsen MT",
+    "El-Galaly TC",
+    "Bøgsted M",
+    "Grønkjær M",
+    "Jørgensen L"
+   ],
+   "journal": "Health Qual Life Outcomes",
+   "volume": "19",
+   "issue": "1",
+   "pages": "251",
+   "doi": "10.1186/s12955-021-01887-6",
+   "members": [
+    "Lene Kongsgaard Nielsen"
    ]
   },
   {
@@ -4556,6 +4918,48 @@
    ]
   },
   {
+   "pmid": "33409622",
+   "year": 2021,
+   "sortdate": "2021/09/01",
+   "title": "Health-related quality of life in patients with multiple myeloma participating in a multidisciplinary rehabilitation program.",
+   "authors": [
+    "Nielsen LK",
+    "Larsen RF",
+    "Jarlbaek L",
+    "Möller S",
+    "Jespersen E"
+   ],
+   "journal": "Ann Hematol",
+   "volume": "100",
+   "issue": "9",
+   "pages": "2311-2323",
+   "doi": "10.1007/s00277-020-04356-0",
+   "members": [
+    "Lene Kongsgaard Nielsen"
+   ]
+  },
+  {
+   "pmid": "34389578",
+   "year": 2021,
+   "sortdate": "2021/08/13",
+   "title": "Municipal acute care teams as a flexible solution for the treatment of acutely ill patients at-home: a mixed-method study of patients' and caregivers' experiences with an acute care team.",
+   "authors": [
+    "Udesen SEJ",
+    "Nielsen DS",
+    "Andersen N",
+    "Østervang C",
+    "Lassen AT"
+   ],
+   "journal": "BMJ Open",
+   "volume": "11",
+   "issue": "8",
+   "pages": "e049945",
+   "doi": "10.1136/bmjopen-2021-049945",
+   "members": [
+    "Nina Andersen"
+   ]
+  },
+  {
    "pmid": "34348121",
    "year": 2021,
    "sortdate": "2021/08/09",
@@ -4790,6 +5194,7 @@
    "pages": "63-73",
    "doi": "10.1111/ejh.13615",
    "members": [
+    "Lene Kongsgaard Nielsen",
     "Niels Abildgaard"
    ]
   },
@@ -4836,6 +5241,27 @@
    "doi": "10.3390/molecules26123649",
    "members": [
     "Niels Abildgaard"
+   ]
+  },
+  {
+   "pmid": "33913802",
+   "year": 2021,
+   "sortdate": "2021/06/01",
+   "title": "Healthcare professionals' experiences with highly qualified nurses working in acute care teams in primary healthcare settings.",
+   "authors": [
+    "Udesen SEJ",
+    "Lassen AT",
+    "Andersen N",
+    "Østervang C",
+    "Nielsen DS"
+   ],
+   "journal": "Scand J Prim Health Care",
+   "volume": "39",
+   "issue": "2",
+   "pages": "194-203",
+   "doi": "10.1080/02813432.2021.1913903",
+   "members": [
+    "Nina Andersen"
    ]
   },
   {
@@ -4924,7 +5350,8 @@
    "pages": "104335",
    "doi": "10.1016/j.archger.2020.104335",
    "members": [
-    "Henrik Frederiksen"
+    "Henrik Frederiksen",
+    "Lene Kongsgaard Nielsen"
    ]
   },
   {
@@ -5116,6 +5543,7 @@
    "doi": "10.1111/bjh.16806",
    "members": [
     "Henrik Frederiksen",
+    "Lene Kongsgaard Nielsen",
     "Niels Abildgaard"
    ]
   },
@@ -5846,6 +6274,7 @@
    "pages": "1650-1659",
    "doi": "10.3324/haematol.2019.222299",
    "members": [
+    "Lene Kongsgaard Nielsen",
     "Niels Abildgaard"
    ]
   },
@@ -5983,6 +6412,32 @@
    "doi": "10.1016/j.exphem.2020.03.001",
    "members": [
     "Niels Abildgaard"
+   ]
+  },
+  {
+   "pmid": "31971287",
+   "year": 2020,
+   "sortdate": "2020/04/01",
+   "title": "Nurses' attitudes regarding the importance of families in nursing care: A cross-sectional study.",
+   "authors": [
+    "Østergaard B",
+    "Clausen AM",
+    "Agerskov H",
+    "Brødsgaard A",
+    "Dieperink KB",
+    "Funderskov KF",
+    "Nielsen D",
+    "Sorknaes AD",
+    "Voltelen B",
+    "Konradsen H"
+   ],
+   "journal": "J Clin Nurs",
+   "volume": "29",
+   "issue": "7-8",
+   "pages": "1290-1301",
+   "doi": "10.1111/jocn.15196",
+   "members": [
+    "Anne Møller Clausen"
    ]
   },
   {
@@ -6143,6 +6598,7 @@
    "doi": "10.1007/s11136-019-02304-8",
    "members": [
     "Henrik Frederiksen",
+    "Lene Kongsgaard Nielsen",
     "Niels Abildgaard"
    ]
   },
@@ -6535,6 +6991,7 @@
    "pages": "11-24",
    "doi": "10.1111/bjh.15759",
    "members": [
+    "Lene Kongsgaard Nielsen",
     "Niels Abildgaard"
    ]
   },
@@ -6685,6 +7142,7 @@
    "doi": "10.1111/ejh.13175",
    "members": [
     "Henrik Frederiksen",
+    "Lene Kongsgaard Nielsen",
     "Niels Abildgaard"
    ]
   },
@@ -6856,6 +7314,7 @@
    "pages": "18",
    "doi": "10.1186/s40164-018-0110-0",
    "members": [
+    "Lene Kongsgaard Nielsen",
     "Niels Abildgaard"
    ]
   },
@@ -7157,6 +7616,7 @@
    "doi": "10.1111/ejh.12882",
    "members": [
     "Henrik Frederiksen",
+    "Lene Kongsgaard Nielsen",
     "Niels Abildgaard"
    ]
   },
