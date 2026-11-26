@@ -584,8 +584,12 @@ MEMBERS = [{'name': 'Henrik Frederiksen',
   'profile': ''},
  {'name': 'Klara Rydahl',
   'title': {'en': 'MD, PhD Student', 'da': 'Læge, ph.d.-studerende'},
-  'bio': {'en': "Medical doctor and PhD student at the Hematology Research Unit. TODO(Add Klara's PhD project in one sentence.)",
-          'da': 'Læge og ph.d.-studerende ved Hæmatologisk Forskningsenhed. TODO(Tilføj Klaras ph.d.-projekt i én sætning.)'},
+  'bio': {'en': 'Medical doctor and PhD student at the Hematology Research Unit. Her research focuses on frailty and quality of life in patients with '
+                'multiple myeloma, using real-world data from the QoL-MM study. Her first study, published in the British Journal of Haematology, '
+                'showed that frail patients have clinically relevant lower quality of life and physical functioning than fit patients.',
+          'da': 'Læge og ph.d.-studerende ved Hæmatologisk Forskningsenhed. Hun forsker i skrøbelighed og livskvalitet hos patienter med myelomatose '
+                'med udgangspunkt i real-world-data fra QoL-MM-studiet. Hendes første studie, publiceret i British Journal of Haematology, viste, at '
+                'skrøbelige patienter har klinisk relevant lavere livskvalitet og fysisk funktion end fitte patienter.'},
   'email': '',
   'photo': 'klara-rydahl.jpg',
   'profile': ''},
