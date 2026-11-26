@@ -25,7 +25,12 @@ AUTHOR_QUERIES = {
     "Henrik Frederiksen": '"Frederiksen, Henrik"[Full Author Name] AND (Odense[Affiliation] OR "Southern Denmark"[Affiliation])',
     "Niels Abildgaard": '"Abildgaard, Niels"[Full Author Name]',
     "Tine Rosenberg": '"Rosenberg, Tine"[Full Author Name] AND (Hematology[Affiliation] OR Haematology[Affiliation] OR "Quality of Life Research"[Affiliation])',  # another Tine Rosenberg publishes in ENT surgery
-    # "Pia K. Pedersen": no PubMed publications found
+    "Lene Kongsgaard Nielsen": '"Nielsen, Lene Kongsgaard"[Full Author Name]',
+    "Anne Møller Clausen": '"Clausen AM"[Author] AND Odense[Affiliation]',
+    "Nina Andersen": '"Andersen, Nina"[Full Author Name] AND Odense[Affiliation] AND (frailty OR geriatric)',  # several other Nina Andersens publish from Odense
+    "Klara Rydahl": '"Rydahl K"[Author] AND Odense[Affiliation]',
+    # Pia K. Pedersen and Tina Käehne: no PubMed publications found
+    # Affiliated researchers (Madeleine King, Sören Möller) are left out on purpose
 }
 
 # How each member's name appears in PubMed author lists, used to highlight them
@@ -34,6 +39,10 @@ AUTHOR_MATCH = {
     "Henrik Frederiksen": [r"^Frederiksen H$"],
     "Niels Abildgaard": [r"^Abildgaard N$"],
     "Tine Rosenberg": [r"^Rosenberg T$"],
+    "Lene Kongsgaard Nielsen": [r"^Nielsen LK$", r"^Kongsgaard Nielsen L$"],
+    "Anne Møller Clausen": [r"^Clausen AM$"],
+    "Nina Andersen": [r"^Andersen N$"],
+    "Klara Rydahl": [r"^Rydahl K"],
 }
 
 MONTHS = {m: i for i, m in enumerate(
