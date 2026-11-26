@@ -29,6 +29,30 @@
  },
  "publications": [
   {
+   "pmid": "42967255",
+   "year": 2026,
+   "sortdate": "2026/11/01",
+   "title": "The Steroid Symptom Questionnaire Multiple Myeloma (SSQ-MM): translation and cross-cultural adaptation into Danish and Norwegian and initial psychometric evaluation of the Norwegian version.",
+   "authors": [
+    "Rosenberg T",
+    "Rutherford C",
+    "King T",
+    "Tait MA",
+    "Askeland FB",
+    "Nielsen LK"
+   ],
+   "journal": "Qual Life Res",
+   "volume": "35",
+   "issue": "11",
+   "pages": "",
+   "doi": "10.1007/s11136-026-04415-5",
+   "members": [
+    "Lene Kongsgaard Nielsen",
+    "Tine Rosenberg"
+   ],
+   "pro": true
+  },
+  {
    "pmid": "42962158",
    "year": 2026,
    "sortdate": "2026/10/30",
@@ -56,7 +80,7 @@
    "members": [
     "Henrik Frederiksen"
    ],
-   "pro": false
+   "pro": true
   },
   {
    "pmid": "42948810",
@@ -1004,6 +1028,84 @@
    "pro": false
   },
   {
+   "pmid": "40744913",
+   "year": 2025,
+   "sortdate": "2025/07/31",
+   "title": "A diverse landscape of FGFR alterations and co-mutations suggests potential therapeutic strategies in pediatric low-grade gliomas.",
+   "authors": [
+    "Apfelbaum AA",
+    "Morin E",
+    "Sturm D",
+    "Ayoub G",
+    "DiGiacomo J",
+    "Bahadur S",
+    "Chandarana B",
+    "Power PC",
+    "Cusick MM",
+    "Novikov D",
+    "Prabhakar P",
+    "Jones RE",
+    "Vogelzang J",
+    "Bossi CC",
+    "Malinowski S",
+    "Woodward LM",
+    "Jones TA",
+    "Jeang J",
+    "Lamson SW",
+    "Collins J",
+    "Cai KY",
+    "Jones JS",
+    "Oh S",
+    "Jeon H",
+    "Wang J",
+    "Cameron A",
+    "Rechter P",
+    "De Leon A",
+    "Murugesan K",
+    "Montesion M",
+    "Albacker LA",
+    "Ramkissoon SH",
+    "van Tilburg CM",
+    "Hardin EC",
+    "Sievers P",
+    "Sahm F",
+    "Yeo KK",
+    "Rosenberg T",
+    "Chi SN",
+    "Wright KD",
+    "Hébert S",
+    "Peck S",
+    "Picca A",
+    "Larouche V",
+    "Renzi S",
+    "Buhrlage SJ",
+    "Bale TA",
+    "Smith AA",
+    "Touat M",
+    "Jabado N",
+    "Fischer ES",
+    "Eck MJ",
+    "Baird L",
+    "Witt O",
+    "Kleinman CL",
+    "Nguyen QD",
+    "Sheer D",
+    "Alexandrescu S",
+    "Jones DTW",
+    "Ligon KL",
+    "Bandopadhayay P"
+   ],
+   "journal": "Nat Commun",
+   "volume": "16",
+   "issue": "1",
+   "pages": "7018",
+   "doi": "10.1038/s41467-025-61820-z",
+   "members": [
+    "Tine Rosenberg"
+   ],
+   "pro": false
+  },
+  {
    "pmid": "40165411",
    "year": 2025,
    "sortdate": "2025/07/01",
@@ -1201,7 +1303,7 @@
    "members": [
     "Henrik Frederiksen"
    ],
-   "pro": true
+   "pro": false
   },
   {
    "pmid": "39798280",
@@ -1226,6 +1328,31 @@
    "doi": "10.1016/j.cmpb.2024.108581",
    "members": [
     "Henrik Frederiksen"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "39757700",
+   "year": 2025,
+   "sortdate": "2025/03/01",
+   "title": "Limited Benefit of Routine Clinical Follow-Up for Relapse Detection in Diffuse Large B-Cell Lymphoma Patients in Complete Remission Following First-Line Treatment.",
+   "authors": [
+    "Lassen T",
+    "Nielsen TH",
+    "von Heymann A",
+    "Nielsen LK",
+    "Larsen MK",
+    "Gang AO",
+    "Johansen C",
+    "Pedersen LM"
+   ],
+   "journal": "Am J Hematol",
+   "volume": "100",
+   "issue": "3",
+   "pages": "408-416",
+   "doi": "10.1002/ajh.27577",
+   "members": [
+    "Lene Kongsgaard Nielsen"
    ],
    "pro": false
   },
@@ -1568,7 +1695,7 @@
    "members": [
     "Anne Møller Clausen"
    ],
-   "pro": true
+   "pro": false
   },
   {
    "pmid": "39223296",
@@ -1904,6 +2031,30 @@
    "doi": "10.1007/s10654-024-01139-z",
    "members": [
     "Henrik Frederiksen"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "38245657",
+   "year": 2024,
+   "sortdate": "2024/08/01",
+   "title": "Sirolimus for vascular anomalies in the first year of life: a systematic review.",
+   "authors": [
+    "Cavazos R",
+    "Patil MS",
+    "Gowda SH",
+    "Iacobas I",
+    "Rosenberg T",
+    "Fernandes CJ",
+    "Pammi M"
+   ],
+   "journal": "J Perinatol",
+   "volume": "44",
+   "issue": "8",
+   "pages": "1087-1097",
+   "doi": "10.1038/s41372-024-01868-9",
+   "members": [
+    "Tine Rosenberg"
    ],
    "pro": false
   },
@@ -3229,6 +3380,30 @@
    "pro": false
   },
   {
+   "pmid": "36773516",
+   "year": 2023,
+   "sortdate": "2023/03/01",
+   "title": "Recent progress and novel approaches to treating atypical teratoid rhabdoid tumor.",
+   "authors": [
+    "Alva E",
+    "Rubens J",
+    "Chi S",
+    "Rosenberg T",
+    "Reddy A",
+    "Raabe EH",
+    "Margol A"
+   ],
+   "journal": "Neoplasia",
+   "volume": "37",
+   "issue": "",
+   "pages": "100880",
+   "doi": "10.1016/j.neo.2023.100880",
+   "members": [
+    "Tine Rosenberg"
+   ],
+   "pro": false
+  },
+  {
    "pmid": "36708872",
    "year": 2023,
    "sortdate": "2023/03/01",
@@ -3324,6 +3499,27 @@
    "pro": false
   },
   {
+   "pmid": "36482088",
+   "year": 2023,
+   "sortdate": "2023/02/01",
+   "title": "Early removal of a permanent catheter during the acute management of the unstable pediatric hemato-oncology patient with suspected catheter-related bloodstream infection: a multi-disciplinary survey and review of the literature.",
+   "authors": [
+    "Cohen N",
+    "Rosenberg T",
+    "Rimon A",
+    "Friedman S"
+   ],
+   "journal": "Eur J Pediatr",
+   "volume": "182",
+   "issue": "2",
+   "pages": "795-802",
+   "doi": "10.1007/s00431-022-04747-7",
+   "members": [
+    "Tine Rosenberg"
+   ],
+   "pro": false
+  },
+  {
    "pmid": "36629291",
    "year": 2023,
    "sortdate": "2023/01/02",
@@ -3403,6 +3599,48 @@
    "doi": "10.1080/07853890.2022.2046287",
    "members": [
     "Henrik Frederiksen"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "35397478",
+   "year": 2022,
+   "sortdate": "2022/11/02",
+   "title": "Upfront molecular targeted therapy for the treatment of BRAF-mutant pediatric high-grade glioma.",
+   "authors": [
+    "Rosenberg T",
+    "Yeo KK",
+    "Mauguen A",
+    "Alexandrescu S",
+    "Prabhu SP",
+    "Tsai JW",
+    "Malinowski S",
+    "Joshirao M",
+    "Parikh K",
+    "Farouk Sait S",
+    "Rosenblum MK",
+    "Benhamida JK",
+    "Michaiel G",
+    "Tran HN",
+    "Dahiya S",
+    "Kachurak K",
+    "Friedman GK",
+    "Krystal JI",
+    "Huang MA",
+    "Margol AS",
+    "Wright KD",
+    "Aguilera D",
+    "MacDonald TJ",
+    "Chi SN",
+    "Karajannis MA"
+   ],
+   "journal": "Neuro Oncol",
+   "volume": "24",
+   "issue": "11",
+   "pages": "1964-1975",
+   "doi": "10.1093/neuonc/noac096",
+   "members": [
+    "Tine Rosenberg"
    ],
    "pro": false
   },
@@ -4270,7 +4508,7 @@
    "members": [
     "Klara Rydahl"
    ],
-   "pro": true
+   "pro": false
   },
   {
    "pmid": "35087026",
@@ -5678,7 +5916,7 @@
    "members": [
     "Klara Rydahl"
    ],
-   "pro": true
+   "pro": false
   },
   {
    "pmid": "32515050",
@@ -6100,6 +6338,28 @@
     "Niels Abildgaard"
    ],
    "pro": false
+  },
+  {
+   "pmid": "33108340",
+   "year": 2020,
+   "sortdate": "2020/10/27",
+   "title": "Everyday living with pain - reported by patients with multiple myeloma.",
+   "authors": [
+    "Jespersen E",
+    "Nielsen LK",
+    "Larsen RF",
+    "Möller S",
+    "Jarlbæk L"
+   ],
+   "journal": "Scand J Pain",
+   "volume": "21",
+   "issue": "1",
+   "pages": "127-134",
+   "doi": "10.1515/sjpain-2020-0087",
+   "members": [
+    "Lene Kongsgaard Nielsen"
+   ],
+   "pro": true
   },
   {
    "pmid": "33092233",
@@ -6541,6 +6801,36 @@
    "pro": false
   },
   {
+   "pmid": "31880006",
+   "year": 2020,
+   "sortdate": "2020/05/01",
+   "title": "Quality of life is maintained with ixazomib maintenance in post-transplant newly diagnosed multiple myeloma: The TOURMALINE-MM3 trial.",
+   "authors": [
+    "Schjesvold F",
+    "Goldschmidt H",
+    "Maisnar V",
+    "Spicka I",
+    "Abildgaard N",
+    "Rowlings P",
+    "Cain L",
+    "Romanus D",
+    "Suryanarayan K",
+    "Rajkumar V",
+    "Odom D",
+    "Gnanasakthy A",
+    "Dimopoulos M"
+   ],
+   "journal": "Eur J Haematol",
+   "volume": "104",
+   "issue": "5",
+   "pages": "443-458",
+   "doi": "10.1111/ejh.13379",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": true
+  },
+  {
    "pmid": "31713762",
    "year": 2020,
    "sortdate": "2020/05/01",
@@ -6637,7 +6927,7 @@
    "members": [
     "Anne Møller Clausen"
    ],
-   "pro": true
+   "pro": false
   },
   {
    "pmid": "32209087",
@@ -7119,6 +7409,38 @@
    "doi": "10.1111/jth.14446",
    "members": [
     "Henrik Frederiksen"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "30710461",
+   "year": 2019,
+   "sortdate": "2019/05/01",
+   "title": "Unique noncoding variants upstream of PRDM13 are associated with a spectrum of developmental retinal dystrophies including progressive bifocal chorioretinal atrophy.",
+   "authors": [
+    "Silva RS",
+    "Arno G",
+    "Cipriani V",
+    "Pontikos N",
+    "Defoort-Dhellemmes S",
+    "Kalhoro A",
+    "Carss KJ",
+    "Raymond FL",
+    "Dhaenens CM",
+    "Jensen H",
+    "Rosenberg T",
+    "van Heyningen V",
+    "Moore AT",
+    "Puech B",
+    "Webster AR"
+   ],
+   "journal": "Hum Mutat",
+   "volume": "40",
+   "issue": "5",
+   "pages": "578-587",
+   "doi": "10.1002/humu.23715",
+   "members": [
+    "Tine Rosenberg"
    ],
    "pro": false
   },
@@ -7658,6 +7980,43 @@
    "pro": false
   },
   {
+   "pmid": "29338789",
+   "year": 2018,
+   "sortdate": "2018/01/16",
+   "title": "Diagnosis, treatment, and response assessment in solitary plasmacytoma: updated recommendations from a European Expert Panel.",
+   "authors": [
+    "Caers J",
+    "Paiva B",
+    "Zamagni E",
+    "Leleu X",
+    "Bladé J",
+    "Kristinsson SY",
+    "Touzeau C",
+    "Abildgaard N",
+    "Terpos E",
+    "Heusschen R",
+    "Ocio E",
+    "Delforge M",
+    "Sezer O",
+    "Beksac M",
+    "Ludwig H",
+    "Merlini G",
+    "Moreau P",
+    "Zweegman S",
+    "Engelhardt M",
+    "Rosiñol L"
+   ],
+   "journal": "J Hematol Oncol",
+   "volume": "11",
+   "issue": "1",
+   "pages": "10",
+   "doi": "10.1186/s13045-017-0549-1",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
    "pmid": "29239133",
    "year": 2018,
    "sortdate": "2018/01/01",
@@ -7783,6 +8142,45 @@
    "issue": "10",
    "pages": "E611-E614",
    "doi": "10.1002/ajh.24857",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "28841211",
+   "year": 2017,
+   "sortdate": "2017/08/25",
+   "title": "Whole-body computed tomography versus conventional skeletal survey in patients with multiple myeloma: a study of the International Myeloma Working Group.",
+   "authors": [
+    "Hillengass J",
+    "Moulopoulos LA",
+    "Delorme S",
+    "Koutoulidis V",
+    "Mosebach J",
+    "Hielscher T",
+    "Drake M",
+    "Rajkumar SV",
+    "Oestergaard B",
+    "Abildgaard N",
+    "Hinge M",
+    "Plesner T",
+    "Suehara Y",
+    "Matsue K",
+    "Withofs N",
+    "Caers J",
+    "Waage A",
+    "Goldschmidt H",
+    "Dimopoulos MA",
+    "Lentzsch S",
+    "Durie B",
+    "Terpos E"
+   ],
+   "journal": "Blood Cancer J",
+   "volume": "7",
+   "issue": "8",
+   "pages": "e599",
+   "doi": "10.1038/bcj.2017.78",
    "members": [
     "Niels Abildgaard"
    ],
@@ -8389,6 +8787,29 @@
    "pro": false
   },
   {
+   "pmid": "25784139",
+   "year": 2016,
+   "sortdate": "2016/02/01",
+   "title": "Prayer Marks in Immigrants from Bangladesh with Diabetes Who Live in Greece.",
+   "authors": [
+    "Papadakis G",
+    "Zampelis T",
+    "Michalopoulou M",
+    "Konstantopoulos K",
+    "Rosenberg T",
+    "Chatzipanagiotou S"
+   ],
+   "journal": "J Immigr Minor Health",
+   "volume": "18",
+   "issue": "1",
+   "pages": "274-6",
+   "doi": "10.1007/s10903-015-0184-2",
+   "members": [
+    "Tine Rosenberg"
+   ],
+   "pro": false
+  },
+  {
    "pmid": "26783877",
    "year": 2016,
    "sortdate": "2016/01/01",
@@ -8442,6 +8863,63 @@
    "doi": "10.1111/ejh.12546",
    "members": [
     "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "26121108",
+   "year": 2015,
+   "sortdate": "2015/10/01",
+   "title": "Salvage bortezomib-dexamethasone and high-dose melphalan (HDM) and autologous stem cell support (ASCT) in myeloma patients at first relapse after HDM with ASCT. A phase-2 trial.",
+   "authors": [
+    "Gimsing P",
+    "Hjertner Ø",
+    "Abildgaard N",
+    "Andersen NF",
+    "Dahl TG",
+    "Gregersen H",
+    "Klausen TW",
+    "Mellqvist UH",
+    "Linder O",
+    "Lindås R",
+    "Tøffner Clausen N",
+    "Lenhoff S"
+   ],
+   "journal": "Bone Marrow Transplant",
+   "volume": "50",
+   "issue": "10",
+   "pages": "1306-11",
+   "doi": "10.1038/bmt.2015.125",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "26359412",
+   "year": 2015,
+   "sortdate": "2015/09/01",
+   "title": "Lower Levels of Vitamin D Among Bangladeshi Immigrants with Diabetes in Greece Compared to Indigenous Greek Patients with Diabetes.",
+   "authors": [
+    "Papadakis G",
+    "Zambelis T",
+    "Villiotou V",
+    "Dogkas N",
+    "Pappas A",
+    "Keramidas I",
+    "Kakava K",
+    "Michalopoulou M",
+    "Rosenberg T",
+    "Konstantopoulos K",
+    "Chatzipanagiotou S"
+   ],
+   "journal": "In Vivo",
+   "volume": "29",
+   "issue": "5",
+   "pages": "541-5",
+   "doi": "",
+   "members": [
+    "Tine Rosenberg"
    ],
    "pro": false
   },
@@ -8584,7 +9062,41 @@
    "members": [
     "Henrik Frederiksen"
    ],
-   "pro": true
+   "pro": false
+  },
+  {
+   "pmid": "25867654",
+   "year": 2015,
+   "sortdate": "2015/06/01",
+   "title": "Autologous stem cell transplantation versus novel drugs or conventional chemotherapy for patients with relapsed multiple myeloma after previous ASCT.",
+   "authors": [
+    "Grövdal M",
+    "Nahi H",
+    "Gahrton G",
+    "Liwing J",
+    "Waage A",
+    "Abildgaard N",
+    "Pedersen PT",
+    "Hammerstrøm J",
+    "Laaksonen A",
+    "Bazia P",
+    "Terava V",
+    "Ollikainen H",
+    "Silvennoinen R",
+    "Putkonen M",
+    "Anttila P",
+    "Porkka K",
+    "Remes K"
+   ],
+   "journal": "Bone Marrow Transplant",
+   "volume": "50",
+   "issue": "6",
+   "pages": "808-12",
+   "doi": "10.1038/bmt.2015.39",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
   },
   {
    "pmid": "25840748",
@@ -8640,6 +9152,29 @@
    "doi": "10.1002/ajh.23932",
    "members": [
     "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "25792649",
+   "year": 2015,
+   "sortdate": "2015/03/01",
+   "title": "Epidemiological and clinical study of diabetes in immigrants from Bangladesh in Athens versus Greek patients.",
+   "authors": [
+    "Papadakis G",
+    "Zampelis T",
+    "Michalopoulou M",
+    "Konstantopoulos K",
+    "Rosenberg T",
+    "Chatzipanagiotou S"
+   ],
+   "journal": "In Vivo",
+   "volume": "29",
+   "issue": "2",
+   "pages": "223-7",
+   "doi": "",
+   "members": [
+    "Tine Rosenberg"
    ],
    "pro": false
   },
@@ -8705,7 +9240,7 @@
    "members": [
     "Niels Abildgaard"
    ],
-   "pro": true
+   "pro": false
   },
   {
    "pmid": "25573204",
@@ -9342,6 +9877,39 @@
    "pro": true
   },
   {
+   "pmid": "20811404",
+   "year": 2010,
+   "sortdate": "2010/10/01",
+   "title": "The use of biochemical markers of bone remodeling in multiple myeloma: a report of the International Myeloma Working Group.",
+   "authors": [
+    "Terpos E",
+    "Dimopoulos MA",
+    "Sezer O",
+    "Roodman D",
+    "Abildgaard N",
+    "Vescio R",
+    "Tosi P",
+    "Garcia-Sanz R",
+    "Davies F",
+    "Chanan-Khan A",
+    "Palumbo A",
+    "Sonneveld P",
+    "Drake MT",
+    "Harousseau JL",
+    "Anderson KC",
+    "Durie BG"
+   ],
+   "journal": "Leukemia",
+   "volume": "24",
+   "issue": "10",
+   "pages": "1700-12",
+   "doi": "10.1038/leu.2010.173",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
    "pmid": "20594193",
    "year": 2010,
    "sortdate": "2010/10/01",
@@ -9549,6 +10117,34 @@
    "pro": false
   },
   {
+   "pmid": "18997828",
+   "year": 2009,
+   "sortdate": "2009/04/01",
+   "title": "The polymorphism IL-1beta T-31C is associated with a longer overall survival in patients with multiple myeloma undergoing auto-SCT.",
+   "authors": [
+    "Vangsted AJ",
+    "Klausen TW",
+    "Ruminski W",
+    "Gimsing P",
+    "Andersen NF",
+    "Gang AO",
+    "Abildgaard N",
+    "Knudsen LM",
+    "Nielsen JL",
+    "Gregersen H",
+    "Vogel U"
+   ],
+   "journal": "Bone Marrow Transplant",
+   "volume": "43",
+   "issue": "7",
+   "pages": "539-45",
+   "doi": "10.1038/bmt.2008.351",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
    "pmid": "19089918",
    "year": 2009,
    "sortdate": "2009/03/15",
@@ -9618,7 +10214,7 @@
    "members": [
     "Henrik Frederiksen"
    ],
-   "pro": true
+   "pro": false
   },
   {
    "pmid": "18182077",
@@ -9784,6 +10380,33 @@
    "pro": false
   },
   {
+   "pmid": "16489627",
+   "year": 2006,
+   "sortdate": "2006/08/05",
+   "title": "Functional proteomic analysis of GS-NS0 murine myeloma cell lines with varying recombinant monoclonal antibody production rate.",
+   "authors": [
+    "Dinnis DM",
+    "Stansfield SH",
+    "Schlatter S",
+    "Smales CM",
+    "Alete D",
+    "Birch JR",
+    "Racher AJ",
+    "Marshall CT",
+    "Nielsen LK",
+    "James DC"
+   ],
+   "journal": "Biotechnol Bioeng",
+   "volume": "94",
+   "issue": "5",
+   "pages": "830-41",
+   "doi": "10.1002/bit.20899",
+   "members": [
+    "Lene Kongsgaard Nielsen"
+   ],
+   "pro": false
+  },
+  {
    "pmid": "16406245",
    "year": 2006,
    "sortdate": "2006/07/01",
@@ -9824,7 +10447,7 @@
    "members": [
     "Henrik Frederiksen"
    ],
-   "pro": true
+   "pro": false
   },
   {
    "pmid": "16235099",
@@ -10020,7 +10643,7 @@
    "members": [
     "Henrik Frederiksen"
    ],
-   "pro": true
+   "pro": false
   },
   {
    "pmid": "14661817",
@@ -10066,7 +10689,7 @@
    "members": [
     "Henrik Frederiksen"
    ],
-   "pro": true
+   "pro": false
   },
   {
    "pmid": "14574147",
@@ -10087,7 +10710,7 @@
    "members": [
     "Henrik Frederiksen"
    ],
-   "pro": true
+   "pro": false
   },
   {
    "pmid": "12547486",
@@ -10111,7 +10734,7 @@
    "members": [
     "Henrik Frederiksen"
    ],
-   "pro": true
+   "pro": false
   },
   {
    "pmid": "12542480",
@@ -10207,6 +10830,366 @@
    "doi": "10.1097/00001648-200205000-00015",
    "members": [
     "Henrik Frederiksen"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "11568016",
+   "year": 2001,
+   "sortdate": "2001/10/01",
+   "title": "Serum osteoprotegerin levels are reduced in patients with multiple myeloma with lytic bone disease.",
+   "authors": [
+    "Seidel C",
+    "Hjertner Ø",
+    "Abildgaard N",
+    "Heickendorff L",
+    "Hjorth M",
+    "Westin J",
+    "Nielsen JL",
+    "Hjorth-Hansen H",
+    "Waage A",
+    "Sundan A",
+    "Børset M"
+   ],
+   "journal": "Blood",
+   "volume": "98",
+   "issue": "7",
+   "pages": "2269-71",
+   "doi": "10.1182/blood.v98.7.2269",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "11049995",
+   "year": 2000,
+   "sortdate": "2000/11/01",
+   "title": "High levels of soluble syndecan-1 in myeloma-derived bone marrow: modulation of hepatocyte growth factor activity.",
+   "authors": [
+    "Seidel C",
+    "Børset M",
+    "Hjertner O",
+    "Cao D",
+    "Abildgaard N",
+    "Hjorth-Hansen H",
+    "Sanderson RD",
+    "Waage A",
+    "Sundan A"
+   ],
+   "journal": "Blood",
+   "volume": "96",
+   "issue": "9",
+   "pages": "3139-46",
+   "doi": "",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "10997332",
+   "year": 2000,
+   "sortdate": "2000/02/01",
+   "title": "Biochemical markers of bone metabolism reflect osteoclastic and osteoblastic activity in multiple myeloma.",
+   "authors": [
+    "Abildgaard N",
+    "Glerup H",
+    "Rungby J",
+    "Bendix-Hansen K",
+    "Kassem M",
+    "Brixen K",
+    "Heickendorff L",
+    "Nielsen JL",
+    "Eriksen EF"
+   ],
+   "journal": "Eur J Haematol",
+   "volume": "64",
+   "issue": "2",
+   "pages": "121-9",
+   "doi": "10.1034/j.1600-0609.2000.90074.x",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "10627439",
+   "year": 2000,
+   "sortdate": "2000/01/15",
+   "title": "Serum syndecan-1: a new independent prognostic marker in multiple myeloma.",
+   "authors": [
+    "Seidel C",
+    "Sundan A",
+    "Hjorth M",
+    "Turesson I",
+    "Dahl IM",
+    "Abildgaard N",
+    "Waage A",
+    "Borset M"
+   ],
+   "journal": "Blood",
+   "volume": "95",
+   "issue": "2",
+   "pages": "388-92",
+   "doi": "",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "10651731",
+   "year": 2000,
+   "sortdate": "2000/01/01",
+   "title": "Danish patients with untreated multiple myeloma do not harbour human herpesvirus 8.",
+   "authors": [
+    "Rask C",
+    "Kelsen J",
+    "Olesen G",
+    "Nielsen JL",
+    "Obel N",
+    "Abildgaard N"
+   ],
+   "journal": "Br J Haematol",
+   "volume": "108",
+   "issue": "1",
+   "pages": "96-8",
+   "doi": "10.1046/j.1365-2141.2000.01806.x",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "10520004",
+   "year": 1999,
+   "sortdate": "1999/09/01",
+   "title": "Prognostic evaluation in multiple myeloma: an analysis of the impact of new prognostic factors.",
+   "authors": [
+    "Turesson I",
+    "Abildgaard N",
+    "Ahlgren T",
+    "Dahl I",
+    "Holmberg E",
+    "Hjorth M",
+    "Nielsen JL",
+    "Odén A",
+    "Seidel C",
+    "Waage A",
+    "Westin J",
+    "Wislöff F"
+   ],
+   "journal": "Br J Haematol",
+   "volume": "106",
+   "issue": "4",
+   "pages": "1005-12",
+   "doi": "10.1046/j.1365-2141.1999.01651.x",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "9714526",
+   "year": 1998,
+   "sortdate": "1998/08/01",
+   "title": "Long-term oral pamidronate treatment inhibits osteoclastic bone resorption and bone turnover without affecting osteoblastic function in multiple myeloma.",
+   "authors": [
+    "Abildgaard N",
+    "Rungby J",
+    "Glerup H",
+    "Brixen K",
+    "Kassem M",
+    "Brincker H",
+    "Heickendorff L",
+    "Eriksen EF",
+    "Nielsen JL"
+   ],
+   "journal": "Eur J Haematol",
+   "volume": "61",
+   "issue": "2",
+   "pages": "128-34",
+   "doi": "10.1111/j.1600-0609.1998.tb01073.x",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "9609523",
+   "year": 1998,
+   "sortdate": "1998/05/01",
+   "title": "Failure of oral pamidronate to reduce skeletal morbidity in multiple myeloma: a double-blind placebo-controlled trial. Danish-Swedish co-operative study group.",
+   "authors": [
+    "Brincker H",
+    "Westin J",
+    "Abildgaard N",
+    "Gimsing P",
+    "Turesson I",
+    "Hedenus M",
+    "Ford J",
+    "Kandra A"
+   ],
+   "journal": "Br J Haematol",
+   "volume": "101",
+   "issue": "2",
+   "pages": "280-6",
+   "doi": "10.1046/j.1365-2141.1998.00695.x",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "9599525",
+   "year": 1998,
+   "sortdate": "1998/04/06",
+   "title": "[Kaposi sarcoma-associated Herpesvirus infection of dendritic cells in bone marrow in patients with myelomatosis].",
+   "authors": [
+    "Abildgaard N",
+    "Nielsen JL"
+   ],
+   "journal": "Ugeskr Laeger",
+   "volume": "160",
+   "issue": "15",
+   "pages": "2264-5",
+   "doi": "",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "9446640",
+   "year": 1998,
+   "sortdate": "1998/02/01",
+   "title": "Elevated serum concentrations of hepatocyte growth factor in patients with multiple myeloma. The Nordic Myeloma Study Group.",
+   "authors": [
+    "Seidel C",
+    "Børset M",
+    "Turesson I",
+    "Abildgaard N",
+    "Sundan A",
+    "Waage A"
+   ],
+   "journal": "Blood",
+   "volume": "91",
+   "issue": "3",
+   "pages": "806-12",
+   "doi": "",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "9401078",
+   "year": 1997,
+   "sortdate": "1997/12/01",
+   "title": "Bone marrow fibrosis and disease activity in multiple myeloma monitored by the aminoterminal propeptide of procollagen III in serum.",
+   "authors": [
+    "Abildgaard N",
+    "Bendix-Hansen K",
+    "Kristensen JE",
+    "Vejlgaard T",
+    "Risteli L",
+    "Nielsen JL",
+    "Heickendorff L"
+   ],
+   "journal": "Br J Haematol",
+   "volume": "99",
+   "issue": "3",
+   "pages": "641-8",
+   "doi": "10.1046/j.1365-2141.1997.4503260.x",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "9111591",
+   "year": 1997,
+   "sortdate": "1997/02/01",
+   "title": "Abnormal bone turnover in monoclonal gammopathy of undetermined significance: analyses of type I collagen telopeptide, osteocalcin, bone-specific alkaline phosphatase and propeptides of type I and type III procollagens.",
+   "authors": [
+    "Vejlgaard T",
+    "Abildgaard N",
+    "Jans H",
+    "Nielsen JL",
+    "Heickendorff L"
+   ],
+   "journal": "Eur J Haematol",
+   "volume": "58",
+   "issue": "2",
+   "pages": "104-8",
+   "doi": "10.1111/j.1600-0609.1997.tb00932.x",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "9012695",
+   "year": 1997,
+   "sortdate": "1997/01/01",
+   "title": "Serum markers of bone metabolism in multiple myeloma: prognostic value of the carboxy-terminal telopeptide of type I collagen (ICTP). Nordic Myeloma Study Group (NMSG).",
+   "authors": [
+    "Abildgaard N",
+    "Bentzen SM",
+    "Nielsen JL",
+    "Heickendorff L"
+   ],
+   "journal": "Br J Haematol",
+   "volume": "96",
+   "issue": "1",
+   "pages": "103-10",
+   "doi": "10.1046/j.1365-2141.1997.8672495.x",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "9003478",
+   "year": 1996,
+   "sortdate": "1996/11/01",
+   "title": "Assessment of bone involvement in patients with multiple myeloma using bone densitometry.",
+   "authors": [
+    "Abildgaard N",
+    "Brixen K",
+    "Kristensen JE",
+    "Vejlgaard T",
+    "Charles P",
+    "Nielsen JL"
+   ],
+   "journal": "Eur J Haematol",
+   "volume": "57",
+   "issue": "5",
+   "pages": "370-6",
+   "doi": "10.1111/j.1600-0609.1996.tb01395.x",
+   "members": [
+    "Niels Abildgaard"
+   ],
+   "pro": false
+  },
+  {
+   "pmid": "8192146",
+   "year": 1994,
+   "sortdate": "1994/07/01",
+   "title": "Connective tissue components in serum in multiple myeloma: analyses of propeptides of type I and type III procollagens, type I collagen telopeptide, and hyaluronan.",
+   "authors": [
+    "Abildgaard N",
+    "Nielsen JL",
+    "Heickendorff L"
+   ],
+   "journal": "Am J Hematol",
+   "volume": "46",
+   "issue": "3",
+   "pages": "173-8",
+   "doi": "10.1002/ajh.2830460303",
+   "members": [
+    "Niels Abildgaard"
    ],
    "pro": false
   }
