@@ -72,7 +72,8 @@ def page_path(page, lang):
 def url(page, lang, depth):
     prefix = "../" * depth
     base = "" if lang == "en" else "da/"
-    return prefix + base + ("" if page == "about" else page + "/")
+    tail = "index.html" if os.environ.get("QOLRC_PREVIEW") else ""
+    return prefix + base + ("" if page == "about" else page + "/") + tail
 
 
 def depth_of(page, lang):
