@@ -528,7 +528,9 @@ def publications(lang):
     else:
         pubs = data["publications"]
         match = {m: [re.compile(rx) for rx in rxs] for m, rxs in data.get("author_match", {}).items()}
-        members = sorted({m for p in pubs for m in p["members"]})
+        present = {m for p in pubs for m in p["members"]}
+        team_order = list(C.MEMBER_GROUP_OF)
+        members = [m for m in team_order if m in present] + sorted(present - set(team_order))
         has_pro = any("pro" in p for p in pubs)
         n_pro = sum(1 for p in pubs if p.get("pro"))
         chips = []
