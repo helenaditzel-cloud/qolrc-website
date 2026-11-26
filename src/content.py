@@ -204,11 +204,18 @@ STUDIES = [{'group': 'nmsg',
   'text': {'en': 'TODO(Add a one-sentence description of DARA-PRO.)', 'da': 'TODO(Tilføj en kort beskrivelse af DARA-PRO.)'},
   'role': {'en': '', 'da': ''}},
  {'group': 'other',
-  'title': {'en': 'IMPROVE', 'da': 'IMPROVE'},
-  'disease': {'en': 'Hematology', 'da': 'Hæmatologi'},
-  'nct': '',
-  'text': {'en': 'TODO(Add a one-sentence description of IMPROVE.)', 'da': 'TODO(Tilføj en kort beskrivelse af IMPROVE.)'},
-  'role': {'en': '', 'da': ''}},
+  'title': {'en': 'IMPROVE: geriatric assessment in older patients with frailty and hematologic cancer',
+            'da': 'IMPROVE: geriatrisk vurdering hos ældre, skrøbelige patienter med hæmatologisk kræft'},
+  'disease': {'en': 'Hematologic cancer', 'da': 'Hæmatologisk kræft'},
+  'nct': 'NCT06373471',
+  'text': {'en': 'A randomized controlled trial of whether adding comprehensive geriatric assessment and treatment to standard care improves quality '
+                 'of life and physical functioning in patients aged 70 or older with frailty and hematologic cancer. The trial aims to include 152 patients. '
+                 'It builds on the completed IMPROVE pilot study (NCT06689332).',
+           'da': 'Et randomiseret kontrolleret forsøg, der undersøger, om geriatrisk helbredsvurdering og behandling som tillæg til standardbehandling '
+                 'forbedrer livskvalitet og fysisk funktion hos patienter på 70 år eller derover med skrøbelighed og hæmatologisk kræft. Forsøget skal '
+                 'inkludere 152 patienter. Det bygger videre på det afsluttede IMPROVE-pilotstudie (NCT06689332).'},
+  'role': {'en': 'Sponsor and study lead (PI Henrik Frederiksen, PhD student Nina Andersen)',
+           'da': 'Sponsor og studieledelse (forsøgsansvarlig Henrik Frederiksen, ph.d.-studerende Nina Andersen)'}},
  {'group': 'other',
   'title': {'en': 'Revision of the EORTC QLQ-MY20', 'da': 'Revision af EORTC QLQ-MY20'},
   'disease': {'en': 'Multiple myeloma', 'da': 'Myelomatose'},
