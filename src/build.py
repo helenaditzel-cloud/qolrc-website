@@ -202,7 +202,7 @@ def about(lang):
     up = "../" * d
     hero_src, _ = art("hero", "hero-art.svg", up)
     band_src, band_photo = art("band", "band-art.svg", up)
-    band_overlay = "linear-gradient(90deg, rgba(10,42,51,.92), rgba(10,42,51,.7)), " if band_photo else ""
+    band_overlay = "linear-gradient(90deg, rgba(10,61,99,.92) 0%, rgba(13,76,122,.7) 55%, rgba(13,76,122,.35) 100%), " if band_photo else ""
     paras = "\n".join(f"<p>{md_links(p)}</p>" for p in a["intro"][lang])
     cards = "\n".join(
         f"""<li class="card theme">
@@ -397,6 +397,15 @@ def patients(lang):
   <div class="wrap grid grid-2">
     <div class="card"><h2>{esc(t(P['who_heading'], lang))}</h2><ul class="checklist">{who}</ul></div>
     <div class="card"><h2>{esc(t(P['practical_heading'], lang))}</h2><ul class="checklist">{practical}</ul></div>
+  </div>
+</section>
+<section class="band" style="background-image:linear-gradient(90deg, rgba(10,61,99,.92) 0%, rgba(13,76,122,.7) 55%, rgba(13,76,122,.3) 100%), url('{"../" * d}assets/img/photos/band-patients.jpg'); background-position: center 55%">
+  <div class="wrap band-inner">
+    <div>
+      <h2>{esc(t(P['join_heading'], lang))}</h2>
+      <p>{esc(t(P['join_text'], lang))}</p>
+    </div>
+    <p>{email_html}</p>
   </div>
 </section>"""
     return layout("patients", lang, title, body, t(P["intro"], lang))
