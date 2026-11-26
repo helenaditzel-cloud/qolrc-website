@@ -465,7 +465,6 @@ MEMBER_GROUP_OF = {  # order here = order on the page
     "Klara Rydahl": "phd",
     "Madeleine King": "adjunct",
     "Sören Möller": "adjunct",
-    "Tina Käehne": "admin",
 }
 
 MEMBERS = [{'name': 'Henrik Frederiksen',
@@ -595,13 +594,6 @@ MEMBERS = [{'name': 'Henrik Frederiksen',
                 'skrøbelige patienter har klinisk relevant lavere livskvalitet og fysisk funktion end fitte patienter.'},
   'email': '',
   'photo': 'klara-rydahl.jpg',
-  'profile': ''},
- {'name': 'Tina Käehne',
-  'title': {'en': 'Finance', 'da': 'Økonomi'},
-  'bio': {'en': 'Responsible for finances at QoLRC and the Hematology Research Unit. TODO(Tina to check and add a sentence.)',
-          'da': 'Ansvarlig for økonomi i QoLRC og Hæmatologisk Forskningsenhed. TODO(Tina tjekker og tilføjer en sætning.)'},
-  'email': '',
-  'photo': 'tina-kaehne.jpg',
   'profile': ''}]
 
 # ---------------------------------------------------------------- Publications
