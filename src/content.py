@@ -672,22 +672,4 @@ NEWS = [
      "text": {"en": "At the Nordic ITP meeting in Oslo on 17–18 April 2026, Henrik Frederiksen presented a case of acquired amegakaryocytic thrombocytopenia after treatment with an immune checkpoint inhibitor as part of neoadjuvant treatment for bilateral breast cancer (BMJ Case Reports, 2025). Helena Møgelbjerg Ditzel presented the SSQ-MM validation study in patients with ITP and AIHA.",
               "da": "På det nordiske ITP-møde i Oslo den 17.–18. april 2026 præsenterede Henrik Frederiksen et tilfælde af erhvervet amegakaryocytær trombocytopeni efter behandling med en immun checkpoint-hæmmer som led i neoadjuverende behandling for bilateral brystkræft (BMJ Case Reports, 2025). Helena Møgelbjerg Ditzel præsenterede SSQ-MM-valideringsstudiet hos patienter med ITP og AIHA."},
      "photo": "henrik-nordic-itp-2026.jpg", "link": "https://nordicitp.com/"},
-    {
-        "date": "2026-09-01",
-        "title": {"en": "Poster on geriatric assessment in older patients with hematologic cancer",
-                  "da": "Poster om geriatrisk vurdering af ældre patienter med hæmatologisk kræft"},
-        "text": {"en": "Nina Andersen presented the results of the pilot study on comprehensive geriatric assessment at the start of treatment for older patients with frailty and hematologic cancer. TODO(Add the name of the meeting and the correct date.)",
-                 "da": "Nina Andersen præsenterede resultaterne af pilotstudiet om geriatrisk helbredsvurdering ved opstart af behandling hos ældre, skrøbelige patienter med hæmatologisk kræft. TODO(Tilføj mødets navn og den korrekte dato.)"},
-        "photo": "nina-poster.jpg",
-        "link": "",
-    },
-    {
-        "date": "2025-09-01",
-        "title": {"en": "Poster on home-based daratumumab treatment guided by patient-reported outcomes",
-                  "da": "Poster om hjemmebehandling med daratumumab styret af patientrapporterede oplysninger"},
-        "text": {"en": "Tine Rosenberg presented results showing that daratumumab can be given at home or in a local health clinic, and that patient-reported outcome data can be used to assess patients before treatment. TODO(Add the name of the meeting and the correct date.)",
-                 "da": "Tine Rosenberg præsenterede resultater, der viser, at daratumumab kan gives i eget hjem eller i en lokal sundhedsklinik, og at patientrapporterede oplysninger kan bruges til at vurdere patienterne før behandling. TODO(Tilføj mødets navn og den korrekte dato.)"},
-        "photo": "tine-poster.jpg",
-        "link": "",
-    },
 ]
