@@ -327,13 +327,13 @@ PATIENTS = {
     "practical": {
         "en": [
             "You decide how much time you want to spend, and you can stop at any time.",
-            "TODO(Describe the expected time commitment, for example a few hours per study.)",
-            "TODO(State whether transport and other expenses are reimbursed, or any fee.)",
+            "The expected time commitment is about 8 to 10 hours every six months.",
+            "Travel expenses are reimbursed. The role is voluntary and unpaid.",
         ],
         "da": [
             "Du bestemmer selv, hvor meget tid du vil bruge, og du kan stoppe når som helst.",
-            "TODO(Beskriv den forventede tidsforbrug, fx nogle timer pr. studie.)",
-            "TODO(Angiv, om transport og andre udgifter dækkes, eller om der gives honorar.)",
+            "Du skal forvente at bruge omkring 8 til 10 timer hvert halve år.",
+            "Udgifter til transport dækkes. Det er en frivillig og ulønnet rolle.",
         ],
     },
     "join_heading": {"en": "Interested?", "da": "Interesseret?"},
