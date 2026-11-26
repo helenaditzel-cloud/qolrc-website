@@ -29,7 +29,7 @@ NAV = [
     ("studies", "Ongoing studies", "Igangværende studier"),
     ("pro", "PRO expertise", "PRO-ekspertise"),
     ("patients", "Patient involvement", "Patientinddragelse"),
-    ("members", "Members", "Medarbejdere"),
+    ("team", "Our team", "Vores team"),
     ("publications", "Publications", "Publikationer"),
     ("news", "News & events", "Nyheder"),
     ("partners", "Partners", "Partnere"),

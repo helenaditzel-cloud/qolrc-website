@@ -463,7 +463,7 @@ def initials(name):
 
 
 def members(lang):
-    d = depth_of("members", lang)
+    d = depth_of("team", lang)
     up = "../" * d
     def card(m):
         photo_file = os.path.join(ROOT, "assets", "img", "people", m["photo"]) if m["photo"] else ""
@@ -497,11 +497,11 @@ def members(lang):
                             f'<ul class="grid grid-3 members-grid">{"".join(card(m) for m in people)}</ul>')
     missing = [m["name"] for m in C.MEMBERS if m["name"] not in C.MEMBER_GROUP_OF]
     assert not missing, f"members without group: {missing}"
-    body = page_header("members", nav_label("members", lang), C.MEMBERS_INTRO, lang) + f"""
+    body = page_header("team", nav_label("team", lang), C.MEMBERS_INTRO, lang) + f"""
 <section class="section">
   <div class="wrap">{''.join(sections)}</div>
 </section>"""
-    return layout("members", lang, nav_label("members", lang), body, t(C.MEMBERS_INTRO, lang))
+    return layout("team", lang, nav_label("team", lang), body, t(C.MEMBERS_INTRO, lang))
 
 
 def load_pubmed():
@@ -661,7 +661,7 @@ PAGES = {
     "studies": studies,
     "pro": pro,
     "patients": patients,
-    "members": members,
+    "team": members,
     "publications": publications,
     "news": news,
     "partners": partners,
