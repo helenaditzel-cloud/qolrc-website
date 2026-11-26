@@ -145,7 +145,8 @@ def layout(page, lang, title, body, description):
     </nav>
     <div>
       <p class="footer-heading">{UI['contact_us'][lang]}</p>
-      <address>{"<br>".join(esc(t(line, lang)) for line in C.CONTACT['address'][:3])}</address>
+      <address>{"<br>".join(esc(t(line, lang)) for line in C.CONTACT['address'][1:5])}</address>
+      <p><a href="mailto:{C.CONTACT['email']}">{C.CONTACT['email']}</a></p>
       <p><a href="{url('contact', lang, d)}">{UI['all_contact'][lang]} &rarr;</a></p>
     </div>
   </div>
@@ -534,7 +535,7 @@ def contact(lang):
       <h2>{esc(t(c['email_heading'], lang))}</h2>
       <p>{email_html}</p>
       <h2>{esc(t(c['phone_heading'], lang))}</h2>
-      <p>{esc(c['phone'])}</p>
+      <p>{esc(t(c['phone'], lang))}</p>
     </div>
     <div class="card card-note">
       <h2>{esc(t(c['patients_heading'], lang))}</h2>

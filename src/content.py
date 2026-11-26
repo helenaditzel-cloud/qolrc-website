@@ -345,7 +345,7 @@ PATIENTS = {
         "en": "Please do not include details about your health or treatment in your email.",
         "da": "Skriv venligst ikke oplysninger om dit helbred eller din behandling i e-mailen.",
     },
-    "join_email": "TODO(email address for patient representatives)",
+    "join_email": "OUH.QoLReC@rsyd.dk",
 }
 
 # ---------------------------------------------------------------- Members
@@ -504,17 +504,17 @@ CONTACT = {
     },
     "address_heading": {"en": "Address", "da": "Adresse"},
     "address": [
-        "Quality of Life Research Center",
-        {"en": "Department of Hematology", "da": "Hæmatologisk Afdeling"},
+        {"en": "Hematology Research Unit, Dept. X", "da": "Hæmatologisk Forskningsenhed, Afd. X"},
+        "Quality of Life Research Center (QoLRC)",
         {"en": "Odense University Hospital", "da": "Odense Universitetshospital"},
-        "TODO(Street address)",
-        "TODO(Postal code) Odense",
+        {"en": "Kløvervænget 10, Entrance 112, 12th floor", "da": "Kløvervænget 10, Indgang 112, 12. sal"},
+        "5000 Odense C",
         {"en": "Denmark", "da": "Danmark"},
     ],
     "email_heading": {"en": "Email", "da": "E-mail"},
-    "email": "TODO(general email address)",
+    "email": "OUH.QoLReC@rsyd.dk",
     "phone_heading": {"en": "Phone", "da": "Telefon"},
-    "phone": "TODO(phone number)",
+    "phone": {"en": "+45 66 11 33 33 (OUH switchboard)", "da": "66 11 33 33 (OUH's hovednummer)"},
     "patients_heading": {"en": "For patients", "da": "Til patienter"},
     "patients": {
         "en": "We cannot answer questions about individual treatment. Please contact your own department or doctor.",
