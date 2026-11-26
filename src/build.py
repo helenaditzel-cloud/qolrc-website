@@ -260,6 +260,7 @@ def about(lang):
     <ul class="grid grid-3">{cards}</ul>
   </div>
 </section>
+<div class="photo-divider" style="background-image:url('{up}assets/img/photos/divider.jpg')" role="presentation"></div>
 {recent}
 <section class="band" style="background-image:{band_overlay}url('{band_src}')">
   <div class="wrap band-inner">

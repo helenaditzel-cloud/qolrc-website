@@ -256,3 +256,6 @@ img.portrait { filter: grayscale(1) contrast(1.05); }
   @view-transition { navigation: auto; }
   ::view-transition-old(root), ::view-transition-new(root) { animation-duration: .25s; }
 }
+
+.photo-divider { height: 280px; background-color: var(--primary); background-position: center 55%; background-size: cover; background-repeat: no-repeat; border-top: 6px solid var(--accent); }
+@media (max-width: 680px) { .photo-divider { height: 160px; } }
