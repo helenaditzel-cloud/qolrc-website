@@ -395,7 +395,7 @@ def members(lang):
     for m in C.MEMBERS:
         photo_file = os.path.join(ROOT, "assets", "img", "people", m["photo"]) if m["photo"] else ""
         if photo_file and os.path.exists(photo_file):
-            pic = f'<img class="portrait" src="{up}assets/img/people/{m["photo"]}" alt="{esc(UI["portrait_of"][lang])} {esc(m["name"])}" width="400" height="500" loading="lazy">'
+            pic = f'<img class="portrait" src="{up}assets/img/people/{m["photo"]}" alt="{esc(UI["portrait_of"][lang])} {esc(m["name"])}" width="400" height="500">'
         else:
             pic = (f'<div class="portrait portrait-placeholder" role="img" aria-label="{esc(UI["photo_missing"][lang])}">'
                    f'<img src="{up}assets/img/portrait-placeholder.svg" alt="" width="400" height="500">'

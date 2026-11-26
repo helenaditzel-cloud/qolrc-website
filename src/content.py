@@ -446,17 +446,6 @@ MEMBERS = [{'name': 'Henrik Frederiksen',
   'photo': 'niels-abildgaard.jpg',
   'profile': 'https://portal.findresearcher.sdu.dk/en/persons/nabildgaard/',
   'orcid': '0000-0001-6852-2014'},
- {'name': 'Madeleine King',
-  'title': {'en': 'PhD, Adjunct Professor', 'da': 'Ph.d., adjungeret professor'},
-  'bio': {'en': 'Professor at the University of Sydney and adjunct professor at the University of Southern Denmark and the Hematology Research Unit. An '
-                'internationally leading researcher in health-related quality of life and patient-reported outcome measures, she has helped set standards for '
-                "using PRO measures in clinical trials, and received the ISOQOL President's Award in 2022.",
-          'da': 'Professor ved University of Sydney og adjungeret professor ved Syddansk Universitet og Hæmatologisk Forskningsenhed. Hun er en internationalt '
-                'førende forsker i helbredsrelateret livskvalitet og patientrapporterede måleinstrumenter, har bidraget til standarder for brug af PRO i '
-                "kliniske forsøg og modtog ISOQOL's President's Award i 2022."},
-  'email': '',
-  'photo': 'madeleine-king.jpg',
-  'profile': ''},
  {'name': 'Lene Kongsgaard Nielsen',
   'title': {'en': 'MD, PhD, Scientific Leader and Associate Professor', 'da': 'Læge, ph.d., videnskabelig leder og lektor'},
   'bio': {'en': 'Consultant in hematology, associate professor at the University of Southern Denmark and scientific leader of the Quality of Life Research '
@@ -499,6 +488,26 @@ MEMBERS = [{'name': 'Henrik Frederiksen',
   'photo': 'tine-rosenberg.jpg',
   'profile': 'https://portal.findresearcher.sdu.dk/en/persons/tinerosenberg/',
   'orcid': '0000-0002-7874-5526'},
+ {'name': 'Pia K. Pedersen',
+  'title': {'en': 'Daily Manager and Chief Nurse', 'da': 'Daglig leder og oversygeplejerske'},
+  'bio': {'en': 'Daily manager of the Hematology Research Unit at Odense University Hospital and the University of Southern Denmark. She is responsible for '
+                "the unit's day-to-day management and administration and supports researchers and research projects across the unit, including QoLRC.",
+          'da': 'Daglig leder af Hæmatologisk Forskningsenhed på Odense Universitetshospital og Syddansk Universitet. Hun har ansvaret for enhedens daglige '
+                'drift og administration og understøtter forskere og forskningsprojekter på tværs af enheden, herunder QoLRC.'},
+  'email': '',
+  'photo': 'pia-pedersen.jpg',
+  'profile': ''},
+ {'name': 'Madeleine King',
+  'title': {'en': 'PhD, Adjunct Professor', 'da': 'Ph.d., adjungeret professor'},
+  'bio': {'en': 'Professor at the University of Sydney and adjunct professor at the University of Southern Denmark and the Hematology Research Unit. An '
+                'internationally leading researcher in health-related quality of life and patient-reported outcome measures, she has helped set standards for '
+                "using PRO measures in clinical trials, and received the ISOQOL President's Award in 2022.",
+          'da': 'Professor ved University of Sydney og adjungeret professor ved Syddansk Universitet og Hæmatologisk Forskningsenhed. Hun er en internationalt '
+                'førende forsker i helbredsrelateret livskvalitet og patientrapporterede måleinstrumenter, har bidraget til standarder for brug af PRO i '
+                "kliniske forsøg og modtog ISOQOL's President's Award i 2022."},
+  'email': '',
+  'photo': 'madeleine-king.jpg',
+  'profile': ''},
  {'name': 'Anne Møller Clausen',
   'title': {'en': 'RN, MSc in Clinical Nursing, PhD Student', 'da': 'Sygeplejerske, cand.cur., ph.d.-studerende'},
   'bio': {'en': 'Registered nurse with an MSc in Clinical Nursing and PhD student at the Department of Hematology, Odense University Hospital. Her PhD '
@@ -523,15 +532,6 @@ MEMBERS = [{'name': 'Henrik Frederiksen',
           'da': 'Læge og ph.d.-studerende ved Hæmatologisk Forskningsenhed. TODO(Tilføj Klaras ph.d.-projekt i én sætning.)'},
   'email': '',
   'photo': 'klara-rydahl.jpg',
-  'profile': ''},
- {'name': 'Pia K. Pedersen',
-  'title': {'en': 'Daily Manager and Chief Nurse', 'da': 'Daglig leder og oversygeplejerske'},
-  'bio': {'en': 'Daily manager of the Hematology Research Unit at Odense University Hospital and the University of Southern Denmark. She is responsible for '
-                "the unit's day-to-day management and administration and supports researchers and research projects across the unit, including QoLRC.",
-          'da': 'Daglig leder af Hæmatologisk Forskningsenhed på Odense Universitetshospital og Syddansk Universitet. Hun har ansvaret for enhedens daglige '
-                'drift og administration og understøtter forskere og forskningsprojekter på tværs af enheden, herunder QoLRC.'},
-  'email': '',
-  'photo': 'pia-pedersen.jpg',
   'profile': ''},
  {'name': 'Tina Käehne',
   'title': {'en': 'Finance', 'da': 'Økonomi'},
