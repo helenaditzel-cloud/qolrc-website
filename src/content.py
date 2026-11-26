@@ -422,79 +422,124 @@ MEMBERS_INTRO = {
 }
 
 # photo: file name in assets/img/people/ (portrait, ideally 800 x 1000 px). Leave "" to show a placeholder.
-MEMBERS = [
-    {
-        "name": "Lene Kongsgaard Nielsen",
-        "title": {"en": "MD, PhD, Scientific Leader and Associate Professor", "da": "Læge, ph.d., videnskabelig leder og lektor"},
-        "bio": {
-            "en": "Consultant in hematology, associate professor at the University of Southern Denmark and scientific leader of the Quality of Life Research Center. She leads the center's research on quality of life in multiple myeloma, including the design, collection and analysis of quality of life data in Nordic Myeloma Study Group trials and in real-world Danish cohorts.",
-            "da": "Overlæge i hæmatologi, lektor ved Syddansk Universitet og videnskabelig leder af Quality of Life Research Center. Hun leder centrets forskning i livskvalitet ved myelomatose, herunder planlægning, indsamling og analyse af livskvalitetsdata i studier fra Nordic Myeloma Study Group og i danske kohorter uden for kliniske forsøg.",
-        },
-        "email": "",
-        "photo": "lene-kongsgaard-nielsen.jpg",
-        "profile": "https://portal.findresearcher.sdu.dk/da/persons/lenekn",
-        "orcid": "0000-0003-2083-3870",
-    },
-    {
-        "name": "Henrik Frederiksen",
-        "title": {"en": "MD, PhD, Head of Research and Professor", "da": "Læge, ph.d., forskningsleder og professor"},
-        "bio": {
-            "en": "Consultant and Head of Research at the Department and Research Unit of Hematology, Odense University Hospital and University of Southern Denmark. His research focuses on frailty and supportive care in hematologic cancer, including how frailty assessment can be used in routine care to tailor treatment, as well as non-malignant hematologic diseases. Former chair of the Danish Society of Hematology.",
-            "da": "Overlæge og forskningsleder ved Hæmatologisk Afdeling og Forskningsenhed, Odense Universitetshospital og Syddansk Universitet. Hans forskning fokuserer på skrøbelighed og understøttende behandling ved hæmatologisk kræft, herunder hvordan vurdering af skrøbelighed kan bruges i den daglige klinik til at tilpasse behandlingen, samt godartede hæmatologiske sygdomme. Tidligere formand for Dansk Hæmatologisk Selskab.",
-        },
-        "email": "",
-        "photo": "henrik-frederiksen.jpg",
-        "profile": "https://www.sdu.dk/en/forskning/haematologi",
-        "orcid": "0000-0001-8905-0220",
-    },
-    {
-        "name": "Niels Abildgaard",
-        "title": {"en": "Senior Professor", "da": "Seniorprofessor"},
-        "bio": {
-            "en": "Senior professor at the Department of Hematology, Odense University Hospital, and the University of Southern Denmark, and head of the Odense Amyloidosis Centre (AmyC OUH), a Center of Clinical Excellence. His research covers multiple myeloma from disease biology to treatment, with particular emphasis on myeloma bone disease.",
-            "da": "Seniorprofessor på Hæmatologisk Afdeling, Odense Universitetshospital, og Syddansk Universitet samt leder af Odense Amyloidosis Centre (AmyC OUH), et Center for Klinisk Excellence. Hans forskning dækker myelomatose fra sygdomsbiologi til behandling med særligt fokus på knoglesygdom ved myelomatose.",
-        },
-        "email": "",
-        "photo": "niels-abildgaard.jpg",
-        "profile": "https://portal.findresearcher.sdu.dk/en/persons/nabildgaard/",
-        "orcid": "0000-0001-6852-2014",
-    },
-    {
-        "name": "Helena Møgelbjerg Ditzel",
-        "title": {"en": "MD, PhD, Postdoctoral Researcher", "da": "Læge, ph.d., postdoc"},
-        "bio": {
-            "en": "Clinician-researcher working on health-related quality of life, patient-reported outcomes and psychometric validation in hematology and oncology, with a focus on multiple myeloma, autoimmune cytopenias and frailty in older adults. Project manager of the REMNANT-PRO study and principal investigator of the PROGNOSIS-G8 cohort study. PhD in geriatric oncology from the University of Southern Denmark (2025) and board member of the Danish Society of Geriatric Oncology.",
-            "da": "Klinisk forsker, der arbejder med helbredsrelateret livskvalitet, patientrapporterede oplysninger og psykometrisk validering inden for hæmatologi og onkologi med fokus på myelomatose, autoimmune cytopenier og skrøbelighed hos ældre. Projektleder for REMNANT-PRO-studiet og forsøgsansvarlig for kohortestudiet PROGNOSIS-G8. Ph.d. i geriatrisk onkologi fra Syddansk Universitet (2025) og bestyrelsesmedlem i Dansk Selskab for Geriatrisk Onkologi.",
-        },
-        "email": "",
-        "photo": "helena-ditzel.jpg",
-        "profile": "https://portal.findresearcher.sdu.dk/en/persons/hmditzel/",
-        "orcid": "0000-0002-9435-0524",
-    },
-    {
-        "name": "Pia K. Pedersen",
-        "title": {"en": "Daily Manager and Chief Nurse", "da": "Daglig leder og oversygeplejerske"},
-        "bio": {
-            "en": "Daily manager of the Hematology Research Unit at Odense University Hospital and the University of Southern Denmark. She is responsible for the unit's day-to-day management and administration and supports researchers and research projects across the unit, including QoLRC.",
-            "da": "Daglig leder af Hæmatologisk Forskningsenhed på Odense Universitetshospital og Syddansk Universitet. Hun har ansvaret for enhedens daglige drift og administration og understøtter forskere og forskningsprojekter på tværs af enheden, herunder QoLRC.",
-        },
-        "email": "",
-        "photo": "pia-pedersen.jpg",
-        "profile": "",
-    },
-    {
-        "name": "Tine Rosenberg",
-        "title": {"en": "Project Coordinator", "da": "Projektkoordinator"},
-        "bio": {
-            "en": "Research coordinator and project manager (MSc in Health Science) at the Hematology Research Unit and QoLRC, Odense University Hospital. Her research focuses on home-based treatment and digital patient-reported outcomes in multiple myeloma, including home-administered daratumumab and digital symptom reporting before treatment, and she has contributed to the Danish translation and validation of several questionnaires, including the SSQ-MM. From 2026 she is a PhD fellow in the national Treat@Home program, studying home-based daratumumab treatment across Danish hematology departments.",
-            "da": "Forskningskoordinator og projektleder (cand.scient.san.) ved Hæmatologisk Forskningsenhed og QoLRC, Odense Universitetshospital. Hendes forskning fokuserer på hjemmebehandling og digitale patientrapporterede oplysninger ved myelomatose, herunder daratumumab givet i eget hjem og digital symptomrapportering før behandling, og hun har bidraget til dansk oversættelse og validering af flere spørgeskemaer, herunder SSQ-MM. Fra 2026 er hun ph.d.-studerende i det nationale Treat@Home-program, hvor hun undersøger hjemmebehandling med daratumumab på tværs af danske hæmatologiske afdelinger.",
-        },
-        "email": "",
-        "photo": "tine-rosenberg.jpg",
-        "profile": "https://portal.findresearcher.sdu.dk/en/persons/tinerosenberg/",
-        "orcid": "0000-0002-7874-5526",
-    },
-]
+MEMBERS = [{'name': 'Henrik Frederiksen',
+  'title': {'en': 'MD, PhD, Head of Research and Professor', 'da': 'Læge, ph.d., forskningsleder og professor'},
+  'bio': {'en': 'Consultant and Head of Research at the Department and Research Unit of Hematology, Odense University Hospital and University of Southern '
+                'Denmark. His research focuses on frailty and supportive care in hematologic cancer, including how frailty assessment can be used in routine '
+                'care to tailor treatment, as well as non-malignant hematologic diseases. Former chair of the Danish Society of Hematology.',
+          'da': 'Overlæge og forskningsleder ved Hæmatologisk Afdeling og Forskningsenhed, Odense Universitetshospital og Syddansk Universitet. Hans forskning '
+                'fokuserer på skrøbelighed og understøttende behandling ved hæmatologisk kræft, herunder hvordan vurdering af skrøbelighed kan bruges i den '
+                'daglige klinik til at tilpasse behandlingen, samt godartede hæmatologiske sygdomme. Tidligere formand for Dansk Hæmatologisk Selskab.'},
+  'email': '',
+  'photo': 'henrik-frederiksen.jpg',
+  'profile': 'https://www.sdu.dk/en/forskning/haematologi',
+  'orcid': '0000-0001-8905-0220'},
+ {'name': 'Niels Abildgaard',
+  'title': {'en': 'Senior Professor', 'da': 'Seniorprofessor'},
+  'bio': {'en': 'Senior professor at the Department of Hematology, Odense University Hospital, and the University of Southern Denmark, and head of the Odense '
+                'Amyloidosis Centre (AmyC OUH), a Center of Clinical Excellence. His research covers multiple myeloma from disease biology to treatment, with '
+                'particular emphasis on myeloma bone disease.',
+          'da': 'Seniorprofessor på Hæmatologisk Afdeling, Odense Universitetshospital, og Syddansk Universitet samt leder af Odense Amyloidosis Centre (AmyC '
+                'OUH), et Center for Klinisk Excellence. Hans forskning dækker myelomatose fra sygdomsbiologi til behandling med særligt fokus på knoglesygdom '
+                'ved myelomatose.'},
+  'email': '',
+  'photo': 'niels-abildgaard.jpg',
+  'profile': 'https://portal.findresearcher.sdu.dk/en/persons/nabildgaard/',
+  'orcid': '0000-0001-6852-2014'},
+ {'name': 'Madeleine King',
+  'title': {'en': 'PhD, Adjunct Professor', 'da': 'Ph.d., adjungeret professor'},
+  'bio': {'en': 'Professor at the University of Sydney and adjunct professor at the University of Southern Denmark and the Hematology Research Unit. An '
+                'internationally leading researcher in health-related quality of life and patient-reported outcome measures, she has helped set standards for '
+                "using PRO measures in clinical trials, and received the ISOQOL President's Award in 2022.",
+          'da': 'Professor ved University of Sydney og adjungeret professor ved Syddansk Universitet og Hæmatologisk Forskningsenhed. Hun er en internationalt '
+                'førende forsker i helbredsrelateret livskvalitet og patientrapporterede måleinstrumenter, har bidraget til standarder for brug af PRO i '
+                "kliniske forsøg og modtog ISOQOL's President's Award i 2022."},
+  'email': '',
+  'photo': 'madeleine-king.jpg',
+  'profile': ''},
+ {'name': 'Lene Kongsgaard Nielsen',
+  'title': {'en': 'MD, PhD, Scientific Leader and Associate Professor', 'da': 'Læge, ph.d., videnskabelig leder og lektor'},
+  'bio': {'en': 'Consultant in hematology, associate professor at the University of Southern Denmark and scientific leader of the Quality of Life Research '
+                "Center. She leads the center's research on quality of life in multiple myeloma, including the design, collection and analysis of quality of "
+                'life data in Nordic Myeloma Study Group trials and in real-world Danish cohorts.',
+          'da': 'Overlæge i hæmatologi, lektor ved Syddansk Universitet og videnskabelig leder af Quality of Life Research Center. Hun leder centrets '
+                'forskning i livskvalitet ved myelomatose, herunder planlægning, indsamling og analyse af livskvalitetsdata i studier fra Nordic Myeloma Study '
+                'Group og i danske kohorter uden for kliniske forsøg.'},
+  'email': '',
+  'photo': 'lene-kongsgaard-nielsen.jpg',
+  'profile': 'https://portal.findresearcher.sdu.dk/da/persons/lenekn',
+  'orcid': '0000-0003-2083-3870'},
+ {'name': 'Helena Møgelbjerg Ditzel',
+  'title': {'en': 'MD, PhD, Postdoctoral Researcher', 'da': 'Læge, ph.d., postdoc'},
+  'bio': {'en': 'Clinician-researcher working on health-related quality of life, patient-reported outcomes and psychometric validation in hematology and '
+                'oncology, with a focus on multiple myeloma, autoimmune cytopenias and frailty in older adults. Project manager of the REMNANT-PRO study and '
+                'principal investigator of the PROGNOSIS-G8 cohort study. PhD in geriatric oncology from the University of Southern Denmark (2025) and board '
+                'member of the Danish Society of Geriatric Oncology.',
+          'da': 'Klinisk forsker, der arbejder med helbredsrelateret livskvalitet, patientrapporterede oplysninger og psykometrisk validering inden for '
+                'hæmatologi og onkologi med fokus på myelomatose, autoimmune cytopenier og skrøbelighed hos ældre. Projektleder for REMNANT-PRO-studiet og '
+                'forsøgsansvarlig for kohortestudiet PROGNOSIS-G8. Ph.d. i geriatrisk onkologi fra Syddansk Universitet (2025) og bestyrelsesmedlem i Dansk '
+                'Selskab for Geriatrisk Onkologi.'},
+  'email': '',
+  'photo': 'helena-ditzel.jpg',
+  'profile': 'https://portal.findresearcher.sdu.dk/en/persons/hmditzel/',
+  'orcid': '0000-0002-9435-0524'},
+ {'name': 'Tine Rosenberg',
+  'title': {'en': 'Project Coordinator', 'da': 'Projektkoordinator'},
+  'bio': {'en': 'Research coordinator and project manager (MSc in Health Science) at the Hematology Research Unit and QoLRC, Odense University Hospital. Her '
+                'research focuses on home-based treatment and digital patient-reported outcomes in multiple myeloma, including home-administered daratumumab '
+                'and digital symptom reporting before treatment, and she has contributed to the Danish translation and validation of several questionnaires, '
+                'including the SSQ-MM. From 2026 she is a PhD fellow in the national Treat@Home program, studying home-based daratumumab treatment across '
+                'Danish hematology departments.',
+          'da': 'Forskningskoordinator og projektleder (cand.scient.san.) ved Hæmatologisk Forskningsenhed og QoLRC, Odense Universitetshospital. Hendes '
+                'forskning fokuserer på hjemmebehandling og digitale patientrapporterede oplysninger ved myelomatose, herunder daratumumab givet i eget hjem '
+                'og digital symptomrapportering før behandling, og hun har bidraget til dansk oversættelse og validering af flere spørgeskemaer, herunder '
+                'SSQ-MM. Fra 2026 er hun ph.d.-studerende i det nationale Treat@Home-program, hvor hun undersøger hjemmebehandling med daratumumab på tværs af '
+                'danske hæmatologiske afdelinger.'},
+  'email': '',
+  'photo': 'tine-rosenberg.jpg',
+  'profile': 'https://portal.findresearcher.sdu.dk/en/persons/tinerosenberg/',
+  'orcid': '0000-0002-7874-5526'},
+ {'name': 'Anne Møller Clausen',
+  'title': {'en': 'RN, MSc in Clinical Nursing, PhD Student', 'da': 'Sygeplejerske, cand.cur., ph.d.-studerende'},
+  'bio': {'en': 'Registered nurse with an MSc in Clinical Nursing and PhD student at the Department of Hematology, Odense University Hospital. Her PhD '
+                'project, AmyCare, focuses on supportive care for patients with AL amyloidosis.',
+          'da': 'Sygeplejerske, cand.cur. og ph.d.-studerende på Hæmatologisk Afdeling, Odense Universitetshospital. Hendes ph.d.-projekt, AmyCare, handler om '
+                'understøttende behandling til patienter med AL-amyloidose.'},
+  'email': '',
+  'photo': 'anne-moller-clausen.jpg',
+  'profile': ''},
+ {'name': 'Nina Andersen',
+  'title': {'en': 'MD, PhD Student', 'da': 'Læge, ph.d.-studerende'},
+  'bio': {'en': 'Medical doctor and PhD student at the Hematology Research Unit. Her research investigates adding comprehensive geriatric assessment to '
+                'standard care for older patients with frailty and hematologic cancer.',
+          'da': 'Læge og ph.d.-studerende ved Hæmatologisk Forskningsenhed. Hendes forskning undersøger, om en geriatrisk helbredsvurdering som supplement til '
+                'standardbehandling gavner ældre, skrøbelige patienter med hæmatologisk kræft.'},
+  'email': '',
+  'photo': 'nina-andersen.jpg',
+  'profile': ''},
+ {'name': 'Klara Rydahl',
+  'title': {'en': 'MD, PhD Student', 'da': 'Læge, ph.d.-studerende'},
+  'bio': {'en': "Medical doctor and PhD student at the Hematology Research Unit. TODO(Add Klara's PhD project in one sentence.)",
+          'da': 'Læge og ph.d.-studerende ved Hæmatologisk Forskningsenhed. TODO(Tilføj Klaras ph.d.-projekt i én sætning.)'},
+  'email': '',
+  'photo': 'klara-rydahl.jpg',
+  'profile': ''},
+ {'name': 'Pia K. Pedersen',
+  'title': {'en': 'Daily Manager and Chief Nurse', 'da': 'Daglig leder og oversygeplejerske'},
+  'bio': {'en': 'Daily manager of the Hematology Research Unit at Odense University Hospital and the University of Southern Denmark. She is responsible for '
+                "the unit's day-to-day management and administration and supports researchers and research projects across the unit, including QoLRC.",
+          'da': 'Daglig leder af Hæmatologisk Forskningsenhed på Odense Universitetshospital og Syddansk Universitet. Hun har ansvaret for enhedens daglige '
+                'drift og administration og understøtter forskere og forskningsprojekter på tværs af enheden, herunder QoLRC.'},
+  'email': '',
+  'photo': 'pia-pedersen.jpg',
+  'profile': ''},
+ {'name': 'Tina Käehne',
+  'title': {'en': 'Finance', 'da': 'Økonomi'},
+  'bio': {'en': 'Responsible for finances at QoLRC and the Hematology Research Unit. TODO(Tina to check and add a sentence.)',
+          'da': 'Ansvarlig for økonomi i QoLRC og Hæmatologisk Forskningsenhed. TODO(Tina tjekker og tilføjer en sætning.)'},
+  'email': '',
+  'photo': 'tina-kaehne.jpg',
+  'profile': ''}]
 
 # ---------------------------------------------------------------- Publications
 PUBLICATIONS_INTRO = {
