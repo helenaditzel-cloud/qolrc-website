@@ -123,9 +123,8 @@ ul { padding: 0; margin: 0; list-style: none; }
 .contact-box h2 { color: #fff; font-size: 1.5rem; }
 
 /* Highlight band */
-.band { background-color: var(--primary); background-position: center 60%; min-height: 300px; display: flex; align-items: center; background-size: cover; background-repeat: no-repeat; color: #fff; padding: 3.5rem 0; }
+.band { background-color: var(--primary); background-position: center; background-size: cover; background-repeat: no-repeat; color: #fff; padding: 3.5rem 0; }
 .band h2 { color: #fff; }
-.band > .wrap { width: 100%; }
 .band-inner { display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; align-items: center; }
 .band-inner p { max-width: 60ch; }
 .band-inner > p:last-child { text-align: right; }
