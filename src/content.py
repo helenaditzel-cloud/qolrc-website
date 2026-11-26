@@ -105,7 +105,7 @@ ABOUT = {
     ],
     # Key figures shown in a band under the banner. Keep these accurate.
     "figures": [
-        {"value": "3", "label": {"en": "Ongoing and pending studies", "da": "Igangværende og kommende studier"}},
+        {"value": "3", "label": {"en": "Ongoing and early-phase studies", "da": "Igangværende studier og studier i tidlig fase"}},
         {"value": "4", "label": {"en": "Countries in our collaborations", "da": "Lande i vores samarbejder"}},
         {"value": "6", "label": {"en": "Research areas", "da": "Forskningsområder"}},
     ],
@@ -123,8 +123,8 @@ ABOUT = {
 
 # ---------------------------------------------------------------- Ongoing studies
 STUDIES_INTRO = {
-    "en": "Selected ongoing and pending studies led by or involving QoLRC.",
-    "da": "Udvalgte igangværende og kommende studier, som QoLRC leder eller deltager i.",
+    "en": "Selected ongoing and early-phase studies led by or involving QoLRC.",
+    "da": "Udvalgte igangværende studier og studier i tidlig fase, som QoLRC leder eller deltager i.",
 }
 
 STUDIES = [
@@ -165,7 +165,7 @@ STUDIES = [
             "en": "A multinational psychometric validation study of a questionnaire measuring symptoms related to corticosteroid treatment in patients with immune thrombocytopenia and autoimmune hemolytic anemia, with planned sites in Denmark, Norway, Sweden and the United Kingdom.",
             "da": "Et internationalt psykometrisk valideringsstudie af et spørgeskema, der måler symptomer relateret til behandling med binyrebarkhormon hos patienter med immun trombocytopeni og autoimmun hæmolytisk anæmi, med planlagte centre i Danmark, Norge, Sverige og Storbritannien.",
         },
-        "status": {"en": "Pending", "da": "Afventer opstart"},
+        "status": {"en": "Early phase", "da": "Tidlig fase"},
         "role": {"en": "Principal investigator", "da": "Forsøgsansvarlig"},
     },
 ]
@@ -199,7 +199,7 @@ PRO = {
          "items": [
             {"name": "SSQ-MM", "what": {"en": "Steroid Symptom Questionnaire for multiple myeloma: side effects of corticosteroid treatment. Translated into Danish and Norwegian by our team.", "da": "Steroid Symptom Questionnaire til myelomatose: bivirkninger af binyrebarkhormon. Oversat til dansk og norsk af vores team."},
              "url": "", "doi": "10.1007/s11136-026-04415-5", "danish": True},
-            {"name": "SSQ (ITP and AIHA)", "what": {"en": "Steroid Symptom Questionnaire, to be validated in immune thrombocytopenia and autoimmune hemolytic anemia in a pending study.", "da": "Steroid Symptom Questionnaire, som skal valideres ved immun trombocytopeni og autoimmun hæmolytisk anæmi i et kommende studie."},
+            {"name": "SSQ (ITP and AIHA)", "what": {"en": "Steroid Symptom Questionnaire, to be validated in immune thrombocytopenia and autoimmune hemolytic anemia in a study in its early phase.", "da": "Steroid Symptom Questionnaire, som skal valideres ved immun trombocytopeni og autoimmun hæmolytisk anæmi i et studie i tidlig fase."},
              "url": "", "doi": ""},
             {"name": "HM-PRO", "what": {"en": "Generic patient-reported outcome measure for hematologic malignancies.", "da": "Generisk PRO-mål for hæmatologiske kræftsygdomme."},
              "url": "", "doi": "10.1186/s41687-025-00869-2", "danish": True},
