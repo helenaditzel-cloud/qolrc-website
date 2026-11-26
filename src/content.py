@@ -620,12 +620,6 @@ PARTNERS = [
         "country": {"en": "Denmark", "da": "Danmark"},
     },
     {
-        "name": {"en": "Oslo University Hospital", "da": "Oslo universitetssykehus"},
-        "text": {"en": "Sponsor of the REMNANT trial.", "da": "Sponsor for REMNANT-forsøget."},
-        "url": "https://www.oslo-universitetssykehus.no",
-        "country": {"en": "Norway", "da": "Norge"},
-    },
-    {
         "name": {"en": "Nordic Myeloma Study Group (NMSG)", "da": "Nordic Myeloma Study Group (NMSG)"},
         "text": {"en": "Collaborative group for clinical myeloma research in Norway, Sweden, Finland, Estonia, Iceland and Denmark. QoLRC is the group's core facility for quality of life research in clinical protocols.", "da": "Samarbejdsgruppe for klinisk myelomatoseforskning i Norge, Sverige, Finland, Estland, Island og Danmark. QoLRC er gruppens core facility for forskning i livskvalitet i kliniske protokoller."},
         "url": "https://www.nordicmyeloma.org/",
