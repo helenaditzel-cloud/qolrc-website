@@ -49,13 +49,13 @@ ABOUT = {
     "intro": {
         "en": [
             "The Quality of Life Research Center (QoLRC) studies how hematologic diseases and their treatment affect patients' everyday lives. We work with patient-reported outcomes (PROs) and health-related quality of life (HRQoL) in multiple myeloma, other hematologic cancers and benign hematologic conditions such as autoimmune cytopenias.",
-            "The center is based in the Department of Hematology at Odense University Hospital and is affiliated with the University of Southern Denmark. For 35 years we have been part of the [Nordic Myeloma Study Group (NMSG)](https://www.nordicmyeloma.org/), where our focus has been designing, collecting and analyzing quality of life data in clinical trials. We have also collected long-term quality of life data from Danish patients outside clinical trials. Within the [Nordic ITP Group](https://nordicitp.com/), we work on patient-reported outcomes in immune thrombocytopenia, including the translation and psychometric evaluation of questionnaires.",
-            "Our vision is to develop an interdisciplinary center for research in quality of life, working closely with clinicians, statisticians, patient organizations and research partners across the Nordic countries and Europe.",
+            "The center was established in 2017 as a strategic investment by the Department of Hematology and the Hematology Research Unit at Odense University Hospital, and is affiliated with the University of Southern Denmark. Our main research field is quality of life in Danish patients with multiple myeloma. QoLRC is the core facility for quality of life research in the clinical protocols of the [Nordic Myeloma Study Group (NMSG)](https://www.nordicmyeloma.org/), where our researchers have designed, collected and analyzed quality of life data for 35 years. We have also collected long-term quality of life data from Danish patients outside clinical trials. Within the [Nordic ITP Group](https://nordicitp.com/), we work on patient-reported outcomes in immune thrombocytopenia, including the translation and psychometric evaluation of questionnaires.",
+            "Our vision is to establish an interdisciplinary center for research in health-related quality of life at an international level, working closely with clinicians, statisticians, patient organizations and research partners across the Nordic countries and Europe.",
         ],
         "da": [
             "Quality of Life Research Center (QoLRC) undersøger, hvordan hæmatologiske sygdomme og deres behandling påvirker patienternes hverdag. Vi arbejder med patientrapporterede oplysninger (PRO) og helbredsrelateret livskvalitet (HRQoL) ved myelomatose, andre hæmatologiske kræftsygdomme og godartede hæmatologiske sygdomme som autoimmune cytopenier.",
-            "Centret har base i Hæmatologisk Afdeling på Odense Universitetshospital og er tilknyttet Syddansk Universitet. I 35 år har vi været en del af [Nordic Myeloma Study Group (NMSG)](https://www.nordicmyeloma.org/), hvor vores fokus har været at planlægge, indsamle og analysere livskvalitetsdata i kliniske forsøg. Vi har også indsamlet langsigtede livskvalitetsdata fra danske patienter uden for kliniske forsøg. I [Nordic ITP Group](https://nordicitp.com/) arbejder vi med patientrapporterede oplysninger ved immun trombocytopeni, herunder oversættelse og psykometrisk evaluering af spørgeskemaer.",
-            "Vores vision er at udvikle et tværfagligt center for forskning i livskvalitet i tæt samarbejde med klinikere, statistikere, patientforeninger og forskningspartnere i Norden og Europa.",
+            "Centret blev etableret i 2017 som en strategisk investering i Hæmatologisk Afdeling og Hæmatologisk Forskningsenhed på Odense Universitetshospital og er tilknyttet Syddansk Universitet. Vores primære forskningsfelt er livskvalitet hos danske patienter med myelomatose. QoLRC er core facility for forskning i livskvalitet i de kliniske protokoller i [Nordic Myeloma Study Group (NMSG)](https://www.nordicmyeloma.org/), hvor vores forskere i 35 år har planlagt, indsamlet og analyseret livskvalitetsdata. Vi har også indsamlet langsigtede livskvalitetsdata fra danske patienter uden for kliniske forsøg. I [Nordic ITP Group](https://nordicitp.com/) arbejder vi med patientrapporterede oplysninger ved immun trombocytopeni, herunder oversættelse og psykometrisk evaluering af spørgeskemaer.",
+            "Vores vision er at etablere et tværfagligt center for forskning i helbredsrelateret livskvalitet på internationalt niveau i tæt samarbejde med klinikere, statistikere, patientforeninger og forskningspartnere i Norden og Europa.",
         ],
     },
     "themes_heading": {"en": "Our research", "da": "Vores forskning"},
@@ -105,8 +105,8 @@ ABOUT = {
     ],
     # Key figures shown in a band under the banner. Keep these accurate.
     "figures": [
-        {"value": "3", "label": {"en": "Ongoing and early-phase studies", "da": "Igangværende studier og studier i tidlig fase"}},
-        {"value": "4", "label": {"en": "Countries in our collaborations", "da": "Lande i vores samarbejder"}},
+        {"value": "2017", "label": {"en": "Year established", "da": "Etableret"}},
+        {"value": "12", "label": {"en": "Ongoing and early-phase studies", "da": "Igangværende studier og studier i tidlig fase"}},
         {"value": "6", "label": {"en": "Research areas", "da": "Forskningsområder"}},
     ],
     "advice_heading": {"en": "Advice and collaboration", "da": "Rådgivning og samarbejde"},
@@ -127,48 +127,114 @@ STUDIES_INTRO = {
     "da": "Udvalgte igangværende studier og studier i tidlig fase, som QoLRC leder eller deltager i.",
 }
 
-STUDIES = [
-    {
-        "title": {
-            "en": "REMNANT: quality of life in MRD-guided myeloma treatment",
-            "da": "REMNANT: livskvalitet ved MRD-styret myelomatosebehandling",
-        },
-        "disease": {"en": "Multiple myeloma", "da": "Myelomatose"},
-        "nct": "NCT04513639",
-        "text": {
-            "en": "A Nordic randomized trial in newly diagnosed multiple myeloma, led by Oslo University Hospital, in which treatment is guided by measurable residual disease. QoLRC leads the Danish health-related quality of life work, including the statistical analysis plans for the HRQoL sub-study.",
-            "da": "Et nordisk randomiseret forsøg ved nydiagnosticeret myelomatose, ledet af Oslo universitetssykehus, hvor behandlingen styres af målbar restsygdom. QoLRC leder det danske arbejde med helbredsrelateret livskvalitet, herunder de statistiske analyseplaner for livskvalitetsdelen.",
-        },
-        "role": {"en": "Danish HRQoL lead", "da": "Dansk ansvarlig for livskvalitet"},
-    },
-    {
-        "title": {
-            "en": "Patient-reported outcomes in the Nordic IRd trial",
-            "da": "Patientrapporterede oplysninger i det nordiske IRd-forsøg",
-        },
-        "disease": {"en": "Multiple myeloma", "da": "Myelomatose"},
-        "nct": "NCT03376672",
-        "text": {
-            "en": "Analysis of quality of life, myeloma-specific symptoms and peripheral neuropathy in a Nordic Myeloma Study Group phase 2 trial in newly diagnosed, transplant-eligible patients, using the EORTC QLQ-C30, QLQ-MY20 and QLQ-CIPN20.",
-            "da": "Analyse af livskvalitet, myelomatosespecifikke symptomer og perifer neuropati i et fase 2-forsøg fra Nordic Myeloma Study Group hos nydiagnosticerede patienter, der kan tåle højdosisbehandling, med EORTC QLQ-C30, QLQ-MY20 og QLQ-CIPN20.",
-        },
-        "role": {"en": "PRO analysis", "da": "PRO-analyse"},
-    },
-    {
-        "title": {
-            "en": "Validation of the Steroid Symptom Questionnaire in ITP and AIHA",
-            "da": "Validering af Steroid Symptom Questionnaire ved ITP og AIHA",
-        },
-        "disease": {"en": "Autoimmune cytopenias", "da": "Autoimmune cytopenier"},
-        "nct": "",
-        "text": {
-            "en": "A multinational psychometric validation study of a questionnaire measuring symptoms related to corticosteroid treatment in patients with immune thrombocytopenia and autoimmune hemolytic anemia, with planned sites in Denmark, Norway, Sweden and the United Kingdom.",
-            "da": "Et internationalt psykometrisk valideringsstudie af et spørgeskema, der måler symptomer relateret til behandling med binyrebarkhormon hos patienter med immun trombocytopeni og autoimmun hæmolytisk anæmi, med planlagte centre i Danmark, Norge, Sverige og Storbritannien.",
-        },
-        "status": {"en": "Early phase", "da": "Tidlig fase"},
-        "role": {"en": "Principal investigator", "da": "Forsøgsansvarlig"},
-    },
+STUDY_GROUPS = [
+    ("nmsg", {"en": "Nordic Myeloma Study Group (NMSG) studies", "da": "Studier i Nordic Myeloma Study Group (NMSG)"}),
+    ("other", {"en": "Other ongoing studies", "da": "Andre igangværende studier"}),
+    ("early", {"en": "Studies in an early phase", "da": "Studier i tidlig fase"}),
 ]
+
+STUDIES = [{'group': 'nmsg',
+  'title': {'en': 'REST: isatuximab with minimal dexamethasone', 'da': 'REST: isatuximab med minimal dexamethason'},
+  'disease': {'en': 'Multiple myeloma', 'da': 'Myelomatose'},
+  'nct': 'NCT04939844',
+  'text': {'en': 'A phase 2 study of isatuximab combined with bortezomib and lenalidomide with minimal dexamethasone in patients with multiple myeloma who are '
+                 'not eligible for stem cell transplantation.',
+           'da': 'Et fase 2-studie af isatuximab kombineret med bortezomib og lenalidomid med minimal dexamethason hos patienter med myelomatose, der ikke kan '
+                 'tåle stamcellebehandling.'},
+  'role': {'en': 'Quality of life data (NMSG core facility)', 'da': 'Livskvalitetsdata (NMSG core facility)'}},
+ {'group': 'nmsg',
+  'title': {'en': 'SABLe: selinexor in newly diagnosed myeloma', 'da': 'SABLe: selinexor ved nydiagnosticeret myelomatose'},
+  'disease': {'en': 'Multiple myeloma', 'da': 'Myelomatose'},
+  'nct': 'NCT04717700',
+  'text': {'en': 'A phase 2 study of selinexor with alternating bortezomib or lenalidomide plus dexamethasone in newly diagnosed patients who are not eligible '
+                 'for stem cell transplantation.',
+           'da': 'Et fase 2-studie af selinexor med skiftevis bortezomib eller lenalidomid plus dexamethason hos nydiagnosticerede patienter, der ikke kan '
+                 'tåle stamcellebehandling.'},
+  'role': {'en': 'Quality of life data (NMSG core facility)', 'da': 'Livskvalitetsdata (NMSG core facility)'}},
+ {'title': {'en': 'REMNANT: quality of life in MRD-guided myeloma treatment', 'da': 'REMNANT: livskvalitet ved MRD-styret myelomatosebehandling'},
+  'disease': {'en': 'Multiple myeloma', 'da': 'Myelomatose'},
+  'nct': 'NCT04513639',
+  'text': {'en': 'A Nordic randomized trial in newly diagnosed multiple myeloma, led by Oslo University Hospital, in which treatment is guided by measurable '
+                 'residual disease. QoLRC leads the Danish health-related quality of life work, including the statistical analysis plans for the HRQoL '
+                 'sub-study.',
+           'da': 'Et nordisk randomiseret forsøg ved nydiagnosticeret myelomatose, ledet af Oslo universitetssykehus, hvor behandlingen styres af målbar '
+                 'restsygdom. QoLRC leder det danske arbejde med helbredsrelateret livskvalitet, herunder de statistiske analyseplaner for '
+                 'livskvalitetsdelen.'},
+  'role': {'en': 'Danish HRQoL lead', 'da': 'Dansk ansvarlig for livskvalitet'},
+  'group': 'nmsg'},
+ {'group': 'nmsg',
+  'title': {'en': 'SHIELD', 'da': 'SHIELD'},
+  'disease': {'en': 'Multiple myeloma', 'da': 'Myelomatose'},
+  'nct': '',
+  'text': {'en': 'An NMSG study in multiple myeloma. TODO(Add a one-sentence description of SHIELD.)',
+           'da': 'Et NMSG-studie i myelomatose. TODO(Tilføj en kort beskrivelse af SHIELD.)'},
+  'role': {'en': 'Quality of life data (NMSG core facility)', 'da': 'Livskvalitetsdata (NMSG core facility)'}},
+ {'title': {'en': 'Patient-reported outcomes in the Nordic IRd trial', 'da': 'Patientrapporterede oplysninger i det nordiske IRd-forsøg'},
+  'disease': {'en': 'Multiple myeloma', 'da': 'Myelomatose'},
+  'nct': 'NCT03376672',
+  'text': {'en': 'Analysis of quality of life, myeloma-specific symptoms and peripheral neuropathy in a Nordic Myeloma Study Group phase 2 trial in newly '
+                 'diagnosed, transplant-eligible patients, using the EORTC QLQ-C30, QLQ-MY20 and QLQ-CIPN20.',
+           'da': 'Analyse af livskvalitet, myelomatosespecifikke symptomer og perifer neuropati i et fase 2-forsøg fra Nordic Myeloma Study Group hos '
+                 'nydiagnosticerede patienter, der kan tåle højdosisbehandling, med EORTC QLQ-C30, QLQ-MY20 og QLQ-CIPN20.'},
+  'role': {'en': 'PRO analysis', 'da': 'PRO-analyse'},
+  'group': 'nmsg'},
+ {'group': 'nmsg',
+  'title': {'en': 'TALTEC: talquetamab and teclistamab consolidation', 'da': 'TALTEC: konsolidering med talquetamab og teclistamab'},
+  'disease': {'en': 'Multiple myeloma', 'da': 'Myelomatose'},
+  'nct': 'NCT06505369',
+  'text': {'en': 'A phase 2 study of consolidation with the bispecific antibodies talquetamab and teclistamab as part of first-line treatment in '
+                 'transplant-eligible patients, measuring measurable residual disease (MRD) negativity.',
+           'da': 'Et fase 2-studie af konsolidering med de bispecifikke antistoffer talquetamab og teclistamab som del af førstelinjebehandlingen hos '
+                 'patienter, der kan tåle højdosisbehandling, med måling af MRD-negativitet.'},
+  'role': {'en': 'Quality of life data (NMSG core facility)', 'da': 'Livskvalitetsdata (NMSG core facility)'}},
+ {'group': 'other',
+  'title': {'en': 'QoL-MM: quality of life in Danish patients with multiple myeloma', 'da': 'QoL-MM: livskvalitet hos danske patienter med myelomatose'},
+  'disease': {'en': 'Multiple myeloma', 'da': 'Myelomatose'},
+  'nct': 'NCT02892383',
+  'text': {'en': 'A nationwide observational study of quality of life in 681 Danish patients with newly diagnosed or relapsed multiple myeloma, followed with '
+                 'patient-reported outcomes for two years outside clinical trials.',
+           'da': 'Et landsdækkende observationelt studie af livskvalitet hos 681 danske patienter med nydiagnosticeret eller recidiverende myelomatose, fulgt '
+                 'med patientrapporterede oplysninger i to år uden for kliniske forsøg.'},
+  'role': {'en': 'Sponsor and study lead', 'da': 'Sponsor og studieledelse'}},
+ {'group': 'other',
+  'title': {'en': 'DARA-PRO', 'da': 'DARA-PRO'},
+  'disease': {'en': 'Multiple myeloma', 'da': 'Myelomatose'},
+  'nct': '',
+  'text': {'en': 'TODO(Add a one-sentence description of DARA-PRO.)', 'da': 'TODO(Tilføj en kort beskrivelse af DARA-PRO.)'},
+  'role': {'en': '', 'da': ''}},
+ {'group': 'other',
+  'title': {'en': 'IMPROVE', 'da': 'IMPROVE'},
+  'disease': {'en': 'Hematology', 'da': 'Hæmatologi'},
+  'nct': '',
+  'text': {'en': 'TODO(Add a one-sentence description of IMPROVE.)', 'da': 'TODO(Tilføj en kort beskrivelse af IMPROVE.)'},
+  'role': {'en': '', 'da': ''}},
+ {'group': 'other',
+  'title': {'en': 'Revision of the EORTC QLQ-MY20', 'da': 'Revision af EORTC QLQ-MY20'},
+  'disease': {'en': 'Multiple myeloma', 'da': 'Myelomatose'},
+  'nct': '',
+  'text': {'en': 'Revision of the EORTC questionnaire module for patients with multiple myeloma, so that it reflects the symptoms and side effects of modern '
+                 'myeloma treatment. TODO(Check this description.)',
+           'da': "Revision af EORTC's spørgeskemamodul til patienter med myelomatose, så det afspejler symptomer og bivirkninger ved moderne "
+                 'myelomatosebehandling. TODO(Tjek beskrivelsen.)'},
+  'role': {'en': '', 'da': ''}},
+ {'group': 'early',
+  'title': {'en': 'ISOLDE', 'da': 'ISOLDE'},
+  'disease': {'en': 'Multiple myeloma', 'da': 'Myelomatose'},
+  'nct': '',
+  'status': {'en': 'Early phase', 'da': 'Tidlig fase'},
+  'text': {'en': 'An upcoming NMSG study in multiple myeloma. TODO(Add a one-sentence description of ISOLDE.)',
+           'da': 'Et kommende NMSG-studie i myelomatose. TODO(Tilføj en kort beskrivelse af ISOLDE.)'},
+  'role': {'en': 'Quality of life data (NMSG core facility)', 'da': 'Livskvalitetsdata (NMSG core facility)'}},
+ {'title': {'en': 'Validation of the Steroid Symptom Questionnaire in ITP and AIHA', 'da': 'Validering af Steroid Symptom Questionnaire ved ITP og AIHA'},
+  'disease': {'en': 'Autoimmune cytopenias', 'da': 'Autoimmune cytopenier'},
+  'nct': '',
+  'text': {'en': 'A multinational psychometric validation study of a questionnaire measuring symptoms related to corticosteroid treatment in patients with '
+                 'immune thrombocytopenia and autoimmune hemolytic anemia, with planned sites in Denmark, Norway, Sweden and the United Kingdom.',
+           'da': 'Et internationalt psykometrisk valideringsstudie af et spørgeskema, der måler symptomer relateret til behandling med binyrebarkhormon hos '
+                 'patienter med immun trombocytopeni og autoimmun hæmolytisk anæmi, med planlagte centre i Danmark, Norge, Sverige og Storbritannien.'},
+  'status': {'en': 'Early phase', 'da': 'Tidlig fase'},
+  'role': {'en': 'Principal investigator', 'da': 'Forsøgsansvarlig'},
+  'group': 'early'}]
 
 # ---------------------------------------------------------------- PRO expertise
 PRO = {
@@ -359,10 +425,10 @@ MEMBERS_INTRO = {
 MEMBERS = [
     {
         "name": "Lene Kongsgaard Nielsen",
-        "title": {"en": "MD, PhD, Associate Professor, Head of QoLRC", "da": "Læge, ph.d., lektor, leder af QoLRC"},
+        "title": {"en": "MD, PhD, Scientific Leader and Associate Professor", "da": "Læge, ph.d., videnskabelig leder og lektor"},
         "bio": {
-            "en": "Consultant in hematology, associate professor at the University of Southern Denmark and head of the Quality of Life Research Center. She leads the center's research on quality of life in multiple myeloma, including the design, collection and analysis of quality of life data in Nordic Myeloma Study Group trials and in real-world Danish cohorts.",
-            "da": "Overlæge i hæmatologi, lektor ved Syddansk Universitet og leder af Quality of Life Research Center. Hun leder centrets forskning i livskvalitet ved myelomatose, herunder planlægning, indsamling og analyse af livskvalitetsdata i studier fra Nordic Myeloma Study Group og i danske kohorter uden for kliniske forsøg.",
+            "en": "Consultant in hematology, associate professor at the University of Southern Denmark and scientific leader of the Quality of Life Research Center. She leads the center's research on quality of life in multiple myeloma, including the design, collection and analysis of quality of life data in Nordic Myeloma Study Group trials and in real-world Danish cohorts.",
+            "da": "Overlæge i hæmatologi, lektor ved Syddansk Universitet og videnskabelig leder af Quality of Life Research Center. Hun leder centrets forskning i livskvalitet ved myelomatose, herunder planlægning, indsamling og analyse af livskvalitetsdata i studier fra Nordic Myeloma Study Group og i danske kohorter uden for kliniske forsøg.",
         },
         "email": "",
         "photo": "lene-kongsgaard-nielsen.jpg",
@@ -371,7 +437,7 @@ MEMBERS = [
     },
     {
         "name": "Henrik Frederiksen",
-        "title": {"en": "MD, PhD, Professor, Head of Research", "da": "Læge, ph.d., professor, forskningsleder"},
+        "title": {"en": "MD, PhD, Head of Research and Professor", "da": "Læge, ph.d., forskningsleder og professor"},
         "bio": {
             "en": "Consultant and Head of Research at the Department and Research Unit of Hematology, Odense University Hospital and University of Southern Denmark. His research focuses on frailty and supportive care in hematologic cancer, including how frailty assessment can be used in routine care to tailor treatment, as well as non-malignant hematologic diseases. Former chair of the Danish Society of Hematology.",
             "da": "Overlæge og forskningsleder ved Hæmatologisk Afdeling og Forskningsenhed, Odense Universitetshospital og Syddansk Universitet. Hans forskning fokuserer på skrøbelighed og understøttende behandling ved hæmatologisk kræft, herunder hvordan vurdering af skrøbelighed kan bruges i den daglige klinik til at tilpasse behandlingen, samt godartede hæmatologiske sygdomme. Tidligere formand for Dansk Hæmatologisk Selskab.",
@@ -383,10 +449,10 @@ MEMBERS = [
     },
     {
         "name": "Niels Abildgaard",
-        "title": {"en": "Clinical Professor in Hematology", "da": "Klinisk professor i hæmatologi"},
+        "title": {"en": "Senior Professor", "da": "Seniorprofessor"},
         "bio": {
-            "en": "Clinical professor at the Department of Hematology, Odense University Hospital, and the University of Southern Denmark, and head of the Odense Amyloidosis Centre (AmyC OUH), a Center of Clinical Excellence. His research covers multiple myeloma from disease biology to treatment, with particular emphasis on myeloma bone disease.",
-            "da": "Klinisk professor på Hæmatologisk Afdeling, Odense Universitetshospital, og Syddansk Universitet samt leder af Odense Amyloidosis Centre (AmyC OUH), et Center for Klinisk Excellence. Hans forskning dækker myelomatose fra sygdomsbiologi til behandling med særligt fokus på knoglesygdom ved myelomatose.",
+            "en": "Senior professor at the Department of Hematology, Odense University Hospital, and the University of Southern Denmark, and head of the Odense Amyloidosis Centre (AmyC OUH), a Center of Clinical Excellence. His research covers multiple myeloma from disease biology to treatment, with particular emphasis on myeloma bone disease.",
+            "da": "Seniorprofessor på Hæmatologisk Afdeling, Odense Universitetshospital, og Syddansk Universitet samt leder af Odense Amyloidosis Centre (AmyC OUH), et Center for Klinisk Excellence. Hans forskning dækker myelomatose fra sygdomsbiologi til behandling med særligt fokus på knoglesygdom ved myelomatose.",
         },
         "email": "",
         "photo": "niels-abildgaard.jpg",
@@ -407,7 +473,7 @@ MEMBERS = [
     },
     {
         "name": "Pia K. Pedersen",
-        "title": {"en": "Daily Manager, Hematology Research Unit", "da": "Daglig leder, Hæmatologisk Forskningsenhed"},
+        "title": {"en": "Daily Manager and Chief Nurse", "da": "Daglig leder og oversygeplejerske"},
         "bio": {
             "en": "Daily manager of the Hematology Research Unit at Odense University Hospital and the University of Southern Denmark. She is responsible for the unit's day-to-day management and administration and supports researchers and research projects across the unit, including QoLRC.",
             "da": "Daglig leder af Hæmatologisk Forskningsenhed på Odense Universitetshospital og Syddansk Universitet. Hun har ansvaret for enhedens daglige drift og administration og understøtter forskere og forskningsprojekter på tværs af enheden, herunder QoLRC.",
@@ -418,7 +484,7 @@ MEMBERS = [
     },
     {
         "name": "Tine Rosenberg",
-        "title": {"en": "Research Coordinator and Fundraiser", "da": "Forskningskoordinator og fundraiser"},
+        "title": {"en": "Project Coordinator", "da": "Projektkoordinator"},
         "bio": {
             "en": "Research coordinator and project manager (MSc in Health Science) at the Hematology Research Unit and QoLRC, Odense University Hospital. Her research focuses on home-based treatment and digital patient-reported outcomes in multiple myeloma, including home-administered daratumumab and digital symptom reporting before treatment, and she has contributed to the Danish translation and validation of several questionnaires, including the SSQ-MM. From 2026 she is a PhD fellow in the national Treat@Home program, studying home-based daratumumab treatment across Danish hematology departments.",
             "da": "Forskningskoordinator og projektleder (cand.scient.san.) ved Hæmatologisk Forskningsenhed og QoLRC, Odense Universitetshospital. Hendes forskning fokuserer på hjemmebehandling og digitale patientrapporterede oplysninger ved myelomatose, herunder daratumumab givet i eget hjem og digital symptomrapportering før behandling, og hun har bidraget til dansk oversættelse og validering af flere spørgeskemaer, herunder SSQ-MM. Fra 2026 er hun ph.d.-studerende i det nationale Treat@Home-program, hvor hun undersøger hjemmebehandling med daratumumab på tværs af danske hæmatologiske afdelinger.",
@@ -474,7 +540,7 @@ PARTNERS = [
     },
     {
         "name": {"en": "Nordic Myeloma Study Group (NMSG)", "da": "Nordic Myeloma Study Group (NMSG)"},
-        "text": {"en": "Collaborative group for clinical myeloma research in Norway, Sweden, Finland, Estonia, Iceland and Denmark. QoLRC has been part of the group for 35 years.", "da": "Samarbejdsgruppe for klinisk myelomatoseforskning i Norge, Sverige, Finland, Estland, Island og Danmark. QoLRC har været en del af gruppen i 35 år."},
+        "text": {"en": "Collaborative group for clinical myeloma research in Norway, Sweden, Finland, Estonia, Iceland and Denmark. QoLRC is the group's core facility for quality of life research in clinical protocols.", "da": "Samarbejdsgruppe for klinisk myelomatoseforskning i Norge, Sverige, Finland, Estland, Island og Danmark. QoLRC er gruppens core facility for forskning i livskvalitet i kliniske protokoller."},
         "url": "https://www.nordicmyeloma.org/",
         "country": {"en": "Nordic countries", "da": "Norden"},
     },
@@ -485,8 +551,8 @@ PARTNERS = [
         "country": {"en": "Nordic countries", "da": "Norden"},
     },
     {
-        "name": {"en": "OPEN Statistics, Odense University Hospital", "da": "OPEN Statistik, Odense Universitetshospital"},
-        "text": {"en": "Biostatistical collaboration.", "da": "Biostatistisk samarbejde."},
+        "name": {"en": "OPEN, Open Patient data Explorative Network", "da": "OPEN, Open Patient data Explorative Network"},
+        "text": {"en": "Data management and biostatistics, including our collaboration with Professor Sören Möller, Department of Health Services Research, University of Southern Denmark.", "da": "Datahåndtering og biostatistik, herunder vores samarbejde med professor Sören Möller, Institut for Sundhedstjenesteforskning, Syddansk Universitet."},
         "url": "",
         "country": {"en": "Denmark", "da": "Danmark"},
     },

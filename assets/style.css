@@ -144,6 +144,10 @@ ul { padding: 0; margin: 0; list-style: none; }
 .card-body { padding: 1.1rem 1.6rem 1.75rem; }
 
 .study { border-left: 6px solid var(--primary-2); }
+.study h3 { font-size: 1.2rem; }
+.study-group { margin-top: 2.5rem; }
+.study-group:first-child { margin-top: 0; }
+.study-grid { align-items: start; }
 .partner { border-top: 5px solid var(--primary-2); }
 
 .tags { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 .9rem; }

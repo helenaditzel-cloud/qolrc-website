@@ -258,21 +258,28 @@ def about(lang):
 
 
 def studies(lang):
-    items = []
-    for s in C.STUDIES:
-        reg = ""
-        if s["nct"]:
-            reg = (f'<a class="tag tag-link" href="https://clinicaltrials.gov/study/{s["nct"]}">'
-                   f'{UI["registry"][lang]}: {s["nct"]}</a>')
-        items.append(f"""<li class="card study">
-  <p class="tags">{f'<span class="tag tag-status">{esc(t(s["status"], lang))}</span>' if s.get("status") else ""}<span class="tag">{esc(t(s['disease'], lang))}</span>{reg}</p>
-  <h2>{esc(t(s['title'], lang))}</h2>
+    sections = []
+    for gid, gtitle in C.STUDY_GROUPS:
+        items = []
+        for s in [x for x in C.STUDIES if x.get("group") == gid]:
+            reg = ""
+            if s["nct"]:
+                reg = (f'<a class="tag tag-link" href="https://clinicaltrials.gov/study/{s["nct"]}">'
+                       f'{UI["registry"][lang]}: {s["nct"]}</a>')
+            status = f'<span class="tag tag-status">{esc(t(s["status"], lang))}</span>' if s.get("status") else ""
+            role = t(s.get("role", ""), lang) if s.get("role") else ""
+            role_html = f'<p class="meta"><strong>{UI["our_role"][lang]}:</strong> {esc(role)}</p>' if role else ""
+            items.append(f"""<li class="card study">
+  <p class="tags">{status}<span class="tag">{esc(t(s['disease'], lang))}</span>{reg}</p>
+  <h3>{esc(t(s['title'], lang))}</h3>
   <p>{esc(t(s['text'], lang))}</p>
-  <p class="meta"><strong>{UI['our_role'][lang]}:</strong> {esc(t(s['role'], lang))}</p>
+  {role_html}
 </li>""")
+        sections.append(f"""<h2 class="section-title study-group">{esc(t(gtitle, lang))}</h2>
+<ul class="grid grid-2 study-grid">{''.join(items)}</ul>""")
     body = page_header("studies", nav_label("studies", lang), C.STUDIES_INTRO, lang) + f"""
 <section class="section">
-  <div class="wrap"><ul class="stack">{''.join(items)}</ul></div>
+  <div class="wrap">{''.join(sections)}</div>
 </section>"""
     return layout("studies", lang, nav_label("studies", lang), body, t(C.STUDIES_INTRO, lang))
 
