@@ -666,6 +666,12 @@ NEWS = [
           "alt": {"en": "Helena Møgelbjerg Ditzel and Tine Rosenberg at the Gullfoss waterfall",
                   "da": "Helena Møgelbjerg Ditzel og Tine Rosenberg ved vandfaldet Gullfoss"}},
      ]},
+    {"date": "2026-04-17",
+     "title": {"en": "QoLRC at the Nordic ITP meeting in Oslo",
+               "da": "QoLRC til det nordiske ITP-møde i Oslo"},
+     "text": {"en": "At the Nordic ITP meeting in Oslo on 17–18 April 2026, Henrik Frederiksen presented a case of acquired amegakaryocytic thrombocytopenia after treatment with an immune checkpoint inhibitor as part of neoadjuvant treatment for bilateral breast cancer (BMJ Case Reports, 2025). Helena Møgelbjerg Ditzel presented the SSQ-MM validation study in patients with ITP and AIHA.",
+              "da": "På det nordiske ITP-møde i Oslo den 17.–18. april 2026 præsenterede Henrik Frederiksen et tilfælde af erhvervet amegakaryocytær trombocytopeni efter behandling med en immun checkpoint-hæmmer som led i neoadjuverende behandling for bilateral brystkræft (BMJ Case Reports, 2025). Helena Møgelbjerg Ditzel præsenterede SSQ-MM-valideringsstudiet hos patienter med ITP og AIHA."},
+     "photo": "henrik-nordic-itp-2026.jpg", "link": "https://nordicitp.com/"},
     {
         "date": "2026-09-01",
         "title": {"en": "Poster on geriatric assessment in older patients with hematologic cancer",
