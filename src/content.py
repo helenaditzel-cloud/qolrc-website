@@ -644,10 +644,9 @@ SPONSORS_INTRO = {"en": "Our research is made possible by grants from these foun
                   "da": "Vores forskning er muliggjort af bevillinger fra disse fonde og organisationer."}
 # logo: file name in assets/img/sponsors/ (PNG or SVG). Without a logo file the name is shown instead.
 SPONSORS = [
+    {"name": "Kræftens Bekæmpelse", "url": "https://www.cancer.dk/", "logo": "kraeftens-bekaempelse.png"},
     {"name": "Stiftelsen Dam", "url": "https://dam.no/", "logo": "stiftelsen-dam.png"},
-    {"name": "Velux Fonden", "url": "https://veluxfoundations.dk/", "logo": "velux-fonden.png"},
-    {"name": "Dagmar Marshalls Fond", "url": "", "logo": "dagmar-marshalls-fond.png"},
-    {"name": "Danish Cancer Research Foundation", "url": "", "logo": "danish-cancer-research-foundation.png"},
+    {"name": "Sygeforsikring danmark", "url": "https://www.sygeforsikring.dk/", "logo": "sygeforsikring-danmark.png"},
 ]
 
 # ---------------------------------------------------------------- Contact
