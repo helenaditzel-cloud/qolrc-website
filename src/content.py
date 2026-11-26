@@ -738,5 +738,5 @@ NEWS = [
                "da": "Bevilling fra Stiftelsen Dam til REMNANT-studiets livskvalitetsdel"},
      "text": {"en": "The patient-reported outcome sub-study of REMNANT has received funding from the Norwegian foundation Stiftelsen Dam, through the Norwegian Blood Cancer Society (Blodkreftforeningen). REMNANT is a Nordic randomized trial led by Oslo University Hospital, in which treatment of newly diagnosed multiple myeloma is guided by measurable residual disease. The grant supports the quality of life analyses in part 2 of the study, which are carried out at QoLRC and led by Helena Møgelbjerg Ditzel.",
               "da": "REMNANT-studiets delstudie om patientrapporterede oplysninger har fået støtte fra den norske fond Stiftelsen Dam gennem den norske blodkræftforening (Blodkreftforeningen). REMNANT er et nordisk randomiseret forsøg ledet af Oslo universitetssykehus, hvor behandlingen af nydiagnosticeret myelomatose styres af målbar restsygdom. Bevillingen støtter livskvalitetsanalyserne i studiets del 2, som udføres i QoLRC og ledes af Helena Møgelbjerg Ditzel."},
-     "photo": "stiftelsen-dam.jpg", "link": "https://dam.no/"},
+     "photo": "remnant-funding.jpg", "link": "https://dam.no/"},
 ]
